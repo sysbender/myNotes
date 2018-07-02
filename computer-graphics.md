@@ -33,6 +33,17 @@ programming in 2D
      Draw - glDrawArrays
     primitive - triangle, line, quad(2 triangle)
     
+    instancing - complex
+    material - set of texture and shader used
+    
+    transparency 
+    opaqueness
+    texture atlasing - combine multiple image into a single texture
+    particle emitter - size, velocity , acceleration, speed, color , lifetime
+    particle system - 
+    use interleave vbo - not multiple individu vbo
+    
+    
     
   
   
