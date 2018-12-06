@@ -1,0 +1,24 @@
+build.xml
+
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <taskdef name="groovy" classpath="/usr/share/groovy/lib/groovy-2.4.15.jar:/usr/share/groovy/lib/groovy-ant.jar:/usr/share/groovy/lib/ant.jar:." classname="org.codehaus.groovy.ant.Groovy"/>
+
+  <property name="foo" value="bar"/>
+<target name="run">
+   <script language="groovy">
+    println "Hello world!"
+   </script>
+  </target>
+
+</project>
+
+
+download groovy-all-2.4.15.jar from 
+http://central.maven.org/maven2/org/codehaus/groovy/groovy-all/2.4.15/
+to current directory.
+
+run
+# ant -lib . -f new.xml run
+
+
