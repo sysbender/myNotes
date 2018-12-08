@@ -1,0 +1,25 @@
+
+download 
+* vagrant
+* VM provider
+
+
+# vagrant file
+  5 part
+  # config.vm.box - operating system
+  # config.vm.provider - virtual box
+  # config.vm.network - how your host sees your box
+  # config.vm.synced_folder - access files from your computer
+  # config.vm.provision -  what we want setup
+  
+
+
+command 
+
+- general
+* vagrant -v  : show version
+
+
+
+refer:
+* vagrant crash course
