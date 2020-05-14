@@ -3,6 +3,8 @@
 
 go env
 go get
+go run main.go
+go install
 
 # workspace
 
@@ -21,6 +23,6 @@ go-workspace
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzM3MzQ4OTA3LC04OTMyOTg4OTIsODI4Mz
-gwMTI0XX0=
+eyJoaXN0b3J5IjpbLTE1MTY0NzQzMzQsNzM3MzQ4OTA3LC04OT
+MyOTg4OTIsODI4MzgwMTI0XX0=
 -->
