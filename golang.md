@@ -4,6 +4,9 @@
 
 # workspace
 
+
+set GOPATH=C:\Users\jason\go
+
 ```
 go-workspace
 	bin
@@ -16,5 +19,5 @@ go-workspace
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODI4MzgwMTI0XX0=
+eyJoaXN0b3J5IjpbLTg5MzI5ODg5Miw4MjgzODAxMjRdfQ==
 -->
