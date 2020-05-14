@@ -1,6 +1,8 @@
 
 # installation
 
+go env
+go get
 
 # workspace
 
@@ -19,5 +21,6 @@ go-workspace
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg5MzI5ODg5Miw4MjgzODAxMjRdfQ==
+eyJoaXN0b3J5IjpbNzM3MzQ4OTA3LC04OTMyOTg4OTIsODI4Mz
+gwMTI0XX0=
 -->
