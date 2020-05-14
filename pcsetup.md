@@ -1,7 +1,8 @@
 
 
 
-# i
+# install chocolat
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM1NzMxMDYzOF19
+eyJoaXN0b3J5IjpbMTAwMTgyNjEzN119
 -->
