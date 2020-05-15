@@ -59,12 +59,19 @@ e2 := example{
 }
 // pass zero parameter with literal construction
 func foo(example{}){}
+
+// anonymous type
+var e3 struct{
+	flat bool
+	counter int16
+}
+fmt.Printf("%+v\n", e3)
 ```
 
 machine word boundary:
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY0NjU2Mjc1NiwxMjI4MzgzOTAxLDEzNz
+eyJoaXN0b3J5IjpbLTg2NzI3MzU2OSwxMjI4MzgzOTAxLDEzNz
 g5NzM5OTIsLTQ5MTc0NzQzNSwxMTQzNjM2NDE3LC04NjIwNDgx
 MzEsMTc4ODYzNTgyMiwtMTUxNjQ3NDMzNCw3MzczNDg5MDcsLT
 g5MzI5ODg5Miw4MjgzODAxMjRdfQ==
