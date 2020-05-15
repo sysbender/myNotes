@@ -51,13 +51,20 @@ type example struct{
 }
 // declare a var, set it zero value
 var e example
+// literal 
+e2 := example{
+	flag: true
+	counter: 10
+	pi : 3.14
+}
 
 ```
 
 machine word boundary:
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM3ODk3Mzk5MiwtNDkxNzQ3NDM1LDExND
-M2MzY0MTcsLTg2MjA0ODEzMSwxNzg4NjM1ODIyLC0xNTE2NDc0
-MzM0LDczNzM0ODkwNywtODkzMjk4ODkyLDgyODM4MDEyNF19
+eyJoaXN0b3J5IjpbMTIyODM4MzkwMSwxMzc4OTczOTkyLC00OT
+E3NDc0MzUsMTE0MzYzNjQxNywtODYyMDQ4MTMxLDE3ODg2MzU4
+MjIsLTE1MTY0NzQzMzQsNzM3MzQ4OTA3LC04OTMyOTg4OTIsOD
+I4MzgwMTI0XX0=
 -->
