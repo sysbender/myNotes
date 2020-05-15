@@ -76,14 +76,14 @@ e4 := struct{
 	flat: true
 	counter: 10
 }
-// conversion
+// conversion explicitly
 
 machine word boundary:
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMzMDQzMDk1NCwxMTcwMjg1MTIsLTg2Nz
-I3MzU2OSwxMjI4MzgzOTAxLDEzNzg5NzM5OTIsLTQ5MTc0NzQz
-NSwxMTQzNjM2NDE3LC04NjIwNDgxMzEsMTc4ODYzNTgyMiwtMT
-UxNjQ3NDMzNCw3MzczNDg5MDcsLTg5MzI5ODg5Miw4MjgzODAx
-MjRdfQ==
+eyJoaXN0b3J5IjpbOTQwNDU5NjQ1LDExNzAyODUxMiwtODY3Mj
+czNTY5LDEyMjgzODM5MDEsMTM3ODk3Mzk5MiwtNDkxNzQ3NDM1
+LDExNDM2MzY0MTcsLTg2MjA0ODEzMSwxNzg4NjM1ODIyLC0xNT
+E2NDc0MzM0LDczNzM0ODkwNywtODkzMjk4ODkyLDgyODM4MDEy
+NF19
 -->
