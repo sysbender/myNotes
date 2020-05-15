@@ -42,9 +42,10 @@ complex64 complex128
 ```
 var will zero the variable
 goLang use conversion over casting.
+## struct
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNzQzMjU0NSwxMTQzNjM2NDE3LC04Nj
+eyJoaXN0b3J5IjpbMTM4NDc5MDA5NCwxMTQzNjM2NDE3LC04Nj
 IwNDgxMzEsMTc4ODYzNTgyMiwtMTUxNjQ3NDMzNCw3MzczNDg5
 MDcsLTg5MzI5ODg5Miw4MjgzODAxMjRdfQ==
 -->
