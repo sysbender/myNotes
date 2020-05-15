@@ -45,14 +45,16 @@ goLang use conversion over casting.
 ## struct
 ```
 type example struct{
-
+	flag bool
+	counter int16
+	pi float32
 }
 // declare a var, set it zero value
 var e example
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4OTA3NzQ2MzcsMTE0MzYzNjQxNywtOD
-YyMDQ4MTMxLDE3ODg2MzU4MjIsLTE1MTY0NzQzMzQsNzM3MzQ4
-OTA3LC04OTMyOTg4OTIsODI4MzgwMTI0XX0=
+eyJoaXN0b3J5IjpbLTQ5MTc0NzQzNSwxMTQzNjM2NDE3LC04Nj
+IwNDgxMzEsMTc4ODYzNTgyMiwtMTUxNjQ3NDMzNCw3MzczNDg5
+MDcsLTg5MzI5ODg5Miw4MjgzODAxMjRdfQ==
 -->
