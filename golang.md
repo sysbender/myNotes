@@ -39,10 +39,12 @@ byte = uint8
 rune = uint32
 float32 float64
 complex64 complex128
+```
+var will zero the variable
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg2MjA0ODEzMSwxNzg4NjM1ODIyLC0xNT
-E2NDc0MzM0LDczNzM0ODkwNywtODkzMjk4ODkyLDgyODM4MDEy
-NF19
+eyJoaXN0b3J5IjpbMTE0MzYzNjQxNywtODYyMDQ4MTMxLDE3OD
+g2MzU4MjIsLTE1MTY0NzQzMzQsNzM3MzQ4OTA3LC04OTMyOTg4
+OTIsODI4MzgwMTI0XX0=
 -->
