@@ -68,11 +68,15 @@ var e3 struct{
 fmt.Printf("%+v\n", e3)
 ```
 
+// anonymous type with literal 
+e4 := struct{
+
+
 machine word boundary:
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg2NzI3MzU2OSwxMjI4MzgzOTAxLDEzNz
-g5NzM5OTIsLTQ5MTc0NzQzNSwxMTQzNjM2NDE3LC04NjIwNDgx
-MzEsMTc4ODYzNTgyMiwtMTUxNjQ3NDMzNCw3MzczNDg5MDcsLT
-g5MzI5ODg5Miw4MjgzODAxMjRdfQ==
+eyJoaXN0b3J5IjpbLTE2NTExNjMxNjMsLTg2NzI3MzU2OSwxMj
+I4MzgzOTAxLDEzNzg5NzM5OTIsLTQ5MTc0NzQzNSwxMTQzNjM2
+NDE3LC04NjIwNDgxMzEsMTc4ODYzNTgyMiwtMTUxNjQ3NDMzNC
+w3MzczNDg5MDcsLTg5MzI5ODg5Miw4MjgzODAxMjRdfQ==
 -->
