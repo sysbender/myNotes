@@ -70,13 +70,18 @@ fmt.Printf("%+v\n", e3)
 
 // anonymous type with literal 
 e4 := struct{
-
+	flag bool
+	counter int16
+}{
+	flat: true
+	counter: 10
+}
 
 machine word boundary:
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NTExNjMxNjMsLTg2NzI3MzU2OSwxMj
-I4MzgzOTAxLDEzNzg5NzM5OTIsLTQ5MTc0NzQzNSwxMTQzNjM2
-NDE3LC04NjIwNDgxMzEsMTc4ODYzNTgyMiwtMTUxNjQ3NDMzNC
-w3MzczNDg5MDcsLTg5MzI5ODg5Miw4MjgzODAxMjRdfQ==
+eyJoaXN0b3J5IjpbMTE3MDI4NTEyLC04NjcyNzM1NjksMTIyOD
+M4MzkwMSwxMzc4OTczOTkyLC00OTE3NDc0MzUsMTE0MzYzNjQx
+NywtODYyMDQ4MTMxLDE3ODg2MzU4MjIsLTE1MTY0NzQzMzQsNz
+M3MzQ4OTA3LC04OTMyOTg4OTIsODI4MzgwMTI0XX0=
 -->
