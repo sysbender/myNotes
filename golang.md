@@ -41,10 +41,10 @@ float32 float64
 complex64 complex128
 ```
 var will zero the variable
-
+golang use conversion over casting.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE0MzYzNjQxNywtODYyMDQ4MTMxLDE3OD
-g2MzU4MjIsLTE1MTY0NzQzMzQsNzM3MzQ4OTA3LC04OTMyOTg4
-OTIsODI4MzgwMTI0XX0=
+eyJoaXN0b3J5IjpbNTIzMzYzNDU1LDExNDM2MzY0MTcsLTg2Mj
+A0ODEzMSwxNzg4NjM1ODIyLC0xNTE2NDc0MzM0LDczNzM0ODkw
+NywtODkzMjk4ODkyLDgyODM4MDEyNF19
 -->
