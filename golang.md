@@ -45,10 +45,12 @@ goLang use conversion over casting.
 ## struct
 ```go
 type example struct{
-	flag bool
+	flag bool   //machine word boundary:
 	counter int16
 	pi float32
 }
+
+
 // declare a var, set it zero value
 var e example
 // literal construction : not zero
@@ -66,7 +68,6 @@ var e3 struct{
 	counter int16
 }
 fmt.Printf("%+v\n", e3)
-```
 
 // anonymous type with literal 
 e4 := struct{
@@ -78,14 +79,15 @@ e4 := struct{
 }
 // conversion explicitly
 // var1 type1 = type1(var2 type2 )
-machine word boundary:
+
 ```
 
- 
- ##pointer 
- 
+## pointer
+
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgyNjI1NjczNyw5NDA0NTk2NDUsMTE3MD
+eyJoaXN0b3J5IjpbLTU4MDgzODM2MSw5NDA0NTk2NDUsMTE3MD
 I4NTEyLC04NjcyNzM1NjksMTIyODM4MzkwMSwxMzc4OTczOTky
 LC00OTE3NDc0MzUsMTE0MzYzNjQxNywtODYyMDQ4MTMxLDE3OD
 g2MzU4MjIsLTE1MTY0NzQzMzQsNzM3MzQ4OTA3LC04OTMyOTg4
