@@ -86,7 +86,8 @@ e4 := struct{
 pass by value
 * thread - os
 * p
-* goroutine- stack 2k, 
+* goroutine - stack 2k, 
+* 
 
 
 * data segment
@@ -95,7 +96,7 @@ pass by value
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgzMjMxODM4NCwtNTgwODM4MzYxLDk0MD
+eyJoaXN0b3J5IjpbLTI0NTkzNTA5OCwtNTgwODM4MzYxLDk0MD
 Q1OTY0NSwxMTcwMjg1MTIsLTg2NzI3MzU2OSwxMjI4MzgzOTAx
 LDEzNzg5NzM5OTIsLTQ5MTc0NzQzNSwxMTQzNjM2NDE3LC04Nj
 IwNDgxMzEsMTc4ODYzNTgyMiwtMTUxNjQ3NDMzNCw3MzczNDg5
