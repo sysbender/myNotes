@@ -85,17 +85,19 @@ e4 := struct{
 ## pointer
 pass by value
 * thread - os
+* p
+* gorouter - stack 2k, 
 
 
 * data segment
-* stack
+* stack - 1Mbytes
 * heap
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU1MDM1MzgwMCwtNTgwODM4MzYxLDk0MD
-Q1OTY0NSwxMTcwMjg1MTIsLTg2NzI3MzU2OSwxMjI4MzgzOTAx
-LDEzNzg5NzM5OTIsLTQ5MTc0NzQzNSwxMTQzNjM2NDE3LC04Nj
-IwNDgxMzEsMTc4ODYzNTgyMiwtMTUxNjQ3NDMzNCw3MzczNDg5
-MDcsLTg5MzI5ODg5Miw4MjgzODAxMjRdfQ==
+eyJoaXN0b3J5IjpbOTIxMDU3MTIzLC01ODA4MzgzNjEsOTQwND
+U5NjQ1LDExNzAyODUxMiwtODY3MjczNTY5LDEyMjgzODM5MDEs
+MTM3ODk3Mzk5MiwtNDkxNzQ3NDM1LDExNDM2MzY0MTcsLTg2Mj
+A0ODEzMSwxNzg4NjM1ODIyLC0xNTE2NDc0MzM0LDczNzM0ODkw
+NywtODkzMjk4ODkyLDgyODM4MDEyNF19
 -->
