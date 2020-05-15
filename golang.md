@@ -1,4 +1,10 @@
 
+# reference
+ 
+
+*   Go Language Programming Practical Basics Tutorial 
+* 
+
 # installation
 
 go env
@@ -36,6 +42,7 @@ complex64 complex128
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc4ODYzNTgyMiwtMTUxNjQ3NDMzNCw3Mz
-czNDg5MDcsLTg5MzI5ODg5Miw4MjgzODAxMjRdfQ==
+eyJoaXN0b3J5IjpbLTg2MjA0ODEzMSwxNzg4NjM1ODIyLC0xNT
+E2NDc0MzM0LDczNzM0ODkwNywtODkzMjk4ODkyLDgyODM4MDEy
+NF19
 -->
