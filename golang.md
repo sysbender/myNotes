@@ -79,9 +79,13 @@ e4 := struct{
 // conversion explicitly
 // var1 type1 = type1(var2 type2 )
 machine word boundary:
+```
+
+ 
+ ##pointer 
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE5MTMzMzUzMiw5NDA0NTk2NDUsMTE3MD
+eyJoaXN0b3J5IjpbLTgyNjI1NjczNyw5NDA0NTk2NDUsMTE3MD
 I4NTEyLC04NjcyNzM1NjksMTIyODM4MzkwMSwxMzc4OTczOTky
 LC00OTE3NDc0MzUsMTE0MzYzNjQxNywtODYyMDQ4MTMxLDE3OD
 g2MzU4MjIsLTE1MTY0NzQzMzQsNzM3MzQ4OTA3LC04OTMyOTg4
