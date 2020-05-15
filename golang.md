@@ -57,14 +57,15 @@ e2 := example{
 	counter: 10
 	pi : 3.14
 }
-
+// pass zero parameter with literal construction
+func foo(example{}){}
 ```
 
 machine word boundary:
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzQ2MzYzNTY3LDEyMjgzODM5MDEsMTM3OD
-k3Mzk5MiwtNDkxNzQ3NDM1LDExNDM2MzY0MTcsLTg2MjA0ODEz
-MSwxNzg4NjM1ODIyLC0xNTE2NDc0MzM0LDczNzM0ODkwNywtOD
-kzMjk4ODkyLDgyODM4MDEyNF19
+eyJoaXN0b3J5IjpbMTY0NjU2Mjc1NiwxMjI4MzgzOTAxLDEzNz
+g5NzM5OTIsLTQ5MTc0NzQzNSwxMTQzNjM2NDE3LC04NjIwNDgx
+MzEsMTc4ODYzNTgyMiwtMTUxNjQ3NDMzNCw3MzczNDg5MDcsLT
+g5MzI5ODg5Miw4MjgzODAxMjRdfQ==
 -->
