@@ -53,8 +53,11 @@ type example struct{
 var e example
 
 ```
+
+machine word boundary:
+ 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ5MTc0NzQzNSwxMTQzNjM2NDE3LC04Nj
-IwNDgxMzEsMTc4ODYzNTgyMiwtMTUxNjQ3NDMzNCw3MzczNDg5
-MDcsLTg5MzI5ODg5Miw4MjgzODAxMjRdfQ==
+eyJoaXN0b3J5IjpbMTM3ODk3Mzk5MiwtNDkxNzQ3NDM1LDExND
+M2MzY0MTcsLTg2MjA0ODEzMSwxNzg4NjM1ODIyLC0xNTE2NDc0
+MzM0LDczNzM0ODkwNywtODkzMjk4ODkyLDgyODM4MDEyNF19
 -->
