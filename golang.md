@@ -43,9 +43,16 @@ complex64 complex128
 var will zero the variable
 goLang use conversion over casting.
 ## struct
+```
+type example struct{
 
+}
+// declare a var, set it zero value
+var e example
+
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM4NDc5MDA5NCwxMTQzNjM2NDE3LC04Nj
-IwNDgxMzEsMTc4ODYzNTgyMiwtMTUxNjQ3NDMzNCw3MzczNDg5
-MDcsLTg5MzI5ODg5Miw4MjgzODAxMjRdfQ==
+eyJoaXN0b3J5IjpbLTE4OTA3NzQ2MzcsMTE0MzYzNjQxNywtOD
+YyMDQ4MTMxLDE3ODg2MzU4MjIsLTE1MTY0NzQzMzQsNzM3MzQ4
+OTA3LC04OTMyOTg4OTIsODI4MzgwMTI0XX0=
 -->
