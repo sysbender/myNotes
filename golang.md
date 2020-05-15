@@ -43,7 +43,7 @@ complex64 complex128
 var will zero the variable
 goLang use conversion over casting.
 ## struct
-```
+```go
 type example struct{
 	flag bool
 	counter int16
@@ -63,8 +63,8 @@ e2 := example{
 machine word boundary:
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIyODM4MzkwMSwxMzc4OTczOTkyLC00OT
-E3NDc0MzUsMTE0MzYzNjQxNywtODYyMDQ4MTMxLDE3ODg2MzU4
-MjIsLTE1MTY0NzQzMzQsNzM3MzQ4OTA3LC04OTMyOTg4OTIsOD
-I4MzgwMTI0XX0=
+eyJoaXN0b3J5IjpbLTE1ODA1MzIwOTEsMTIyODM4MzkwMSwxMz
+c4OTczOTkyLC00OTE3NDc0MzUsMTE0MzYzNjQxNywtODYyMDQ4
+MTMxLDE3ODg2MzU4MjIsLTE1MTY0NzQzMzQsNzM3MzQ4OTA3LC
+04OTMyOTg4OTIsODI4MzgwMTI0XX0=
 -->
