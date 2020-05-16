@@ -99,16 +99,16 @@ like constructor, return an object
 * value semantic
 * pointer semantic - not using during construction
 escape analysis: find out which pointer go to head/stack, avoid integrate issue
-
+  
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEwMDgwNDU1LC0zMzAyNDg4NjAsLTE5MT
-Y2MTQ3NzUsMTY0OTQ1NzU0MiwtMzk2MDg5MTMwLC0xMTExNDIz
-MzUxLC0zNzYzMDE0NTAsLTU4MDgzODM2MSw5NDA0NTk2NDUsMT
-E3MDI4NTEyLC04NjcyNzM1NjksMTIyODM4MzkwMSwxMzc4OTcz
-OTkyLC00OTE3NDc0MzUsMTE0MzYzNjQxNywtODYyMDQ4MTMxLD
-E3ODg2MzU4MjIsLTE1MTY0NzQzMzQsNzM3MzQ4OTA3LC04OTMy
-OTg4OTJdfQ==
+eyJoaXN0b3J5IjpbMTgxNTYyNTIyMywyMTAwODA0NTUsLTMzMD
+I0ODg2MCwtMTkxNjYxNDc3NSwxNjQ5NDU3NTQyLC0zOTYwODkx
+MzAsLTExMTE0MjMzNTEsLTM3NjMwMTQ1MCwtNTgwODM4MzYxLD
+k0MDQ1OTY0NSwxMTcwMjg1MTIsLTg2NzI3MzU2OSwxMjI4Mzgz
+OTAxLDEzNzg5NzM5OTIsLTQ5MTc0NzQzNSwxMTQzNjM2NDE3LC
+04NjIwNDgxMzEsMTc4ODYzNTgyMiwtMTUxNjQ3NDMzNCw3Mzcz
+NDg5MDddfQ==
 -->
