@@ -98,16 +98,17 @@ pass by value
 like constructor, return an object
 * value semantic
 * pointer semantic - not using during construction
-escape analysis: find out which pointer go to head/stack
+escape analysis: find out which pointer go to head/stack, avoid integrate issue
+
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMzMDI0ODg2MCwtMTkxNjYxNDc3NSwxNj
-Q5NDU3NTQyLC0zOTYwODkxMzAsLTExMTE0MjMzNTEsLTM3NjMw
-MTQ1MCwtNTgwODM4MzYxLDk0MDQ1OTY0NSwxMTcwMjg1MTIsLT
-g2NzI3MzU2OSwxMjI4MzgzOTAxLDEzNzg5NzM5OTIsLTQ5MTc0
-NzQzNSwxMTQzNjM2NDE3LC04NjIwNDgxMzEsMTc4ODYzNTgyMi
-wtMTUxNjQ3NDMzNCw3MzczNDg5MDcsLTg5MzI5ODg5Miw4Mjgz
-ODAxMjRdfQ==
+eyJoaXN0b3J5IjpbMjEwMDgwNDU1LC0zMzAyNDg4NjAsLTE5MT
+Y2MTQ3NzUsMTY0OTQ1NzU0MiwtMzk2MDg5MTMwLC0xMTExNDIz
+MzUxLC0zNzYzMDE0NTAsLTU4MDgzODM2MSw5NDA0NTk2NDUsMT
+E3MDI4NTEyLC04NjcyNzM1NjksMTIyODM4MzkwMSwxMzc4OTcz
+OTkyLC00OTE3NDc0MzUsMTE0MzYzNjQxNywtODYyMDQ4MTMxLD
+E3ODg2MzU4MjIsLTE1MTY0NzQzMzQsNzM3MzQ4OTA3LC04OTMy
+OTg4OTJdfQ==
 -->
