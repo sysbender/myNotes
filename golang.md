@@ -104,15 +104,15 @@ escape analysis: find out which pointer go to head/stack, avoid integrate issue
 ### stack growth
 * stack is about 2K for go routine. if it is not enough, it will be copied and moved to a new consecutive place with a 25% percent bigger size.
 * heap using for any value that will be shared across go-routine boundaries
-* 
+* any value that don't know the size at compile time
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI2MDM2MDM1NiwxMjkxNjQ2MzQ5LDE4MT
-U2MjUyMjMsMjEwMDgwNDU1LC0zMzAyNDg4NjAsLTE5MTY2MTQ3
-NzUsMTY0OTQ1NzU0MiwtMzk2MDg5MTMwLC0xMTExNDIzMzUxLC
-0zNzYzMDE0NTAsLTU4MDgzODM2MSw5NDA0NTk2NDUsMTE3MDI4
-NTEyLC04NjcyNzM1NjksMTIyODM4MzkwMSwxMzc4OTczOTkyLC
-00OTE3NDc0MzUsMTE0MzYzNjQxNywtODYyMDQ4MTMxLDE3ODg2
-MzU4MjJdfQ==
+eyJoaXN0b3J5IjpbLTExMTc0MzAyMTAsMTI5MTY0NjM0OSwxOD
+E1NjI1MjIzLDIxMDA4MDQ1NSwtMzMwMjQ4ODYwLC0xOTE2NjE0
+Nzc1LDE2NDk0NTc1NDIsLTM5NjA4OTEzMCwtMTExMTQyMzM1MS
+wtMzc2MzAxNDUwLC01ODA4MzgzNjEsOTQwNDU5NjQ1LDExNzAy
+ODUxMiwtODY3MjczNTY5LDEyMjgzODM5MDEsMTM3ODk3Mzk5Mi
+wtNDkxNzQ3NDM1LDExNDM2MzY0MTcsLTg2MjA0ODEzMSwxNzg4
+NjM1ODIyXX0=
 -->
