@@ -106,13 +106,14 @@ escape analysis: find out which pointer go to head/stack, avoid integrate issue
 * heap using for any value that will be shared across go-routine boundaries
 * any value that don't know the size at compile time
 
+### garbage collection
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMTc0MzAyMTAsMTI5MTY0NjM0OSwxOD
-E1NjI1MjIzLDIxMDA4MDQ1NSwtMzMwMjQ4ODYwLC0xOTE2NjE0
-Nzc1LDE2NDk0NTc1NDIsLTM5NjA4OTEzMCwtMTExMTQyMzM1MS
-wtMzc2MzAxNDUwLC01ODA4MzgzNjEsOTQwNDU5NjQ1LDExNzAy
-ODUxMiwtODY3MjczNTY5LDEyMjgzODM5MDEsMTM3ODk3Mzk5Mi
-wtNDkxNzQ3NDM1LDExNDM2MzY0MTcsLTg2MjA0ODEzMSwxNzg4
-NjM1ODIyXX0=
+eyJoaXN0b3J5IjpbMTcxNzg3MzczNCwtMTExNzQzMDIxMCwxMj
+kxNjQ2MzQ5LDE4MTU2MjUyMjMsMjEwMDgwNDU1LC0zMzAyNDg4
+NjAsLTE5MTY2MTQ3NzUsMTY0OTQ1NzU0MiwtMzk2MDg5MTMwLC
+0xMTExNDIzMzUxLC0zNzYzMDE0NTAsLTU4MDgzODM2MSw5NDA0
+NTk2NDUsMTE3MDI4NTEyLC04NjcyNzM1NjksMTIyODM4MzkwMS
+wxMzc4OTczOTkyLC00OTE3NDc0MzUsMTE0MzYzNjQxNywtODYy
+MDQ4MTMxXX0=
 -->
