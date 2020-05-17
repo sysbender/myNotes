@@ -102,10 +102,11 @@ escape analysis: find out which pointer go to head/stack, avoid integrate issue
   
 
 ### stack growth
-stack is about 2K for go routine. if it is not enough, it will be copied and moved to a new consecutive place with a 25% percent big
+stack is about 2K for go routine. if it is not enough, it will be copied and moved to a new consecutive place with a 25% percent bigger size.
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk3MTk1NzA0MCwxODE1NjI1MjIzLDIxMD
+eyJoaXN0b3J5IjpbMTI5MTY0NjM0OSwxODE1NjI1MjIzLDIxMD
 A4MDQ1NSwtMzMwMjQ4ODYwLC0xOTE2NjE0Nzc1LDE2NDk0NTc1
 NDIsLTM5NjA4OTEzMCwtMTExMTQyMzM1MSwtMzc2MzAxNDUwLC
 01ODA4MzgzNjEsOTQwNDU5NjQ1LDExNzAyODUxMiwtODY3Mjcz
