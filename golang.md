@@ -101,14 +101,15 @@ like constructor, return an object
 escape analysis: find out which pointer go to head/stack, avoid integrate issue
   
 
-
+### stack growth
+stack is about 2K for go routine. if it is not enough, it will be copied and moved to a new consecutive place with a 25% percent big
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgxNTYyNTIyMywyMTAwODA0NTUsLTMzMD
-I0ODg2MCwtMTkxNjYxNDc3NSwxNjQ5NDU3NTQyLC0zOTYwODkx
-MzAsLTExMTE0MjMzNTEsLTM3NjMwMTQ1MCwtNTgwODM4MzYxLD
-k0MDQ1OTY0NSwxMTcwMjg1MTIsLTg2NzI3MzU2OSwxMjI4Mzgz
-OTAxLDEzNzg5NzM5OTIsLTQ5MTc0NzQzNSwxMTQzNjM2NDE3LC
-04NjIwNDgxMzEsMTc4ODYzNTgyMiwtMTUxNjQ3NDMzNCw3Mzcz
-NDg5MDddfQ==
+eyJoaXN0b3J5IjpbMTk3MTk1NzA0MCwxODE1NjI1MjIzLDIxMD
+A4MDQ1NSwtMzMwMjQ4ODYwLC0xOTE2NjE0Nzc1LDE2NDk0NTc1
+NDIsLTM5NjA4OTEzMCwtMTExMTQyMzM1MSwtMzc2MzAxNDUwLC
+01ODA4MzgzNjEsOTQwNDU5NjQ1LDExNzAyODUxMiwtODY3Mjcz
+NTY5LDEyMjgzODM5MDEsMTM3ODk3Mzk5MiwtNDkxNzQ3NDM1LD
+ExNDM2MzY0MTcsLTg2MjA0ODEzMSwxNzg4NjM1ODIyLC0xNTE2
+NDc0MzM0XX0=
 -->
