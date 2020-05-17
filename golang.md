@@ -107,9 +107,10 @@ escape analysis: find out which pointer go to head/stack, avoid integrate issue
 * any value that don't know the size at compile time
 
 ### garbage collection
-
+tri-color, pacing algorithm , 
+*  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcxNzg3MzczNCwtMTExNzQzMDIxMCwxMj
+eyJoaXN0b3J5IjpbLTY2MDM0NTE2MiwtMTExNzQzMDIxMCwxMj
 kxNjQ2MzQ5LDE4MTU2MjUyMjMsMjEwMDgwNDU1LC0zMzAyNDg4
 NjAsLTE5MTY2MTQ3NzUsMTY0OTQ1NzU0MiwtMzk2MDg5MTMwLC
 0xMTExNDIzMzUxLC0zNzYzMDE0NTAsLTU4MDgzODM2MSw5NDA0
