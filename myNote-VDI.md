@@ -5,11 +5,23 @@
 
 ## install ESXi on Hyper-V
 
-```
-install po
+1. install powercli
+    install powerCLI
+Install-Module -Name VMware.PowerCLI
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTA2NjgxNjc3LDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbNDI0NDE4NjcsNzMwOTk4MTE2XX0=
 -->
