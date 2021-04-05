@@ -1,6 +1,6 @@
 # myNote - ansible
 
-#  install Ansible
+# 1. install Ansible
 
 1. enable wsl on windows 10
 2. install centos (download centos 7), create user, add to wheel (sudoers), groupinstall desktop
@@ -16,7 +16,7 @@ ip or hostname
 pip3 install ansible
  
 
-# Ansible for the Windows Admin by Jeremy Murrah
+# 2. Ansible for the Windows Admin by Jeremy Murrah
 
 ## Terminology
 * task 
@@ -39,7 +39,7 @@ ansible-playbook [options] playbook.yml
 --check : run but won't make any change
 ```
 
- # module development
+ # 3. module development
 ## module search path
 * module name  - test_module.py or test_module.sh or test_module.what
 * search path - 
@@ -89,7 +89,7 @@ has three parameters:
 2. required_one_of = [[]],
 3. mutually_exclusive = [[]]
 
-# ansible ad-hoc
+# 4. ansible ad-hoc
 ```
 
 * get parameter
@@ -103,7 +103,7 @@ ansible -m copy -a "src=/etc/hosts dest=/tmp/hosts" --check --diff localhost
 
 ```
 
-# ansible playbook
+# 5. ansible playbook
 
 ## format
 ```
@@ -145,3 +145,130 @@ ansible-playbook playbook.yml
   - copy: src="/etc/hosts" dest="/tmp/hosts"
 ```
 
+## yaml syntax
+
+* list
+
+```
+fruits:
+- apple
+- orange
+- mango
+```
+
+
+* dictionary
+
+```
+martin:
+ name: Martin dev
+ job: developer
+ skill: elite
+```
+
+
+# inventory
+
+without specifying inventory file, can only use localhost 
+different inventory file type:
+1. py -
+2. ini - 
+3. yml - 
+
+```
+# to get the inventory ignore extensions - .orig, .ini, .cfg, .retry
+ansible-config list
+
+# to list all inventory
+ansible-inventory --list
+
+# tree view of inventory
+ansible-inventory --graph
+```
+# 9. best practice
+
+consist style
+* tagging
+* whitespace
+* name of tasks, plays, vairables, roles
+* directory layout
+
+
+```
+# inventory - meaningful name
+cos72 ansible_host=192.168.1.72
+cos73 ansible_host=192.168.1.73
+
+
+# groups
+[cos]
+cos[1:2]
+
+# variable - 16 places you can put variables
+apache_port : 80
+
+# use name lable - for documenting
+
+- hosts: web
+  name: installs and starts apache
+  
+  tasks:
+  - name: install apache packages
+    yum:
+      name: httpd
+      state: latest
+      
+  - name: starts apache service
+    service:
+      name: httpd
+      state: started
+      enabled: yes
+      
+      
+      
+# block - organise and group tasks; enable rollbacks 
+
+- block:
+    copy:
+      src: critical.conf
+      dest: /etc/critical/crit.conf
+      
+    service:
+      name: critical
+      state: restarted
+      
+  rescue:
+    command: shutdown -h now
+    
+#execute option
+
+-vvvv
+--step
+--check
+--diff
+--start-at-task
+
+--list-tasks
+--list-tags
+--list-hosts
+--syntax-check
+
+#avoid - command, shell, raw
+
+# smoke tests -check
+-name: check for proper response
+uri:
+  url: http://localhost/myapp
+  return_content: yes
+register: result
+until: '"hello world" in result.content'
+retries: 10
+delay: 1
+
+
+
+
+
+
+
+```
