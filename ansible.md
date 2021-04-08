@@ -166,8 +166,70 @@ martin:
  skill: elite
 ```
 
+* value can span multiple line with pipe | or great than > (indentation will be ignored)
+1. pipe - will keep the new line and any trailing space
+2. great than - will fold newline to spaces 
 
-# inventory
+## ansible configure file
+
+search order
+* ANSIBLE_CONFIG - env variable
+* ansible.cfg - in current directory (will not load if the folder is writable)
+* ~/.ansible.cfg - in home dir
+* /etc/ansible/ansible.cfg
+
+options in config file:
+* ansible_connection=local
+* ansible_connection=winrm
+* ansible_port=5555
+* ansible_password
+* ansible_winrm_transport: basic
+
+
+## inventory
+
+conbe written in ini or yaml format
+no standard ssh port : webserver.com:2222
+ansible glob pattern - range: www[1:5] , db-[a:f]
+set connect type and user on a per host basis: node1.mydomain.com ansible_connection=winrm ansible_user=admin
+
+### apply variable to a group of hosts
+```
+[bad_group]
+node1 
+node2
+
+[bad_group:vars]
+ntp_server=ntp1.mydomain.com
+proxy=proxy1.mydomain.com
+
+
+```
+
+
+### two default group
+1. all
+2. ungrouped
+
+
+### inventory plugin
+
+plugin - support dynamic list from azure, aws, ...
+
+```
+# to list available inventory plugins
+
+ansible-doc -t inventory -l
+
+#list all ansible module
+ansible-doc -l
+
+list parameters of a module
+ansible-doc -s module_name
+```
+
+
+
 
 without specifying inventory file, can only use localhost 
 different inventory file type:
@@ -185,6 +247,166 @@ ansible-inventory --list
 # tree view of inventory
 ansible-inventory --graph
 ```
+
+## ansbile face
+```
+ansible node1 -m setup
+
+# write facts to a file
+
+- name: writes to a file named 
+  host: node1
+  become: true
+  remote_user: root
+  tasks:
+  - name:
+    copy :
+      dest: /tmp/facts.txt
+      content: "{{ansible_all_ipv4_addresses}}  {{}}"
+
+```
+
+# ansible variables
+
+
+# 8. window
+
+
+
+```
+#check ps version
+
+$PSVersionTable
+
+# winrm
+
+## winrm listener
+
+## winrm service configuration
+
+### configureRemotingForAnsible.ps1  in ansible repo
+setup http/https listeners with a self-signed certificate and baisc authentification
+
+winrm get winrm/config
+winrm set winrm/config/service @{AllowUnencrypted="true"}
+
+# not work: 
+winrm set winrm/config/service/auth @{Basic="true"}
+
+# work (network profile set to private )
+set-item -Force WSMan:\localhost\Service\AllowUnencrypted $True
+
+# www.guruoye.net
+
+
+
+```
+
+
+```
+#window inventory
+
+[windows]
+win10
+
+[windows:vars]
+ansible_user=xxx
+ansbile_password=xxx
+ansible_port=5986
+ansible_connection=winrm
+ansible_winrm_server_cert_validation=ignore
+
+```
+
+ansible -m win_ping all
+
+ansible windows -i hosts -m facts
+
+ansible windows -i hosts -m win_chocolatey -a "name=notepadplusplus state=present"
+
+
+
+```
+
+
+
+
+domain user:
+svc-ansible
+
+winrm:
+ listener:
+	http: 5985
+	https: 5986
+	
+ authentication 
+	basic
+	certificate
+	ntlm
+	kerberos
+	CredSSP - modern, 
+	
+	
+		#powershell
+		winrm enumerate winrm/config/listener
+		winrm get winrm/config/Service
+		wget https://raw.githubusercontent.com/ansible/ansible/devel/examples/scripts/ConfigureRemotingForAnsible.ps1 -Outfile ConfigureRemotingForAnsible.ps1 
+		# enable credSSP and disable basic
+		
+		.\ConfigureRemotingForAnsible.ps1 -EnableCredSSP -DisableBasicAuth -Verbose
+		
+		
+		# remove http
+		 Get-ChildItem -Path WSMan:\localhost\Listener | Where-Object { $_.keys -eq "Transport=HTTP"} | Remove-Item -Recurse -Force
+		 
+		 # restart winrm
+		 restart-service winrm 
+		 
+		 # give service account access - add to local admin group 
+		 
+		 
+========================
+
+
+
+	 
+		 
+[web]
+win10
+
+[web:vars]
+ansbile_user=""
+ansible_password=""
+ansbile_connection=winrm
+ansible_winrm_transport=credssp
+ansible_winrm_server_cert_validation=ignore
+
+
+
+```
+
+### manage windows like Linux with Ansible
+win modules
+* win_chocolatey!
+* win_package
+* not win_msi
+* win_dsc
+
+* win_reboot - reboot and wait for connection
+* wait_for_connection - second half of the reboot
+* win_updates - category_names, reboot, blacklist
+* win_iis_website
+* win_iis_webapp
+* win_regedit - individual key/value
+* win_regmerge - bulk import
+* win_service -
+* win_domain - create domain, join, 
+* win_dns_client - change dns server
+* win_owner - set owner
+* win_acl - 
+
+
+
 # 9. best practice
 
 consist style
