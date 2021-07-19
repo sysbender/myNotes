@@ -6,6 +6,9 @@ techthouths
 
 https://www.youtube.com/watch?v=4-L7HwLgsf4&list=PL2j0_s2VJe2hzQuQyn6yfMS2olhhs4UnQ&index=5
 
+https://www.youtube.com/watch?v=gkwyhUc-xRQ&t=3657s
+
+https://www.youtube.com/watch?v=gssAtCeMOoo
 
 ## basic command
 ### get-command
