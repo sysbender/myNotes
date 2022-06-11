@@ -1,6 +1,25 @@
-# MyNote-Unreal
+# 1. MyNote-Unreal
 
-# reference
+- [1. MyNote-Unreal](#1-mynote-unreal)
+- [2. reference](#2-reference)
+- [3. packet beginner](#3-packet-beginner)
+  - [3.1. 05 - create playable character](#31-05---create-playable-character)
+    - [3.1.1. 05.01-game_modes.mkv](#311-0501-game_modesmkv)
+    - [3.1.2. 05.02-pawns.mkv](#312-0502-pawnsmkv)
+    - [3.1.3. 05.03-characters.mkv](#313-0503-charactersmkv)
+- [4. unreal - learn cpp make games](#4-unreal---learn-cpp-make-games)
+  - [4.1. importing bull cow game](#41-importing-bull-cow-game)
+  - [4.2. view port control](#42-view-port-control)
+- [5. Unreal Engine C++ Project setup from Scratch](#5-unreal-engine-c-project-setup-from-scratch)
+  - [5.1. project structure layout](#51-project-structure-layout)
+  - [5.2. module entry file](#52-module-entry-file)
+  - [5.3. build](#53-build)
+  - [5.4. cook content](#54-cook-content)
+  - [5.5. create our own build script](#55-create-our-own-build-script)
+- [The Unreal Engine Game Framework : From main() to BeginPlay](#the-unreal-engine-game-framework--from-main-to-beginplay)
+
+
+# 2. reference
 
 best tutorial with code and blog:
 https://github.com/orfeasel/UE4-Cpp-Tutorials
@@ -35,7 +54,7 @@ github:
  
  
 
-# packet beginner
+# 3. packet beginner
 
 01.01-introduction.mkv
 01.02-registration_and_installation.mkv
@@ -71,8 +90,8 @@ github:
 04.10-tutorial_5-creating_the_enemies.mkv
 04.11-tutorial_6-creating_a_rotating_door.mkv
 
-## 05 - create playable character
-### 05.01-game_modes.mkv
+## 3.1. 05 - create playable character
+### 3.1.1. 05.01-game_modes.mkv
 an anctor that can be used to define or force game set rule 
 lives, can be paused , time limits, 
 -> create blueprint class, "game mode base"
@@ -92,7 +111,7 @@ lives, can be paused , time limits,
 setting -> world settings -> GameMode override
 
 
-### 05.02-pawns.mkv
+### 3.1.2. 05.02-pawns.mkv
 pawns - an actor that can be controlled by human or computer
 
 bludprint class -> Pawn -> 
@@ -103,7 +122,7 @@ bludprint class -> Pawn ->
 
 
 
-### 05.03-characters.mkv
+### 3.1.3. 05.03-characters.mkv
 a pawn that has by peddle movement - move by legs
 
 bluePrint class Charachater
@@ -160,11 +179,187 @@ bluePrint class Charachater
 
 
 
-# unreal - learn cpp make games
+# 4. unreal - learn cpp make games
 
-##  importing bull cow game
+##  4.1. importing bull cow game
 1. unzip the kit zip file
 2. double click to launch the game
 
-## view port control
+## 4.2. view port control
+
+# 5. Unreal Engine C++ Project setup from Scratch
+
+## 5.1. project structure layout
+
+* source/
+  * DireCore.Build.cs
+    ```
+        PublicDependencyModuleNames:
+        - Core
+        - CoreUObject
+        - Engine
+    ```
+  * Private/
+    * DirkCore.cpp
+    * TestActor.cpp
+  * Public/
+    * DirkCore.h
+    * TestActor.h
+  * DirkEditor.Target.cs
+    ```
+        ExtraModuleNames:        
+        - "DirkCore"
+    ```
+
+  * UnrealBuildTool.exe
+    * UnrealHeaderTool.exe
+    * cl.exe
+    * link.exe
+  * Intermediate/
+    * Build/UE4Editor/
+      * Inc/DirkCore/
+        * DirkCore.init.gen.cpp
+        * TestActor.gen.cpp
+        * TestActor.generated.h
+      * Development/DirkCore/
+        * DirkCore.Cpp.obj
+        * DirkCore.init.gen.cpp.obj
+        * TestActor.cpp.obj
+        * TestActor.gen.cpp.obj
+      * Win64/
+        * UE4Editor-DirkCore.dll
+        * UE4Editor-DirkCore.pdb
+  * Dirk.uproject
+  ```
+    {
+        FileVersion: 3,
+        EngineAssociation: 4.25,
+        Category: "",
+        Description: "",
+        "Modules":[
+            {
+                Name: DirkCore,
+                Type: Runtime,
+                LoadingPhase: Default
+            }
+        ]
+
+    }
+  ```
+  
+
+
+  editor will load the dll module and open the project;
+  * name the project : Dirk
+  * create a workspace directory : 
+  * create a project directory:
+    * Dirk
+      * ".UProject" - file descript the project
+        * "DirkCore" - source module name
+          * "Private\"
+          * "Public\"
+          * "DirkCore.build.cs"
+      * "Dirk.Target.cs" - target rule definition, which source module to build the project
+      * "DirkEditor.Target.cs" - target rule for Editor, TargetType=Editor
+      * "Source\"
+        * "DirkCore" - module directory
+        * DirkCore.build.cs - module build rule
+
+
+## 5.2. module entry file
+
+cpp and head file with same name as the module
+* registry the module as the primary module of our game:
+    ```
+    IMPLEMENT_PRIMARY_GAME_MODULE( FDefaultGameModuleImpl, ProjectR, "ProjectR" );
+    ```
+## 5.3. build
+* build.bat - engine/Build/BatchFiles - call UnrealBuildTool.exe
+    ```
+        # editor target
+    ```
+      * target : DirkEditor
+      * platform: Win64
+      * build Configuration : Development (Between debug and shipping)
+      * path of uproject
+      * -waitnutext -NoHotReload
+    * non editor target
+    ```
+        #no editor target
+        target = Dirk
+    ```
+* start Editor
+    ```
+       UE4Editor.exe Dirk.uproject -log 
+
+       UE4Editor.exe Dirk.uproject -game -log -windowed -resx=1280 -resy=720 
+       # without loading editor, can run console command
+    ```
+* project setting
+  * generate - project ID
+  * save a map and set default map
+
+
+* run game
+  * editor version -editor target ; need the full unreal installation
+  * standalone verion - no editor target; 
+
+## 5.4. cook content
+
+uncooked - when import an image, get Texture2D asset as .uasset file
+cooked - DXT-compressed image 
+
+
+* to cook
+  * run the command line version of editor and pass 
+  * the result is in saved\cook
+  ```
+    UE4Editor-cmd.exe Dirk.uproject -run=cook -targetplatform=WindowNoEditor
+  ```
+    * UE4Editor-cmd.exe
+    * project file
+    * cook commandlet
+    * target = WindowsNoEditor
+  * run game 
+  ```
+    Dirk.exe -log -windowed -resx=1280 -resy=720
+  ```
+  
+## 5.5. create our own build script
+
+* set vars = vars.bat
+    
+```batch
+@echo off
+REM get script directory
+set ROOTDIR=%~dp0  
+REM strip the trailing slash
+set ROOTDIR=%ROOTDIR:~0,-1%
+set PROJECT=Dirk
+set PROJECT_DIR=%ROOTDIR%\%PROJECT%
+set UPROJECT_PATH=%PROJECT_DIR%\%PROJECT%.uproject
+
+set UE4_DIR=E:\Epic Games\UE_4.25
+set UE4EDITOR_EXE=%UE4_DIR%\Engine\Binaries\Win64\UE4Editor.exe
+set BUILD_BAT=%UE4_DIR%\Engine\Build\BatchFiles\Build.bat
+
+```
+
+* script to build
+```batch
+call %~dp0\vars.bat
+
+call "%BUILD_BAT%" %PROJECT%Editor Win64 Development "%UPROJECT_PATH%" -waitmutext -NoHotReload
+```
+* script to run editor
+```batch
+call %~dp0\vars.bat
+
+REM forward argument to editor
+start "" "%UE4EDITOR_EXE%" "%UPROJECT_PATHS" %*
+```
+
+ 
+# The Unreal Engine Game Framework : From main() to BeginPlay
+
 
