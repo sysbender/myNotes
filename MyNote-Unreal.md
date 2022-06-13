@@ -17,6 +17,12 @@
   - [5.4. cook content](#54-cook-content)
   - [5.5. create our own build script](#55-create-our-own-build-script)
 - [The Unreal Engine Game Framework : From main() to BeginPlay](#the-unreal-engine-game-framework--from-main-to-beginplay)
+  - [GEngineLoop](#gengineloop)
+- [ProjectR](#projectr)
+  - [architecure concept](#architecure-concept)
+    - [classes](#classes)
+    - [relation ship of the classes](#relation-ship-of-the-classes)
+    - [BluePrint visual scripting](#blueprint-visual-scripting)
 
 
 # 2. reference
@@ -362,4 +368,50 @@ start "" "%UE4EDITOR_EXE%" "%UPROJECT_PATHS" %*
  
 # The Unreal Engine Game Framework : From main() to BeginPlay
 
+
+## GEngineLoop
+ * PreInit - load modules
+ * 
+
+
+# ProjectR
+
+
+## architecure concept 
+
+
+### classes
+
+* Actors -> AActor : base class that can be positioned 
+  * Components : define function or store value of properties
+* Objects -> UObject :
+
+
+
+* rules
+  * GameMode - definition of the game, rule and victory condition, only on server
+  * GameState, - exist on server and all clients, 
+  * PlayerState - player's name, score, 
+
+
+* Pawn - is an agent, can be possessed by Controller, accept input
+* Character - human Pawn
+  * CapsuleComponent - for collision
+  * CharactorMovementComponent - for moving
+
+* Controller - AIController, PlayerController
+
+* HUD - heads-up display health etc ; each PlayerController normally has a HUD
+* Camera, PlayerCameraManager -each PlayerController normally has a  
+
+
+### relation ship of the classes
+
+PlayerController
+* containers: HUD, Input, PlayerCameraManager
+* possess: Pawn
+* Join : Game (GameMode, GameState) 
+
+
+### BluePrint visual scripting
 
