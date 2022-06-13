@@ -16,13 +16,13 @@
   - [5.3. build](#53-build)
   - [5.4. cook content](#54-cook-content)
   - [5.5. create our own build script](#55-create-our-own-build-script)
-- [The Unreal Engine Game Framework : From main() to BeginPlay](#the-unreal-engine-game-framework--from-main-to-beginplay)
-  - [GEngineLoop](#gengineloop)
-- [ProjectR](#projectr)
-  - [architecure concept](#architecure-concept)
-    - [classes](#classes)
-    - [relation ship of the classes](#relation-ship-of-the-classes)
-    - [BluePrint visual scripting](#blueprint-visual-scripting)
+- [6. The Unreal Engine Game Framework : From main() to BeginPlay](#6-the-unreal-engine-game-framework--from-main-to-beginplay)
+  - [6.1. GEngineLoop](#61-gengineloop)
+- [7. ProjectR](#7-projectr)
+  - [7.1. architecure concept](#71-architecure-concept)
+    - [7.1.1. classes](#711-classes)
+    - [7.1.2. relation ship of the classes](#712-relation-ship-of-the-classes)
+    - [7.1.3. BluePrint visual scripting](#713-blueprint-visual-scripting)
 
 
 # 2. reference
@@ -366,21 +366,21 @@ start "" "%UE4EDITOR_EXE%" "%UPROJECT_PATHS" %*
 ```
 
  
-# The Unreal Engine Game Framework : From main() to BeginPlay
+# 6. The Unreal Engine Game Framework : From main() to BeginPlay
 
 
-## GEngineLoop
+## 6.1. GEngineLoop
  * PreInit - load modules
  * 
 
 
-# ProjectR
+# 7. ProjectR
 
 
-## architecure concept 
+## 7.1. architecure concept 
 
 
-### classes
+### 7.1.1. classes
 
 * Actors -> AActor : base class that can be positioned 
   * Components : define function or store value of properties
@@ -405,7 +405,7 @@ start "" "%UE4EDITOR_EXE%" "%UPROJECT_PATHS" %*
 * Camera, PlayerCameraManager -each PlayerController normally has a  
 
 
-### relation ship of the classes
+### 7.1.2. relation ship of the classes
 
 PlayerController
 * containers: HUD, Input, PlayerCameraManager
@@ -413,5 +413,5 @@ PlayerController
 * Join : Game (GameMode, GameState) 
 
 
-### BluePrint visual scripting
+### 7.1.3. BluePrint visual scripting
 
