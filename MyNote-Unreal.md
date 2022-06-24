@@ -33,6 +33,25 @@ github:
  
  https://github.com/zompi2/UE4NewAutomationTests
  
+ ## shaders
+ # myNote-UnrealShader
+
+
+# reference
+
+虚幻4渲染编程 - https://zhuanlan.zhihu.com/p/36630694
+
+延迟渲染 Deferred Rendering https://blog.csdn.net/poem_qianmo/article/details/77142101
+
+
+unreal rendering pass :
+https://unrealartoptimization.github.io/book/profiling/passes/
+
+
+
+https://blog.csdn.net/u010281174/article/details/123806725
+
+ 
  # learn basic of unreal 
  
  ## map is level
