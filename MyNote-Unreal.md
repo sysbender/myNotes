@@ -20,6 +20,8 @@
     - [template reference](#template-reference)
     - [project setting](#project-setting)
   - [5.6. levels](#56-levels)
+    - [new level](#new-level)
+    - [world setting](#world-setting)
   - [5.7. assets and Content Packs](#57-assets-and-content-packs)
   - [5.8. Actors and Components](#58-actors-and-components)
   - [5.9. Playing and Simulating](#59-playing-and-simulating)
@@ -252,6 +254,24 @@ Project3rdPerson\Saved\Config\WindowsEditor
   * input - keybinds in game , not in editor
 
 ## 5.6. levels
+
+### new level
+
+* Open World: A Level with sample content that uses the World Partition feature to create a large, streamable open world.
+* Empty Open World: A Level that uses World Partition but does not contain any content.
+* Basic: A Level with a floor plan, lighting, atmosphere, and exponential fog.
+* Empty Level: A Level with nothing in it.
+
+
+### world setting
+ >Window > World settings
+* game mode
+* lightmass
+  * ambient occlusion - simulating soft shadows from indirect lighting, which can add depth to your scene
+  * world - level bound, navigation,
+  * physics - gravity
+  * rendering - distance field ambient occlusion, as well as dynamic indirect shadows
+
 
 ## 5.7. assets and Content Packs
 
