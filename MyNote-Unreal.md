@@ -1,6 +1,57 @@
-# MyNote-Unreal
+- [1. MyNote-Unreal](#1-mynote-unreal)
+- [2. reference](#2-reference)
+  - [2.1. shaders](#21-shaders)
+- [3. myNote-UnrealShader](#3-mynote-unrealshader)
+- [4. reference](#4-reference)
+- [5. official document - Understanding the basic of UE](#5-official-document---understanding-the-basic-of-ue)
+  - [5.1. installing](#51-installing)
+  - [5.2. fondation knowledge](#52-fondation-knowledge)
+    - [5.2.1. UE Editor interface](#521-ue-editor-interface)
+    - [5.2.2. UE Terminology](#522-ue-terminology)
+    - [5.2.3. Tools and Editors](#523-tools-and-editors)
+    - [5.2.4. Corordinate Space Terminology](#524-corordinate-space-terminology)
+    - [5.2.5. Guide for games](#525-guide-for-games)
+    - [5.2.6. Guide for Non-Games](#526-guide-for-non-games)
+  - [5.3. content browser](#53-content-browser)
+  - [5.4. customizing unreal engine](#54-customizing-unreal-engine)
+  - [5.5. projects and templates](#55-projects-and-templates)
+  - [5.6. levels](#56-levels)
+  - [5.7. assets and Content Packs](#57-assets-and-content-packs)
+  - [5.8. Actors and Components](#58-actors-and-components)
+  - [5.9. Playing and Simulating](#59-playing-and-simulating)
+  - [5.10. Building Your Application](#510-building-your-application)
+- [6. learn basic of unreal](#6-learn-basic-of-unreal)
+  - [6.1. map is level](#61-map-is-level)
+- [7. Crash Course: An Introduction to Unreal Engine](#7-crash-course-an-introduction-to-unreal-engine)
+  - [7.1. unreal project structure](#71-unreal-project-structure)
+  - [7.2. projects](#72-projects)
+  - [7.3. levels](#73-levels)
+  - [7.4. actor](#74-actor)
+  - [7.5. components and UI](#75-components-and-ui)
+  - [7.6. viewports](#76-viewports)
+  - [7.7. importing meshes](#77-importing-meshes)
+  - [7.8. Quixel Bridge](#78-quixel-bridge)
+  - [7.9. datasmith mesh importing](#79-datasmith-mesh-importing)
+  - [7.10. static mesh editor](#710-static-mesh-editor)
+  - [7.11. mesh guidelines](#711-mesh-guidelines)
+  - [7.12. collision mesh](#712-collision-mesh)
+  - [7.13. lightmap UVs](#713-lightmap-uvs)
+  - [7.14. textures : mipmaps](#714-textures--mipmaps)
+  - [7.15. PBR makes life easier](#715-pbr-makes-life-easier)
+  - [7.16. PBR core properties](#716-pbr-core-properties)
+  - [7.17. common PBR usage](#717-common-pbr-usage)
+- [8. packet beginner](#8-packet-beginner)
+  - [8.1. 05 - create playable character](#81-05---create-playable-character)
+    - [8.1.1. 05.01-game_modes.mkv](#811-0501-game_modesmkv)
+    - [8.1.2. 05.02-pawns.mkv](#812-0502-pawnsmkv)
+    - [8.1.3. 05.03-characters.mkv](#813-0503-charactersmkv)
+- [9. unreal - learn cpp make games](#9-unreal---learn-cpp-make-games)
+  - [9.1. importing bull cow game](#91-importing-bull-cow-game)
+  - [9.2. view port control](#92-view-port-control)
 
-# reference
+# 1. MyNote-Unreal
+
+# 2. reference
 
 best tutorial with code and blog:
 https://github.com/orfeasel/UE4-Cpp-Tutorials
@@ -33,11 +84,11 @@ github:
  
  https://github.com/zompi2/UE4NewAutomationTests
  
- ## shaders
- # myNote-UnrealShader
+ ## 2.1. shaders
+ # 3. myNote-UnrealShader
 
 
-# reference
+# 4. reference
 
 虚幻4渲染编程 - https://zhuanlan.zhihu.com/p/36630694
 
@@ -51,34 +102,155 @@ https://unrealartoptimization.github.io/book/profiling/passes/
 
 https://blog.csdn.net/u010281174/article/details/123806725
 
+
+# 5. official document - Understanding the basic of UE
+
+## 5.1. installing
+
+UE5 new feature requirement
+* Lumen Global Illumination and Reflections - ray trace
+* Nanite Virtualized Geometry
+* Virtual Shadow Maps
+* Temporal Super Resolution
+
+## 5.2. fondation knowledge
+
+### 5.2.1. UE Editor interface
+
+* select mode - editing : select, Landscape, Foliage, Mesh, Fracture, Brush  
+* level ViewPort - Perspective, Ortographic
+* command   console, source control status
+* outline : hider/reveal , create folder
+### 5.2.2. UE Terminology
+* project
+* blueprint
+* object -UObject, gc, Uproperty
+* class - Blueprint, Gameplay
+* Actor - AActor, can be placed
+* Casting - 
+* conponent
+* Pawn - 
+* Charactor - 
+* PlayerController
+* AIController
+* Player state
+* Game Mode
+* Game state
+* Brush
+* Volume - blocking volume, pain causing volume, trigger volume
+* level
+* world
+* 
+### 5.2.3. Tools and Editors
+* level editor
+* static mesh editor - look , collision, UV Mapping, LODs
+* Material Editor
+* Blueprint Editor
+* Physics Asset Editor - Physics for Skeletal Meshes
+* Behavior Tree Editor - AI behavior
+* Niagara Editor - Particle effect 
+* UMG UI Editor - user interface
+* Font Editor
+* Sequencer Editor - Cinematics and Dynamic Events
+* Animation Editor - Skeleton  asset/mesh, Animation Blueprint
+* Control Rig Editor
+* sound cue Editor
+* Media editor
+* nDisplay 3D config editor
+* DMX Libvrary Editor
+* 
+### 5.2.4. Corordinate Space Terminology
+
+Coordinate spaces
+* Tangent - right/left handed, 
+* Local /Object space
+* World
+* TranslatedWorld
+* View/CameraSpace
+* Clip , HomogeniousCoordinates, PostProjectionSpace, ProjectionSpace
+* Screen / OpenGL NormalizedDeviceCoordinates
+* viewPort , ViewportCoordinates, WindowCoordinates
+* 
+### 5.2.5. Guide for games
+compiling code projects:
+
+targets:  - *.target.cs
+* editor
+* client
+* game
+* server
+
+build configuration : state + target
+* Debug - debug engline and game code
+* DebugGame - debug game code only
+* Development - is the default,  enables all but the most time-consuming engine and game code optimizations
+* shipping
+* Test -  the Shipping configuration with some console commands, state, profiliing tool enabled
+
+Build configuration : target only
+* [empty] - standalone executable
+* Editor - open a project in  Unreal Editor
+* Client - <game>Client.Target.cs
+* Server - <game>Server.Target.cs
+
+
+
+### 5.2.6. Guide for Non-Games
+
+
+
+
+
+
+## 5.3. content browser
+
+## 5.4. customizing unreal engine
+* plugin
+* keboard shortcuts
+* editor preference
+
+## 5.5. projects and templates
+
+## 5.6. levels
+
+## 5.7. assets and Content Packs
+
+## 5.8. Actors and Components
  
- # learn basic of unreal 
+
+## 5.9. Playing and Simulating
+
+
+## 5.10. Building Your Application
+
+
+ # 6. learn basic of unreal 
  
- ## map is level
+ ## 6.1. map is level
  
- # Crash Course: An Introduction to Unreal Engine 
+ # 7. Crash Course: An Introduction to Unreal Engine 
  
- ## unreal project structure
- ## projects
- ## levels
- ## actor
- ## components and UI
- ## viewports
- ## importing meshes
- ## Quixel Bridge
- ## datasmith mesh importing
- ## static mesh editor
- ## mesh guidelines
- ## collision mesh
- ## lightmap UVs
- ## textures : mipmaps
- ## PBR makes life easier
- ## PBR core properties
- ## common PBR usage
+ ## 7.1. unreal project structure
+ ## 7.2. projects
+ ## 7.3. levels
+ ## 7.4. actor
+ ## 7.5. components and UI
+ ## 7.6. viewports
+ ## 7.7. importing meshes
+ ## 7.8. Quixel Bridge
+ ## 7.9. datasmith mesh importing
+ ## 7.10. static mesh editor
+ ## 7.11. mesh guidelines
+ ## 7.12. collision mesh
+ ## 7.13. lightmap UVs
+ ## 7.14. textures : mipmaps
+ ## 7.15. PBR makes life easier
+ ## 7.16. PBR core properties
+ ## 7.17. common PBR usage
  
  
 
-# packet beginner
+# 8. packet beginner
 
 01.01-introduction.mkv
 01.02-registration_and_installation.mkv
@@ -114,8 +286,8 @@ https://blog.csdn.net/u010281174/article/details/123806725
 04.10-tutorial_5-creating_the_enemies.mkv
 04.11-tutorial_6-creating_a_rotating_door.mkv
 
-## 05 - create playable character
-### 05.01-game_modes.mkv
+## 8.1. 05 - create playable character
+### 8.1.1. 05.01-game_modes.mkv
 an anctor that can be used to define or force game set rule 
 lives, can be paused , time limits, 
 -> create blueprint class, "game mode base"
@@ -135,7 +307,7 @@ lives, can be paused , time limits,
 setting -> world settings -> GameMode override
 
 
-### 05.02-pawns.mkv
+### 8.1.2. 05.02-pawns.mkv
 pawns - an actor that can be controlled by human or computer
 
 bludprint class -> Pawn -> 
@@ -146,7 +318,7 @@ bludprint class -> Pawn ->
 
 
 
-### 05.03-characters.mkv
+### 8.1.3. 05.03-characters.mkv
 a pawn that has by peddle movement - move by legs
 
 bluePrint class Charachater
@@ -203,11 +375,11 @@ bluePrint class Charachater
 
 
 
-# unreal - learn cpp make games
+# 9. unreal - learn cpp make games
 
-##  importing bull cow game
+##  9.1. importing bull cow game
 1. unzip the kit zip file
 2. double click to launch the game
 
-## view port control
+## 9.2. view port control
 
