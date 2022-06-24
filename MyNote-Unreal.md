@@ -15,6 +15,10 @@
   - [5.3. content browser](#53-content-browser)
   - [5.4. customizing unreal engine](#54-customizing-unreal-engine)
   - [5.5. projects and templates](#55-projects-and-templates)
+    - [create a custom template](#create-a-custom-template)
+    - [upgrade UE4 project to UE5](#upgrade-ue4-project-to-ue5)
+    - [template reference](#template-reference)
+    - [project setting](#project-setting)
   - [5.6. levels](#56-levels)
   - [5.7. assets and Content Packs](#57-assets-and-content-packs)
   - [5.8. Actors and Components](#58-actors-and-components)
@@ -210,6 +214,42 @@ Build configuration : target only
 * editor preference
 
 ## 5.5. projects and templates
+
+### create a custom template
+Custom templates can include 
+* content  
+* settings 
+* code 
+* have specific plugins enabled or disabled by default.
+
+steps to create custom template from existing project:
+* copy project folder to  C:\Program Files\Epic Games\UE_[version]\Templates
+* add or update projectName in [ProjectName]\Config\DefaultGame.ini file
+* copy existing  Templates\TP_FirstPerson\Config\. Copy the TemplateDefs.ini
+  * update LocalizedDisplayNames and LocalizedDescriptions variables
+  * set a category : Gmes, ME, AEC, MFG
+    * Games - Games
+    * ME - Film, Television, and Live Events
+    * AEC - Architecture, Engineering, and Construction
+    * MFG - Automotive, Product Design, and Manufacturing
+* add an icon and preview image in [ProjectName]\Media
+    * icon: [ProjectName].png
+    * preview : [ProjectName]_Preview.png
+### upgrade UE4 project to UE5
+1. open the old project in UE5, select "open a copy"
+
+### template reference
+* configure input for character(pawn)
+  * Edit > Project setting > Engine > Input > Binding 
+
+### project setting
+ in engine.ini
+Project3rdPerson\Saved\Config\WindowsEditor
+* Project category
+  * description
+  * Maps and Modes - load which map or mode by default
+* Engine category
+  * input - keybinds in game , not in editor
 
 ## 5.6. levels
 
