@@ -53,6 +53,8 @@ config file priority:
 		`ubuntu1 ansible_become=true ansible_become_pass=password`
 - hostvars
 	```
+	[centos]
+	centos[1:3]
 	[centos:vars]
 	ansible_user=root
 	```
@@ -556,7 +558,7 @@ delay: 1
 </code></pre>
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc0Mzk0NzQ0NSwxMDQ0Mzc0NjM4LDUxMD
-AwODQ0NSw3NzcxNDAxMzUsMzYzMzAyNjYxLDE4NzM4MzE1NzIs
-LTIzMDgzNjE3NiwtMTU3NDc0MzUxNF19
+eyJoaXN0b3J5IjpbLTE0NjMyMzQzMjksMTA0NDM3NDYzOCw1MT
+AwMDg0NDUsNzc3MTQwMTM1LDM2MzMwMjY2MSwxODczODMxNTcy
+LC0yMzA4MzYxNzYsLTE1NzQ3NDM1MTRdfQ==
 -->
