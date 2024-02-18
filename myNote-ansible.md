@@ -32,6 +32,10 @@ config file priority:
 -   ~/.ansible.cfg
 -   - /etc/ansible/ansible.cfg
 
+
+## inventory
+
+
 # 2. Ansible for the Windows Admin by Jeremy Murrah
 
 ## Terminology
@@ -527,5 +531,6 @@ delay: 1
 </code></pre>
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIzMDgzNjE3NiwtMTU3NDc0MzUxNF19
+eyJoaXN0b3J5IjpbMTg3MzgzMTU3MiwtMjMwODM2MTc2LC0xNT
+c0NzQzNTE0XX0=
 -->
