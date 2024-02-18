@@ -79,6 +79,7 @@ override variable
 ## modules
 
 - setup module - collect facts
+	- automatically execute
 - file module
 - copy module
 - command module
@@ -582,7 +583,7 @@ delay: 1
 </code></pre>
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY1MjM2NDMxMSwtNDU3MDMxNzgsMTA0ND
-M3NDYzOCw1MTAwMDg0NDUsNzc3MTQwMTM1LDM2MzMwMjY2MSwx
-ODczODMxNTcyLC0yMzA4MzYxNzYsLTE1NzQ3NDM1MTRdfQ==
+eyJoaXN0b3J5IjpbLTExNjg2Mzk4NjYsLTQ1NzAzMTc4LDEwND
+QzNzQ2MzgsNTEwMDA4NDQ1LDc3NzE0MDEzNSwzNjMzMDI2NjEs
+MTg3MzgzMTU3MiwtMjMwODM2MTc2LC0xNTc0NzQzNTE0XX0=
 -->
