@@ -41,6 +41,8 @@ config file priority:
 	ANSIBLE_HOST_KEY_CHECKING=False ansible all -m ping
 	# in cfg
 	host_key_checking = False
+	# list hosts in group
+	ansible centos --list-hosts
 	```
 - connect via root
 - connect via sudo
@@ -544,6 +546,7 @@ delay: 1
 </code></pre>
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzc3MTQwMTM1LDM2MzMwMjY2MSwxODczOD
-MxNTcyLC0yMzA4MzYxNzYsLTE1NzQ3NDM1MTRdfQ==
+eyJoaXN0b3J5IjpbNTEwMDA4NDQ1LDc3NzE0MDEzNSwzNjMzMD
+I2NjEsMTg3MzgzMTU3MiwtMjMwODM2MTc2LC0xNTc0NzQzNTE0
+XX0=
 -->
