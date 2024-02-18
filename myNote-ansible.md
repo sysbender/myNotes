@@ -62,6 +62,11 @@ config file priority:
 	`ubuntu[1:3`
 - group vars
 - inventory children groups
+	```
+	[linux:children]
+	centos
+	ubuntu
+	```
 
 # 2. Ansible for the Windows Admin by Jeremy Murrah
 
@@ -558,7 +563,7 @@ delay: 1
 </code></pre>
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NjMyMzQzMjksMTA0NDM3NDYzOCw1MT
+eyJoaXN0b3J5IjpbLTEyNDUwMDM5MTEsMTA0NDM3NDYzOCw1MT
 AwMDg0NDUsNzc3MTQwMTM1LDM2MzMwMjY2MSwxODczODMxNTcy
 LC0yMzA4MzYxNzYsLTE1NzQ3NDM1MTRdfQ==
 -->
