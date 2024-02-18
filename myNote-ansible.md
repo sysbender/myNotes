@@ -27,14 +27,17 @@ configheck current config
 
 config file priority:
 
--   - export ANSIBLE_CONFIG=/tmp/myansible.cfg
--   ./ansible.cfg
--   ~/.ansible.cfg
--   - /etc/ansible/ansible.cfg
+-   `export ANSIBLE_CONFIG=/tmp/myansible.cfg`
+-   `./ansible.cfg`
+-   `~/.ansible.cfg`
+-   `/etc/ansible/ansible.cfg`
 
 
 ## inventory
-inventory file can be in different
+inventory file can be in different format : 
+- hosts : default ini
+- hosts.yml : yml
+- hosts.json : json
 
 - ansible inventory
 	```shell
@@ -564,7 +567,7 @@ delay: 1
 </code></pre>
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY5NjI3NjAyOCwxMDQ0Mzc0NjM4LDUxMD
-AwODQ0NSw3NzcxNDAxMzUsMzYzMzAyNjYxLDE4NzM4MzE1NzIs
-LTIzMDgzNjE3NiwtMTU3NDc0MzUxNF19
+eyJoaXN0b3J5IjpbLTQ1NzAzMTc4LDEwNDQzNzQ2MzgsNTEwMD
+A4NDQ1LDc3NzE0MDEzNSwzNjMzMDI2NjEsMTg3MzgzMTU3Miwt
+MjMwODM2MTc2LC0xNTc0NzQzNTE0XX0=
 -->
