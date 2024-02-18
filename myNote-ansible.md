@@ -18,11 +18,14 @@ ip or hostname
 pip3 install ansible
  
 ## config
+check current config
+`ansible --version`
 
+config file priority:
 - export ANSIBLE_CONFIG=/tmp/myansible.cfg
 - ./ansible.cfg
 - ~/.ansible.cfg
-- 
+- /etc/ansible/ansible.cfg
 
 # 2. Ansible for the Windows Admin by Jeremy Murrah
 
@@ -505,5 +508,5 @@ delay: 1
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg2NTkxODI4OV19
+eyJoaXN0b3J5IjpbNjE5NDgwMzM5XX0=
 -->
