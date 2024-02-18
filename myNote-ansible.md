@@ -35,6 +35,7 @@ config file priority:
 
 ## inventory
 
+- a
 
 # 2. Ansible for the Windows Admin by Jeremy Murrah
 
@@ -531,6 +532,6 @@ delay: 1
 </code></pre>
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg3MzgzMTU3MiwtMjMwODM2MTc2LC0xNT
-c0NzQzNTE0XX0=
+eyJoaXN0b3J5IjpbMTQzNTI5NTgxOCwxODczODMxNTcyLC0yMz
+A4MzYxNzYsLTE1NzQ3NDM1MTRdfQ==
 -->
