@@ -1,5 +1,7 @@
 # myNote-ansible
 
+
+
 # 1. install Ansible
 
 1. enable wsl on windows 10
@@ -15,6 +17,9 @@ ip or hostname
 ```
 pip3 install ansible
  
+## config
+
+- 
 
 # 2. Ansible for the Windows Admin by Jeremy Murrah
 
@@ -497,5 +502,5 @@ delay: 1
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNTU2NjgzMzhdfQ==
+eyJoaXN0b3J5IjpbMTQwOTg5MDQ5XX0=
 -->
