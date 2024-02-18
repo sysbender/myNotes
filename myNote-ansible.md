@@ -1,66 +1,67 @@
-# myNote-ansible
+---
 
 
+---
 
-# 1. install Ansible
-
-1. enable wsl on windows 10
-2. install centos (download centos 7), create user, add to wheel (sudoers), groupinstall desktop
-3. install python3
-4. install ansible as a normal user
-5. try ansible
-```
-# create inventory file , ssh access through key
+<h1 id="mynote-ansible">myNote-ansible</h1>
+<h1 id="install-ansible">1. install Ansible</h1>
+<ol>
+<li>enable wsl on windows 10</li>
+<li>install centos (download centos 7), create user, add to wheel (sudoers), groupinstall desktop</li>
+<li>install python3</li>
+<li>install ansible as a normal user</li>
+<li>try ansible</li>
+</ol>
+<pre><code># create inventory file , ssh access through key
 [example]
 ip or hostname
 
-```
-pip3 install ansible
- 
-## config
-check current config
-`ansible --version`
-
-config file priority:
-- export ANSIBLE_CONFIG=/tmp/myansible.cfg
-- ./ansible.cfg
-- ~/.ansible.cfg
-- /etc/ansible/ansible.cfg
-
-# 2. Ansible for the Windows Admin by Jeremy Murrah
-
-## Terminology
-* task 
-* play = task + hosts
-* playbook = plays
-* hosts/inventory = machines
-* vars/facts = variables - stored in a file or retrieved from a host
-* list - in json/yaml, array in powershell
-* dictionary - in json/yamal = hashtable in powershell
-　
-
-## ansible-playbook command line
-
-```
-ansible-playbook [options] playbook.yml 
+</code></pre>
+<p>pip3 install ansible</p>
+<h2 id="config">config</h2>
+<p>check current config<br>
+<code>ansible --version</code></p>
+<p>config file priority:</p>
+<ul>
+<li>export ANSIBLE_CONFIG=/tmp/myansible.cfg</li>
+<li>./ansible.cfg</li>
+<li>~/.ansible.cfg</li>
+<li>/etc/ansible/ansible.cfg</li>
+</ul>
+<h1 id="ansible-for-the-windows-admin-by-jeremy-murrah">2. Ansible for the Windows Admin by Jeremy Murrah</h1>
+<h2 id="terminology">Terminology</h2>
+<ul>
+<li>task</li>
+<li>play = task + hosts</li>
+<li>playbook = plays</li>
+<li>hosts/inventory = machines</li>
+<li>vars/facts = variables - stored in a file or retrieved from a host</li>
+<li>list - in json/yaml, array in powershell</li>
+<li>dictionary - in json/yamal = hashtable in powershell</li>
+</ul>
+<h2 id="ansible-playbook-command-line">ansible-playbook command line</h2>
+<pre><code>ansible-playbook [options] playbook.yml 
 --step : confirmation before each task
 --limit : ignore inventory file/group , against specified machines
 -v(vvvv) : 
 -e : extra variable individially or @filename
 --check : run but won't make any change
-```
-
- # 3. module development
-## module search path
-* module name  - test_module.py or test_module.sh or test_module.what
-* search path - 
-1. env var : ANSIBLE_LIBRARY; 
-2. command line option : --module-path
-3. "./library"
-
-* boilerplate 
-```
-def main():
+</code></pre>
+<h1 id="module-development">3. module development</h1>
+<h2 id="module-search-path">module search path</h2>
+<ul>
+<li>module name  - test_module.py or test_module.sh or test_module.what</li>
+<li>search path -</li>
+</ul>
+<ol>
+<li>env var : ANSIBLE_LIBRARY;</li>
+<li>command line option : --module-path</li>
+<li>“./library”</li>
+</ol>
+<ul>
+<li>boilerplate</li>
+</ul>
+<pre><code>def main():
   module = AnsibleModule(
     argument_spec = dict( input = dict(required=True) , ),
     supports_check_mode = False
@@ -68,27 +69,27 @@ def main():
   from ansible.module_utils.basic import *
   main()
 
-```
-ansible will generate code from that template:
-about 1600 lines code, copy to the target system, execute it.
-
-* argument_spec is a dict, and get populated by the parameter provided in YAML file.
-
-has three parameters:
-1. argument_spec= dict(),
-   ```
-      mandatory_var = dict(required = True),
-      mandatory_var_not_logged = dict(required =True, no_log = True )
-      mandatory_var_with_3_options = dict(choices=[1,2,3])
-      optional_var1=dict(),
-      optional_var2=dict(),
-      optional_var3=dict(),
-      optional_var_with_default=dict( default='blaar),
-      optional_var_with_type_check=dict(required=True, type='bool'),
-      optional_var_with_alias=dict(required=True, aliases=['whatever']),
-   ```
-```
-   
+</code></pre>
+<p>ansible will generate code from that template:<br>
+about 1600 lines code, copy to the target system, execute it.</p>
+<ul>
+<li>argument_spec is a dict, and get populated by the parameter provided in YAML file.</li>
+</ul>
+<p>has three parameters:</p>
+<ol>
+<li>argument_spec= dict(),<pre><code>   mandatory_var = dict(required = True),
+   mandatory_var_not_logged = dict(required =True, no_log = True )
+   mandatory_var_with_3_options = dict(choices=[1,2,3])
+   optional_var1=dict(),
+   optional_var2=dict(),
+   optional_var3=dict(),
+   optional_var_with_default=dict( default='blaar),
+   optional_var_with_type_check=dict(required=True, type='bool'),
+   optional_var_with_alias=dict(required=True, aliases=['whatever']),
+</code></pre>
+</li>
+</ol>
+<pre><code>   
 - name: Test Module Development
   hosts: localhost
   gather_facts: False
@@ -96,13 +97,13 @@ has three parameters:
   - name: Test Module
     test_module:
       mandatory_var: value1
-```
-2. required_one_of = [[]],
-3. mutually_exclusive = [[]]
-
-# 4. ansible ad-hoc
-```
-
+</code></pre>
+<ol start="2">
+<li>required_one_of = [[]],</li>
+<li>mutually_exclusive = [[]]</li>
+</ol>
+<h1 id="ansible-ad-hoc">4. ansible ad-hoc</h1>
+<pre><code>
 * get parameter
 
 # ansible-doc
@@ -112,101 +113,88 @@ ansible-doc -t connection -l
 # module-name args
 ansible -m copy -a "src=/etc/hosts dest=/tmp/hosts" --check --diff localhost
 
-```
-
-# 5. ansible playbook
-
-## format
-```
-# two layer:
+</code></pre>
+<h1 id="ansible-playbook">5. ansible playbook</h1>
+<h2 id="format">format</h2>
+<pre><code># two layer:
 ---   # indicator start of yaml
 -     # list symbol
 play  # layer 1
 task  # layer 2
 
-```
-
-example
-
-```
-#playbook.ymml
+</code></pre>
+<p>example</p>
+<pre><code>#playbook.ymml
 hosts: localhost
 tasks:
 - copy:
     src: "/etc/hosts"
     dest: "/tmp/hosts"
-```
-* short hand - put them in one line
-```
-#playbook.ymml
+</code></pre>
+<ul>
+<li>short hand - put them in one line</li>
+</ul>
+<pre><code>#playbook.ymml
 hosts: localhost
 tasks:
 - copy:    src: "/etc/hosts"    dest: "/tmp/hosts"
-```
-
-ansible-playbook playbook.yml
-
-```
----
+</code></pre>
+<p>ansible-playbook playbook.yml</p>
+<pre><code>---
 
 - name: this is the first playbook
   gather_facts: no
   hosts: localhost
   tasks:
   - copy: src="/etc/hosts" dest="/tmp/hosts"
-```
-
-## yaml syntax
-
-* list
-
-```
-fruits:
+</code></pre>
+<h2 id="yaml-syntax">yaml syntax</h2>
+<ul>
+<li>list</li>
+</ul>
+<pre><code>fruits:
 - apple
 - orange
 - mango
-```
-
-
-* dictionary
-
-```
-martin:
+</code></pre>
+<ul>
+<li>dictionary</li>
+</ul>
+<pre><code>martin:
  name: Martin dev
  job: developer
  skill: elite
-```
-
-* value can span multiple line with pipe | or great than > (indentation will be ignored)
-1. pipe - will keep the new line and any trailing space
-2. great than - will fold newline to spaces 
-
-## ansible configure file
-
-search order
-* ANSIBLE_CONFIG - env variable
-* ansible.cfg - in current directory (will not load if the folder is writable)
-* ~/.ansible.cfg - in home dir
-* /etc/ansible/ansible.cfg
-
-options in config file:
-* ansible_connection=local
-* ansible_connection=winrm
-* ansible_port=5555
-* ansible_password
-* ansible_winrm_transport: basic
-
-
-## inventory
-
-conbe written in ini or yaml format
-no standard ssh port : webserver.com:2222
-ansible glob pattern - range: www[1:5] , db-[a:f]
-set connect type and user on a per host basis: node1.mydomain.com ansible_connection=winrm ansible_user=admin
-
-### apply variable to a group of hosts
-```
-[bad_group]
+</code></pre>
+<ul>
+<li>value can span multiple line with pipe | or great than &gt; (indentation will be ignored)</li>
+</ul>
+<ol>
+<li>pipe - will keep the new line and any trailing space</li>
+<li>great than - will fold newline to spaces</li>
+</ol>
+<h2 id="ansible-configure-file">ansible configure file</h2>
+<p>search order</p>
+<ul>
+<li>ANSIBLE_CONFIG - env variable</li>
+<li>ansible.cfg - in current directory (will not load if the folder is writable)</li>
+<li>~/.ansible.cfg - in home dir</li>
+<li>/etc/ansible/ansible.cfg</li>
+</ul>
+<p>options in config file:</p>
+<ul>
+<li>ansible_connection=local</li>
+<li>ansible_connection=winrm</li>
+<li>ansible_port=5555</li>
+<li>ansible_password</li>
+<li>ansible_winrm_transport: basic</li>
+</ul>
+<h2 id="inventory">inventory</h2>
+<p>conbe written in ini or yaml format<br>
+no standard ssh port : <a href="http://webserver.com:2222">webserver.com:2222</a><br>
+ansible glob pattern - range: www[1:5] , db-[a:f]<br>
+set connect type and user on a per host basis: <a href="http://node1.mydomain.com">node1.mydomain.com</a> ansible_connection=winrm ansible_user=admin</p>
+<h3 id="apply-variable-to-a-group-of-hosts">apply variable to a group of hosts</h3>
+<pre><code>[bad_group]
 node1 
 node2
 
@@ -215,20 +203,15 @@ ntp_server=ntp1.mydomain.com
 proxy=proxy1.mydomain.com
 
 
-```
-
-
-### two default group
-1. all
-2. ungrouped
-
-
-### inventory plugin
-
-plugin - support dynamic list from azure, aws, ...
-
-```
-# to list available inventory plugins
+</code></pre>
+<h3 id="two-default-group">two default group</h3>
+<ol>
+<li>all</li>
+<li>ungrouped</li>
+</ol>
+<h3 id="inventory-plugin">inventory plugin</h3>
+<p>plugin - support dynamic list from azure, aws, …</p>
+<pre><code># to list available inventory plugins
 
 ansible-doc -t inventory -l
 
@@ -237,19 +220,15 @@ ansible-doc -l
 
 list parameters of a module
 ansible-doc -s module_name
-```
-
-
-
-
-without specifying inventory file, can only use localhost 
-different inventory file type:
-1. py -
-2. ini - 
-3. yml - 
-
-```
-# to get the inventory ignore extensions - .orig, .ini, .cfg, .retry
+</code></pre>
+<p>without specifying inventory file, can only use localhost<br>
+different inventory file type:</p>
+<ol>
+<li>py -</li>
+<li>ini -</li>
+<li>yml -</li>
+</ol>
+<pre><code># to get the inventory ignore extensions - .orig, .ini, .cfg, .retry
 ansible-config list
 
 # to list all inventory
@@ -257,11 +236,9 @@ ansible-inventory --list
 
 # tree view of inventory
 ansible-inventory --graph
-```
-
-## ansbile face
-```
-ansible node1 -m setup
+</code></pre>
+<h2 id="ansbile-face">ansbile face</h2>
+<pre><code>ansible node1 -m setup
 
 # write facts to a file
 
@@ -275,17 +252,10 @@ ansible node1 -m setup
       dest: /tmp/facts.txt
       content: "{{ansible_all_ipv4_addresses}}  {{}}"
 
-```
-
-# ansible variables
-
-
-# 8. window
-
-
-
-```
-#check ps version
+</code></pre>
+<h1 id="ansible-variables">ansible variables</h1>
+<h1 id="window">8. window</h1>
+<pre><code>#check ps version
 
 $PSVersionTable
 
@@ -311,11 +281,8 @@ set-item -Force WSMan:\localhost\Service\AllowUnencrypted $True
 
 
 
-```
-
-
-```
-#window inventory
+</code></pre>
+<pre><code>#window inventory
 
 [windows]
 win10
@@ -327,18 +294,11 @@ ansible_port=5986
 ansible_connection=winrm
 ansible_winrm_server_cert_validation=ignore
 
-```
-
-ansible -m win_ping all
-
-ansible windows -i hosts -m facts
-
-ansible windows -i hosts -m win_chocolatey -a "name=notepadplusplus state=present"
-
-
-
-```
-
+</code></pre>
+<p>ansible -m win_ping all</p>
+<p>ansible windows -i hosts -m facts</p>
+<p>ansible windows -i hosts -m win_chocolatey -a “name=notepadplusplus state=present”</p>
+<pre><code>
 
 
 
@@ -394,43 +354,69 @@ ansible_winrm_server_cert_validation=ignore
 
 
 
-```
-
-### manage windows like Linux with Ansible
-win modules
-* win_chocolatey!
-* win_package
-* not win_msi
-* win_dsc
-
-* win_reboot - reboot and wait for connection
-* wait_for_connection - second half of the reboot
-* win_updates - category_names, reboot, blacklist
-* win_iis_website
-* win_iis_webapp
-* win_regedit - individual key/value
-* win_regmerge - bulk import
-* win_service -
-* win_domain - create domain, join, 
-* win_dns_client - change dns server
-* win_owner - set owner
-* win_acl - 
-
-### Ansible for the windows admin
-
-
-
-# 9. best practice
-
-consist style
-* tagging
-* whitespace
-* name of tasks, plays, vairables, roles
-* directory layout
-
-
-```
-# inventory - meaningful name
+</code></pre>
+<h3 id="manage-windows-like-linux-with-ansible">manage windows like Linux with Ansible</h3>
+<p>win modules</p>
+<ul>
+<li>
+<p>win_chocolatey!</p>
+</li>
+<li>
+<p>win_package</p>
+</li>
+<li>
+<p>not win_msi</p>
+</li>
+<li>
+<p>win_dsc</p>
+</li>
+<li>
+<p>win_reboot - reboot and wait for connection</p>
+</li>
+<li>
+<p>wait_for_connection - second half of the reboot</p>
+</li>
+<li>
+<p>win_updates - category_names, reboot, blacklist</p>
+</li>
+<li>
+<p>win_iis_website</p>
+</li>
+<li>
+<p>win_iis_webapp</p>
+</li>
+<li>
+<p>win_regedit - individual key/value</p>
+</li>
+<li>
+<p>win_regmerge - bulk import</p>
+</li>
+<li>
+<p>win_service -</p>
+</li>
+<li>
+<p>win_domain - create domain, join,</p>
+</li>
+<li>
+<p>win_dns_client - change dns server</p>
+</li>
+<li>
+<p>win_owner - set owner</p>
+</li>
+<li>
+<p>win_acl -</p>
+</li>
+</ul>
+<h3 id="ansible-for-the-windows-admin">Ansible for the windows admin</h3>
+<h1 id="best-practice">9. best practice</h1>
+<p>consist style</p>
+<ul>
+<li>tagging</li>
+<li>whitespace</li>
+<li>name of tasks, plays, vairables, roles</li>
+<li>directory layout</li>
+</ul>
+<pre><code># inventory - meaningful name
 cos72 ansible_host=192.168.1.72
 cos73 ansible_host=192.168.1.73
 
@@ -506,7 +492,5 @@ delay: 1
 
 
 
-```
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbNjE5NDgwMzM5XX0=
--->
+</code></pre>
+
