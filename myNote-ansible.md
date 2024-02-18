@@ -84,6 +84,7 @@ override variable
 	- `ansible centos1 -m setup`
 - file module
 	- `ansible all -m file -a 'path=/tmp/test state=touch'`
+	- `ansible all -m file -a 'path=/tmp/test'`
 - copy module
 - command module
 - 
@@ -93,6 +94,7 @@ override variable
 	- Yellow : success with changes
 	- Green: success no changes
 - idempotence
+	- results are the same repeat an operation many times
 - ansible-doc
 # 2. Ansible for the Windows Admin by Jeremy Murrah
 
@@ -589,8 +591,8 @@ delay: 1
 </code></pre>
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTM2NzI4MDY0LDExOTE5NDExNzcsLTQ1Nz
-AzMTc4LDEwNDQzNzQ2MzgsNTEwMDA4NDQ1LDc3NzE0MDEzNSwz
-NjMzMDI2NjEsMTg3MzgzMTU3MiwtMjMwODM2MTc2LC0xNTc0Nz
-QzNTE0XX0=
+eyJoaXN0b3J5IjpbOTg1Njk1MzQ3LDUzNjcyODA2NCwxMTkxOT
+QxMTc3LC00NTcwMzE3OCwxMDQ0Mzc0NjM4LDUxMDAwODQ0NSw3
+NzcxNDAxMzUsMzYzMzAyNjYxLDE4NzM4MzE1NzIsLTIzMDgzNj
+E3NiwtMTU3NDc0MzUxNF19
 -->
