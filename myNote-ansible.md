@@ -35,7 +35,13 @@ config file priority:
 
 ## inventory
 
-- a
+- ansible inventory
+- connect via root
+- connect via sudo
+- hostvars
+- inventory range
+- group vars
+- inventory children groups
 
 # 2. Ansible for the Windows Admin by Jeremy Murrah
 
@@ -532,6 +538,6 @@ delay: 1
 </code></pre>
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzNTI5NTgxOCwxODczODMxNTcyLC0yMz
-A4MzYxNzYsLTE1NzQ3NDM1MTRdfQ==
+eyJoaXN0b3J5IjpbMzYzMzAyNjYxLDE4NzM4MzE1NzIsLTIzMD
+gzNjE3NiwtMTU3NDc0MzUxNF19
 -->
