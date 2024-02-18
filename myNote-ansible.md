@@ -19,6 +19,9 @@ pip3 install ansible
  
 ## config
 
+- export ANSIBLE_CONFIG=/tmp/myansible.cfg
+- ./ansible.cfg
+- ~/.ansible.cfg
 - 
 
 # 2. Ansible for the Windows Admin by Jeremy Murrah
@@ -502,5 +505,5 @@ delay: 1
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQwOTg5MDQ5XX0=
+eyJoaXN0b3J5IjpbMTg2NTkxODI4OV19
 -->
