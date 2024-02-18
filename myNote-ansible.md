@@ -45,6 +45,9 @@ config file priority:
 	ansible centos --list-hosts
 	```
 - connect via root
+	```
+	ansible all -m command -a 'id' -o
+	```
 - connect via sudo
 - hostvars
 - inventory range
@@ -546,7 +549,7 @@ delay: 1
 </code></pre>
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTEwMDA4NDQ1LDc3NzE0MDEzNSwzNjMzMD
-I2NjEsMTg3MzgzMTU3MiwtMjMwODM2MTc2LC0xNTc0NzQzNTE0
-XX0=
+eyJoaXN0b3J5IjpbMTA0NDM3NDYzOCw1MTAwMDg0NDUsNzc3MT
+QwMTM1LDM2MzMwMjY2MSwxODczODMxNTcyLC0yMzA4MzYxNzYs
+LTE1NzQ3NDM1MTRdfQ==
 -->
