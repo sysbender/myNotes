@@ -36,8 +36,11 @@ config file priority:
 ## inventory
 
 - ansible inventory
-	```
+	```shell
+	# from command
 	ANSIBLE_HOST_KEY_CHECKING=False ansible all -m ping
+	# in cfg
+	host_key_checking = False
 	```
 - connect via root
 - connect via sudo
@@ -541,6 +544,6 @@ delay: 1
 </code></pre>
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ0NTYyODc3NiwzNjMzMDI2NjEsMTg3Mz
-gzMTU3MiwtMjMwODM2MTc2LC0xNTc0NzQzNTE0XX0=
+eyJoaXN0b3J5IjpbNzc3MTQwMTM1LDM2MzMwMjY2MSwxODczOD
+MxNTcyLC0yMzA4MzYxNzYsLTE1NzQ3NDM1MTRdfQ==
 -->
