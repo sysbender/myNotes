@@ -89,6 +89,9 @@ override variable
 - 
 
 - color notation used during Ansible execution
+	-  Red - failure
+	- Yellow : success with changes
+	- Green: success no changes
 - idempotence
 - ansible-doc
 # 2. Ansible for the Windows Admin by Jeremy Murrah
@@ -586,8 +589,8 @@ delay: 1
 </code></pre>
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MTkzMjM5NTksMTE5MTk0MTE3NywtND
-U3MDMxNzgsMTA0NDM3NDYzOCw1MTAwMDg0NDUsNzc3MTQwMTM1
-LDM2MzMwMjY2MSwxODczODMxNTcyLC0yMzA4MzYxNzYsLTE1Nz
-Q3NDM1MTRdfQ==
+eyJoaXN0b3J5IjpbNTM2NzI4MDY0LDExOTE5NDExNzcsLTQ1Nz
+AzMTc4LDEwNDQzNzQ2MzgsNTEwMDA4NDQ1LDc3NzE0MDEzNSwz
+NjMzMDI2NjEsMTg3MzgzMTU3MiwtMjMwODM2MTc2LC0xNTc0Nz
+QzNTE0XX0=
 -->
