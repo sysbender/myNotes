@@ -40,8 +40,10 @@ inventory file can be in different format :
 - hosts.json : json
 override the inventory file in the ansible.cfg from command line
 `ansible -i hosts`
-override args
-`ansible -e 'ex'`
+override variable
+`ansible -e 'ansible_port=2222'`
+
+
 - ansible inventory
 	```shell
 	# from command
@@ -74,7 +76,12 @@ override args
 	centos
 	ubuntu
 	```
+## modules
 
+- setup
+- file
+- copy
+- 
 # 2. Ansible for the Windows Admin by Jeremy Murrah
 
 ## Terminology
@@ -570,7 +577,7 @@ delay: 1
 </code></pre>
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTEyNDQwMjA5LC00NTcwMzE3OCwxMDQ0Mz
-c0NjM4LDUxMDAwODQ0NSw3NzcxNDAxMzUsMzYzMzAyNjYxLDE4
-NzM4MzE1NzIsLTIzMDgzNjE3NiwtMTU3NDc0MzUxNF19
+eyJoaXN0b3J5IjpbLTE1NDIwNjI0NDUsLTQ1NzAzMTc4LDEwND
+QzNzQ2MzgsNTEwMDA4NDQ1LDc3NzE0MDEzNSwzNjMzMDI2NjEs
+MTg3MzgzMTU3MiwtMjMwODM2MTc2LC0xNTc0NzQzNTE0XX0=
 -->
