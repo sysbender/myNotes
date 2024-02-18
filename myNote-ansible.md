@@ -78,10 +78,15 @@ override variable
 	```
 ## modules
 
-- setup
-- file
-- copy
+- setup module - collect facts
+- file module
+- copy module
+- command module
 - 
+
+- color notation used during Ansible execution
+- idempotence
+- ansible-doc
 # 2. Ansible for the Windows Admin by Jeremy Murrah
 
 ## Terminology
@@ -577,7 +582,7 @@ delay: 1
 </code></pre>
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NDIwNjI0NDUsLTQ1NzAzMTc4LDEwND
-QzNzQ2MzgsNTEwMDA4NDQ1LDc3NzE0MDEzNSwzNjMzMDI2NjEs
-MTg3MzgzMTU3MiwtMjMwODM2MTc2LC0xNTc0NzQzNTE0XX0=
+eyJoaXN0b3J5IjpbMTY1MjM2NDMxMSwtNDU3MDMxNzgsMTA0ND
+M3NDYzOCw1MTAwMDg0NDUsNzc3MTQwMTM1LDM2MzMwMjY2MSwx
+ODczODMxNTcyLC0yMzA4MzYxNzYsLTE1NzQ3NDM1MTRdfQ==
 -->
