@@ -52,6 +52,10 @@ config file priority:
 - connect via sudo
 		`ubuntu1 ansible_become=true ansible_become_pass=password`
 - hostvars
+	```
+	[centos:vars]
+	ansible_user=root
+	```
 - inventory range
 	`ubuntu[1:3`
 - group vars
@@ -552,7 +556,7 @@ delay: 1
 </code></pre>
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzYxOTg2OTIsMTA0NDM3NDYzOCw1MTAwMD
-g0NDUsNzc3MTQwMTM1LDM2MzMwMjY2MSwxODczODMxNTcyLC0y
-MzA4MzYxNzYsLTE1NzQ3NDM1MTRdfQ==
+eyJoaXN0b3J5IjpbMTc0Mzk0NzQ0NSwxMDQ0Mzc0NjM4LDUxMD
+AwODQ0NSw3NzcxNDAxMzUsMzYzMzAyNjYxLDE4NzM4MzE1NzIs
+LTIzMDgzNjE3NiwtMTU3NDc0MzUxNF19
 -->
