@@ -84,7 +84,7 @@ override variable
 	- `ansible centos1 -m setup`
 - file module
 	- `ansible all -m file -a 'path=/tmp/test state=touch'`
-	- `ansible all -m file -a 'path=/tmp/test'`
+	- `ansible all -m file -a 'path=/tmp/test state=file mode=600'`
 - copy module
 - command module
 - 
@@ -591,8 +591,8 @@ delay: 1
 </code></pre>
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTg1Njk1MzQ3LDUzNjcyODA2NCwxMTkxOT
-QxMTc3LC00NTcwMzE3OCwxMDQ0Mzc0NjM4LDUxMDAwODQ0NSw3
-NzcxNDAxMzUsMzYzMzAyNjYxLDE4NzM4MzE1NzIsLTIzMDgzNj
-E3NiwtMTU3NDc0MzUxNF19
+eyJoaXN0b3J5IjpbLTE0OTE1MzYwODksNTM2NzI4MDY0LDExOT
+E5NDExNzcsLTQ1NzAzMTc4LDEwNDQzNzQ2MzgsNTEwMDA4NDQ1
+LDc3NzE0MDEzNSwzNjMzMDI2NjEsMTg3MzgzMTU3MiwtMjMwOD
+M2MTc2LC0xNTc0NzQzNTE0XX0=
 -->
