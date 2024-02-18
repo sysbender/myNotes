@@ -38,7 +38,9 @@ inventory file can be in different format :
 - hosts : default ini
 - hosts.yml : yml
 - hosts.json : json
-
+override the inventory file in the ansible.cfg from command line
+`ansible -i hosts`
+override 
 - ansible inventory
 	```shell
 	# from command
@@ -567,7 +569,7 @@ delay: 1
 </code></pre>
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ1NzAzMTc4LDEwNDQzNzQ2MzgsNTEwMD
-A4NDQ1LDc3NzE0MDEzNSwzNjMzMDI2NjEsMTg3MzgzMTU3Miwt
-MjMwODM2MTc2LC0xNTc0NzQzNTE0XX0=
+eyJoaXN0b3J5IjpbMzc0MjAzMTA3LC00NTcwMzE3OCwxMDQ0Mz
+c0NjM4LDUxMDAwODQ0NSw3NzcxNDAxMzUsMzYzMzAyNjYxLDE4
+NzM4MzE1NzIsLTIzMDgzNjE3NiwtMTU3NDc0MzUxNF19
 -->
