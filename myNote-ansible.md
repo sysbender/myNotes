@@ -50,7 +50,7 @@ config file priority:
 	ansible all -m command -a 'id' -o
 	```
 - connect via sudo
-		``
+		`ubuntu1 ansible_become=true ansible_become_pass=password`
 - hostvars
 - inventory range
 	`ubuntu[1:3`
@@ -552,7 +552,7 @@ delay: 1
 </code></pre>
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM5MjI3NDk1NywxMDQ0Mzc0NjM4LDUxMD
-AwODQ0NSw3NzcxNDAxMzUsMzYzMzAyNjYxLDE4NzM4MzE1NzIs
-LTIzMDgzNjE3NiwtMTU3NDc0MzUxNF19
+eyJoaXN0b3J5IjpbNzYxOTg2OTIsMTA0NDM3NDYzOCw1MTAwMD
+g0NDUsNzc3MTQwMTM1LDM2MzMwMjY2MSwxODczODMxNTcyLC0y
+MzA4MzYxNzYsLTE1NzQ3NDM1MTRdfQ==
 -->
