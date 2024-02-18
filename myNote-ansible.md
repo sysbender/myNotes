@@ -46,11 +46,14 @@ config file priority:
 	```
 - connect via root
 	```
+	centos1 ansible_user=root ansible_port=2222
 	ansible all -m command -a 'id' -o
 	```
 - connect via sudo
+		``
 - hostvars
 - inventory range
+	`ubuntu[1:3`
 - group vars
 - inventory children groups
 
@@ -549,7 +552,7 @@ delay: 1
 </code></pre>
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA0NDM3NDYzOCw1MTAwMDg0NDUsNzc3MT
-QwMTM1LDM2MzMwMjY2MSwxODczODMxNTcyLC0yMzA4MzYxNzYs
-LTE1NzQ3NDM1MTRdfQ==
+eyJoaXN0b3J5IjpbLTM5MjI3NDk1NywxMDQ0Mzc0NjM4LDUxMD
+AwODQ0NSw3NzcxNDAxMzUsMzYzMzAyNjYxLDE4NzM4MzE1NzIs
+LTIzMDgzNjE3NiwtMTU3NDc0MzUxNF19
 -->
