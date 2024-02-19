@@ -139,7 +139,16 @@ override variable
 		- end `...` 
 	- 'message of the day' playbook
 	```
-	
+	---
+	-
+	   #hosts
+	   hosts: centos
+	   user: root
+	   tasks:
+	     - name: configure a MOTD
+
+	  
+	...
 	```
 	- use variable
 	- override variable from command line
@@ -645,7 +654,7 @@ delay: 1
 </code></pre>
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg1NDU4Mjk2NiwxMDY4NjcxMTc1LDM3Nz
+eyJoaXN0b3J5IjpbMTM5NDU4OTk3OSwxMDY4NjcxMTc1LDM3Nz
 E3NDUxLDE5Njg5NTg4OCwtMTA4OTc0NzU1MywtMTQ5MTUzNjA4
 OSw1MzY3MjgwNjQsMTE5MTk0MTE3NywtNDU3MDMxNzgsMTA0ND
 M3NDYzOCw1MTAwMDg0NDUsNzc3MTQwMTM1LDM2MzMwMjY2MSwx
