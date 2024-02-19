@@ -144,10 +144,13 @@ override variable
 	   #hosts
 	   hosts: centos
 	   user: root
+	   gather_facts: False
+	   vars:
+	     motd: "Welcome to Ansible\n"
 	   tasks:
 	     - name: configure a MOTD
 	       copy:
-	         src: centos_motd
+	         content: "{{ motd }}"
 	         dest: /etc/motd	  
 	...
 	```
@@ -655,9 +658,10 @@ delay: 1
 </code></pre>
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NDUyNjUzODksMTA2ODY3MTE3NSwzNz
-cxNzQ1MSwxOTY4OTU4ODgsLTEwODk3NDc1NTMsLTE0OTE1MzYw
-ODksNTM2NzI4MDY0LDExOTE5NDExNzcsLTQ1NzAzMTc4LDEwND
-QzNzQ2MzgsNTEwMDA4NDQ1LDc3NzE0MDEzNSwzNjMzMDI2NjEs
-MTg3MzgzMTU3MiwtMjMwODM2MTc2LC0xNTc0NzQzNTE0XX0=
+eyJoaXN0b3J5IjpbNjYxNjIxODAsLTE5NDUyNjUzODksMTA2OD
+Y3MTE3NSwzNzcxNzQ1MSwxOTY4OTU4ODgsLTEwODk3NDc1NTMs
+LTE0OTE1MzYwODksNTM2NzI4MDY0LDExOTE5NDExNzcsLTQ1Nz
+AzMTc4LDEwNDQzNzQ2MzgsNTEwMDA4NDQ1LDc3NzE0MDEzNSwz
+NjMzMDI2NjEsMTg3MzgzMTU3MiwtMjMwODM2MTc2LC0xNTc0Nz
+QzNTE0XX0=
 -->
