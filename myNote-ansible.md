@@ -99,6 +99,12 @@ override variable
 	- results are the same repeat an operation many times
 - ansible-doc
 	`ansible-doc file`
+
+## playbook
+- yaml
+- playbook sections
+- playbook variables
+- playbook 
 # 2. Ansible for the Windows Admin by Jeremy Murrah
 
 ## Terminology
@@ -594,9 +600,9 @@ delay: 1
 </code></pre>
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk2ODk1ODg4LC0xMDg5NzQ3NTUzLC0xND
-kxNTM2MDg5LDUzNjcyODA2NCwxMTkxOTQxMTc3LC00NTcwMzE3
-OCwxMDQ0Mzc0NjM4LDUxMDAwODQ0NSw3NzcxNDAxMzUsMzYzMz
-AyNjYxLDE4NzM4MzE1NzIsLTIzMDgzNjE3NiwtMTU3NDc0MzUx
-NF19
+eyJoaXN0b3J5IjpbOTExNjY4NjUyLDE5Njg5NTg4OCwtMTA4OT
+c0NzU1MywtMTQ5MTUzNjA4OSw1MzY3MjgwNjQsMTE5MTk0MTE3
+NywtNDU3MDMxNzgsMTA0NDM3NDYzOCw1MTAwMDg0NDUsNzc3MT
+QwMTM1LDM2MzMwMjY2MSwxODczODMxNTcyLC0yMzA4MzYxNzYs
+LTE1NzQ3NDM1MTRdfQ==
 -->
