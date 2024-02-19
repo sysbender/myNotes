@@ -88,7 +88,7 @@ override variable
 - copy module
 	`ansible all -m copy -a 'remote_src=yes src=/tmp/test dest=/tmp/test1'`
 - command module - default module
-	
+	`ansible all -a 'hostname' -o`
 - 
 
 - color notation used during Ansible execution
@@ -593,7 +593,7 @@ delay: 1
 </code></pre>
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNzE0Mzc0MjUsLTE0OTE1MzYwODksNT
+eyJoaXN0b3J5IjpbLTEwODk3NDc1NTMsLTE0OTE1MzYwODksNT
 M2NzI4MDY0LDExOTE5NDExNzcsLTQ1NzAzMTc4LDEwNDQzNzQ2
 MzgsNTEwMDA4NDQ1LDc3NzE0MDEzNSwzNjMzMDI2NjEsMTg3Mz
 gzMTU3MiwtMjMwODM2MTc2LC0xNTc0NzQzNTE0XX0=
