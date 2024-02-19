@@ -86,7 +86,9 @@ override variable
 	- `ansible all -m file -a 'path=/tmp/test state=touch'`
 	- `ansible all -m file -a 'path=/tmp/test state=file mode=600'`
 - copy module
-- command module
+	`ansible all -m copy -a 'remote_src=yes src=/tmp/test dest=/tmp/test1'`
+- command module - default module
+	
 - 
 
 - color notation used during Ansible execution
@@ -591,8 +593,8 @@ delay: 1
 </code></pre>
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0OTE1MzYwODksNTM2NzI4MDY0LDExOT
-E5NDExNzcsLTQ1NzAzMTc4LDEwNDQzNzQ2MzgsNTEwMDA4NDQ1
-LDc3NzE0MDEzNSwzNjMzMDI2NjEsMTg3MzgzMTU3MiwtMjMwOD
-M2MTc2LC0xNTc0NzQzNTE0XX0=
+eyJoaXN0b3J5IjpbLTExNzE0Mzc0MjUsLTE0OTE1MzYwODksNT
+M2NzI4MDY0LDExOTE5NDExNzcsLTQ1NzAzMTc4LDEwNDQzNzQ2
+MzgsNTEwMDA4NDQ1LDc3NzE0MDEzNSwzNjMzMDI2NjEsMTg3Mz
+gzMTU3MiwtMjMwODM2MTc2LC0xNTc0NzQzNTE0XX0=
 -->
