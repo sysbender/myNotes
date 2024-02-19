@@ -136,8 +136,11 @@ override variable
 		- tasks
 		- handlers
 		- roles
-		- end `...`
+		- end `...` 
 	- 'message of the day' playbook
+	```
+	
+	```
 	- use variable
 	- override variable from command line
 	- use handlers for post task execution
@@ -642,7 +645,7 @@ delay: 1
 </code></pre>
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEwNTU3MzMyNCwxMDY4NjcxMTc1LDM3Nz
+eyJoaXN0b3J5IjpbLTg1NDU4Mjk2NiwxMDY4NjcxMTc1LDM3Nz
 E3NDUxLDE5Njg5NTg4OCwtMTA4OTc0NzU1MywtMTQ5MTUzNjA4
 OSw1MzY3MjgwNjQsMTE5MTk0MTE3NywtNDU3MDMxNzgsMTA0ND
 M3NDYzOCw1MTAwMDg0NDUsNzc3MTQwMTM1LDM2MzMwMjY2MSwx
