@@ -98,6 +98,7 @@ override variable
 - idempotence
 	- results are the same repeat an operation many times
 - ansible-doc
+	`ansible-doc file`
 # 2. Ansible for the Windows Admin by Jeremy Murrah
 
 ## Terminology
@@ -593,8 +594,9 @@ delay: 1
 </code></pre>
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwODk3NDc1NTMsLTE0OTE1MzYwODksNT
-M2NzI4MDY0LDExOTE5NDExNzcsLTQ1NzAzMTc4LDEwNDQzNzQ2
-MzgsNTEwMDA4NDQ1LDc3NzE0MDEzNSwzNjMzMDI2NjEsMTg3Mz
-gzMTU3MiwtMjMwODM2MTc2LC0xNTc0NzQzNTE0XX0=
+eyJoaXN0b3J5IjpbMTk2ODk1ODg4LC0xMDg5NzQ3NTUzLC0xND
+kxNTM2MDg5LDUzNjcyODA2NCwxMTkxOTQxMTc3LC00NTcwMzE3
+OCwxMDQ0Mzc0NjM4LDUxMDAwODQ0NSw3NzcxNDAxMzUsMzYzMz
+AyNjYxLDE4NzM4MzE1NzIsLTIzMDgzNjE3NiwtMTU3NDc0MzUx
+NF19
 -->
