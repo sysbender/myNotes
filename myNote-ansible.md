@@ -151,12 +151,17 @@ override variable
 	     - name: configure a MOTD
 	       copy:
 	         content: "{{ motd }}"
-	         dest: /etc/motd	  
+	         dest: /etc/motd	
+	       notify: MOTD changed
+	     handlers:
+	       
 	...
 	```
 	- use variable
 	- override variable from command line
 	- use handlers for post task execution
+		- defined as task
+		- add notify key to task
 	- when directive
 	- 
 - playbook variables
@@ -658,10 +663,10 @@ delay: 1
 </code></pre>
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjYxNjIxODAsLTE5NDUyNjUzODksMTA2OD
-Y3MTE3NSwzNzcxNzQ1MSwxOTY4OTU4ODgsLTEwODk3NDc1NTMs
-LTE0OTE1MzYwODksNTM2NzI4MDY0LDExOTE5NDExNzcsLTQ1Nz
-AzMTc4LDEwNDQzNzQ2MzgsNTEwMDA4NDQ1LDc3NzE0MDEzNSwz
-NjMzMDI2NjEsMTg3MzgzMTU3MiwtMjMwODM2MTc2LC0xNTc0Nz
-QzNTE0XX0=
+eyJoaXN0b3J5IjpbLTQyMTYwODcxNSw2NjE2MjE4MCwtMTk0NT
+I2NTM4OSwxMDY4NjcxMTc1LDM3NzE3NDUxLDE5Njg5NTg4OCwt
+MTA4OTc0NzU1MywtMTQ5MTUzNjA4OSw1MzY3MjgwNjQsMTE5MT
+k0MTE3NywtNDU3MDMxNzgsMTA0NDM3NDYzOCw1MTAwMDg0NDUs
+Nzc3MTQwMTM1LDM2MzMwMjY2MSwxODczODMxNTcyLC0yMzA4Mz
+YxNzYsLTE1NzQ3NDM1MTRdfQ==
 -->
