@@ -117,8 +117,14 @@ override variable
 	- list and dictionary
 	- list 
 		```
-		
+		- item1
+		- item2
 	```
+	- dictionary
+	```
+	```
+		 
+		
 - playbook sections
 - playbook variables
 - playbook facts
@@ -619,7 +625,7 @@ delay: 1
 </code></pre>
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQxNTE0NTg3OCwzNzcxNzQ1MSwxOTY4OT
+eyJoaXN0b3J5IjpbLTgzODY3NzA0NCwzNzcxNzQ1MSwxOTY4OT
 U4ODgsLTEwODk3NDc1NTMsLTE0OTE1MzYwODksNTM2NzI4MDY0
 LDExOTE5NDExNzcsLTQ1NzAzMTc4LDEwNDQzNzQ2MzgsNTEwMD
 A4NDQ1LDc3NzE0MDEzNSwzNjMzMDI2NjEsMTg3MzgzMTU3Miwt
