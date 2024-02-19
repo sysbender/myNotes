@@ -105,11 +105,12 @@ override variable
 	- structure
 	- indentation
 	- quotes :
-		- no quote, single/double quote 
+		- no quote, single/double quote
+		- use quote when there is escape `\n` 
 	- multiline value 
 		- `|` multiple line
 		- `>` one line ends with new line
-		- `>-`  one line no new line
+		- `>-`  remove ending new line
 	- boolean
 	- list and dictionary
 - playbook sections
@@ -612,9 +613,9 @@ delay: 1
 </code></pre>
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkxMTQxMzY3NiwzNzcxNzQ1MSwxOTY4OT
-U4ODgsLTEwODk3NDc1NTMsLTE0OTE1MzYwODksNTM2NzI4MDY0
-LDExOTE5NDExNzcsLTQ1NzAzMTc4LDEwNDQzNzQ2MzgsNTEwMD
-A4NDQ1LDc3NzE0MDEzNSwzNjMzMDI2NjEsMTg3MzgzMTU3Miwt
-MjMwODM2MTc2LC0xNTc0NzQzNTE0XX0=
+eyJoaXN0b3J5IjpbLTE3NjIxMjU5NjMsMzc3MTc0NTEsMTk2OD
+k1ODg4LC0xMDg5NzQ3NTUzLC0xNDkxNTM2MDg5LDUzNjcyODA2
+NCwxMTkxOTQxMTc3LC00NTcwMzE3OCwxMDQ0Mzc0NjM4LDUxMD
+AwODQ0NSw3NzcxNDAxMzUsMzYzMzAyNjYxLDE4NzM4MzE1NzIs
+LTIzMDgzNjE3NiwtMTU3NDc0MzUxNF19
 -->
