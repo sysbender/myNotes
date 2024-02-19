@@ -154,7 +154,9 @@ override variable
 	         dest: /etc/motd	
 	       notify: MOTD changed
 	     handlers:
-	       
+	       - name: MOTD changed  
+	         debug:
+	           msg: The MOTD was changed
 	...
 	```
 	- use variable
@@ -663,10 +665,10 @@ delay: 1
 </code></pre>
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQyMTYwODcxNSw2NjE2MjE4MCwtMTk0NT
-I2NTM4OSwxMDY4NjcxMTc1LDM3NzE3NDUxLDE5Njg5NTg4OCwt
-MTA4OTc0NzU1MywtMTQ5MTUzNjA4OSw1MzY3MjgwNjQsMTE5MT
-k0MTE3NywtNDU3MDMxNzgsMTA0NDM3NDYzOCw1MTAwMDg0NDUs
-Nzc3MTQwMTM1LDM2MzMwMjY2MSwxODczODMxNTcyLC0yMzA4Mz
-YxNzYsLTE1NzQ3NDM1MTRdfQ==
+eyJoaXN0b3J5IjpbLTE2NzUzMTcxMjMsNjYxNjIxODAsLTE5ND
+UyNjUzODksMTA2ODY3MTE3NSwzNzcxNzQ1MSwxOTY4OTU4ODgs
+LTEwODk3NDc1NTMsLTE0OTE1MzYwODksNTM2NzI4MDY0LDExOT
+E5NDExNzcsLTQ1NzAzMTc4LDEwNDQzNzQ2MzgsNTEwMDA4NDQ1
+LDc3NzE0MDEzNSwzNjMzMDI2NjEsMTg3MzgzMTU3MiwtMjMwOD
+M2MTc2LC0xNTc0NzQzNTE0XX0=
 -->
