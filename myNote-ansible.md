@@ -104,11 +104,12 @@ override variable
 - YAML
 	- structure
 	- indentation
-	- quotes : 
+	- quotes :
+		- no quote, single/double quote 
 	- multiline value 
-		- `|`
-		- `>` ends with new line
-		- `>-`  
+		- `|` multiple line
+		- `>` one line ends with new line
+		- `>-`  one line no new line
 	- boolean
 	- list and dictionary
 - playbook sections
@@ -611,9 +612,9 @@ delay: 1
 </code></pre>
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjU5NjY1OTkxLDM3NzE3NDUxLDE5Njg5NT
-g4OCwtMTA4OTc0NzU1MywtMTQ5MTUzNjA4OSw1MzY3MjgwNjQs
-MTE5MTk0MTE3NywtNDU3MDMxNzgsMTA0NDM3NDYzOCw1MTAwMD
-g0NDUsNzc3MTQwMTM1LDM2MzMwMjY2MSwxODczODMxNTcyLC0y
-MzA4MzYxNzYsLTE1NzQ3NDM1MTRdfQ==
+eyJoaXN0b3J5IjpbMTkxMTQxMzY3NiwzNzcxNzQ1MSwxOTY4OT
+U4ODgsLTEwODk3NDc1NTMsLTE0OTE1MzYwODksNTM2NzI4MDY0
+LDExOTE5NDExNzcsLTQ1NzAzMTc4LDEwNDQzNzQ2MzgsNTEwMD
+A4NDQ1LDc3NzE0MDEzNSwzNjMzMDI2NjEsMTg3MzgzMTU3Miwt
+MjMwODM2MTc2LC0xNTc0NzQzNTE0XX0=
 -->
