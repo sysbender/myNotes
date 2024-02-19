@@ -102,9 +102,17 @@ override variable
 
 ## playbook
 - yaml
+	- structure
+	- indentation
+	- quotes
+	- multiline value
+	- boolean
+	- list and dictionary
 - playbook sections
 - playbook variables
-- playbook 
+- playbook facts
+- Jinja2 template
+- playbook creating and execute
 # 2. Ansible for the Windows Admin by Jeremy Murrah
 
 ## Terminology
@@ -600,9 +608,9 @@ delay: 1
 </code></pre>
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTExNjY4NjUyLDE5Njg5NTg4OCwtMTA4OT
-c0NzU1MywtMTQ5MTUzNjA4OSw1MzY3MjgwNjQsMTE5MTk0MTE3
-NywtNDU3MDMxNzgsMTA0NDM3NDYzOCw1MTAwMDg0NDUsNzc3MT
-QwMTM1LDM2MzMwMjY2MSwxODczODMxNTcyLC0yMzA4MzYxNzYs
-LTE1NzQ3NDM1MTRdfQ==
+eyJoaXN0b3J5IjpbMjEzMTEzNTk0NywxOTY4OTU4ODgsLTEwOD
+k3NDc1NTMsLTE0OTE1MzYwODksNTM2NzI4MDY0LDExOTE5NDEx
+NzcsLTQ1NzAzMTc4LDEwNDQzNzQ2MzgsNTEwMDA4NDQ1LDc3Nz
+E0MDEzNSwzNjMzMDI2NjEsMTg3MzgzMTU3MiwtMjMwODM2MTc2
+LC0xNTc0NzQzNTE0XX0=
 -->
