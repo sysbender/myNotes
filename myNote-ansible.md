@@ -101,7 +101,7 @@ override variable
 	`ansible-doc file`
 
 ## playbook
-- yaml
+- YAML
 	- structure
 	- indentation
 	- quotes
@@ -608,9 +608,9 @@ delay: 1
 </code></pre>
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEzMTEzNTk0NywxOTY4OTU4ODgsLTEwOD
-k3NDc1NTMsLTE0OTE1MzYwODksNTM2NzI4MDY0LDExOTE5NDEx
-NzcsLTQ1NzAzMTc4LDEwNDQzNzQ2MzgsNTEwMDA4NDQ1LDc3Nz
-E0MDEzNSwzNjMzMDI2NjEsMTg3MzgzMTU3MiwtMjMwODM2MTc2
-LC0xNTc0NzQzNTE0XX0=
+eyJoaXN0b3J5IjpbMzc3MTc0NTEsMTk2ODk1ODg4LC0xMDg5Nz
+Q3NTUzLC0xNDkxNTM2MDg5LDUzNjcyODA2NCwxMTkxOTQxMTc3
+LC00NTcwMzE3OCwxMDQ0Mzc0NjM4LDUxMDAwODQ0NSw3NzcxND
+AxMzUsMzYzMzAyNjYxLDE4NzM4MzE1NzIsLTIzMDgzNjE3Niwt
+MTU3NDc0MzUxNF19
 -->
