@@ -128,6 +128,13 @@ override variable
 		 
 		
 - playbook sections
+	- common sections
+	- 'message of the day' playbook
+	- use variable
+	- override variable from command line
+	- use handlers for post task execution
+	- when directive
+	- 
 - playbook variables
 - playbook facts
 - Jinja2 template
@@ -627,9 +634,9 @@ delay: 1
 </code></pre>
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA2ODY3MTE3NSwzNzcxNzQ1MSwxOTY4OT
-U4ODgsLTEwODk3NDc1NTMsLTE0OTE1MzYwODksNTM2NzI4MDY0
-LDExOTE5NDExNzcsLTQ1NzAzMTc4LDEwNDQzNzQ2MzgsNTEwMD
-A4NDQ1LDc3NzE0MDEzNSwzNjMzMDI2NjEsMTg3MzgzMTU3Miwt
-MjMwODM2MTc2LC0xNTc0NzQzNTE0XX0=
+eyJoaXN0b3J5IjpbLTgxNDkwMjQzMiwxMDY4NjcxMTc1LDM3Nz
+E3NDUxLDE5Njg5NTg4OCwtMTA4OTc0NzU1MywtMTQ5MTUzNjA4
+OSw1MzY3MjgwNjQsMTE5MTk0MTE3NywtNDU3MDMxNzgsMTA0ND
+M3NDYzOCw1MTAwMDg0NDUsNzc3MTQwMTM1LDM2MzMwMjY2MSwx
+ODczODMxNTcyLC0yMzA4MzYxNzYsLTE1NzQ3NDM1MTRdfQ==
 -->
