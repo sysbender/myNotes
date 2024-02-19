@@ -121,8 +121,10 @@ override variable
 		- item2
 	```
 	- dictionary
-	```
-	```
+	```	
+		key1: value1
+		key2: value2
+		```
 		 
 		
 - playbook sections
@@ -625,7 +627,7 @@ delay: 1
 </code></pre>
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgzODY3NzA0NCwzNzcxNzQ1MSwxOTY4OT
+eyJoaXN0b3J5IjpbLTU1NDM3OTAzNCwzNzcxNzQ1MSwxOTY4OT
 U4ODgsLTEwODk3NDc1NTMsLTE0OTE1MzYwODksNTM2NzI4MDY0
 LDExOTE5NDExNzcsLTQ1NzAzMTc4LDEwNDQzNzQ2MzgsNTEwMD
 A4NDQ1LDc3NzE0MDEzNSwzNjMzMDI2NjEsMTg3MzgzMTU3Miwt
