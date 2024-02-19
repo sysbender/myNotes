@@ -129,12 +129,14 @@ override variable
 		
 - playbook sections
 	- common sections
+		- begin `---`
 		- play
 		- hosts
 		- vars
 		- tasks
 		- handlers
 		- roles
+		- end `...`
 	- 'message of the day' playbook
 	- use variable
 	- override variable from command line
@@ -640,9 +642,9 @@ delay: 1
 </code></pre>
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MjE0MDc1NzMsMTA2ODY3MTE3NSwzNz
-cxNzQ1MSwxOTY4OTU4ODgsLTEwODk3NDc1NTMsLTE0OTE1MzYw
-ODksNTM2NzI4MDY0LDExOTE5NDExNzcsLTQ1NzAzMTc4LDEwND
-QzNzQ2MzgsNTEwMDA4NDQ1LDc3NzE0MDEzNSwzNjMzMDI2NjEs
-MTg3MzgzMTU3MiwtMjMwODM2MTc2LC0xNTc0NzQzNTE0XX0=
+eyJoaXN0b3J5IjpbMjEwNTU3MzMyNCwxMDY4NjcxMTc1LDM3Nz
+E3NDUxLDE5Njg5NTg4OCwtMTA4OTc0NzU1MywtMTQ5MTUzNjA4
+OSw1MzY3MjgwNjQsMTE5MTk0MTE3NywtNDU3MDMxNzgsMTA0ND
+M3NDYzOCw1MTAwMDg0NDUsNzc3MTQwMTM1LDM2MzMwMjY2MSwx
+ODczODMxNTcyLC0yMzA4MzYxNzYsLTE1NzQ3NDM1MTRdfQ==
 -->
