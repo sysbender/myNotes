@@ -112,6 +112,7 @@ override variable
 		- `>` one line ends with new line
 		- `>-`  remove ending new line
 	- boolean
+		- True : ``
 	- list and dictionary
 - playbook sections
 - playbook variables
@@ -613,9 +614,9 @@ delay: 1
 </code></pre>
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NjIxMjU5NjMsMzc3MTc0NTEsMTk2OD
-k1ODg4LC0xMDg5NzQ3NTUzLC0xNDkxNTM2MDg5LDUzNjcyODA2
-NCwxMTkxOTQxMTc3LC00NTcwMzE3OCwxMDQ0Mzc0NjM4LDUxMD
-AwODQ0NSw3NzcxNDAxMzUsMzYzMzAyNjYxLDE4NzM4MzE1NzIs
-LTIzMDgzNjE3NiwtMTU3NDc0MzUxNF19
+eyJoaXN0b3J5IjpbNjc3NjAyOTMyLDM3NzE3NDUxLDE5Njg5NT
+g4OCwtMTA4OTc0NzU1MywtMTQ5MTUzNjA4OSw1MzY3MjgwNjQs
+MTE5MTk0MTE3NywtNDU3MDMxNzgsMTA0NDM3NDYzOCw1MTAwMD
+g0NDUsNzc3MTQwMTM1LDM2MzMwMjY2MSwxODczODMxNTcyLC0y
+MzA4MzYxNzYsLTE1NzQ3NDM1MTRdfQ==
 -->
