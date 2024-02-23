@@ -117,7 +117,8 @@ supplying power
 - Power Bricks
 	```
 	show inline
-	
+	switchport mode dynamic desirable
+	power inline delay shutdown 20 initial 300
 	```
 VLAN
 
@@ -130,7 +131,7 @@ CDP - Cisco Discovery Protocol
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMzk2ODUwODgsLTE5NDUyMjA1MTgsLT
-Y2MDQxNTY2LDE4ODU5MTk2MjcsMTQ2MjQ4OTI4OCwxNjg5MjI4
-NThdfQ==
+eyJoaXN0b3J5IjpbNDI4NDU4ODM0LC0xOTQ1MjIwNTE4LC02Nj
+A0MTU2NiwxODg1OTE5NjI3LDE0NjI0ODkyODgsMTY4OTIyODU4
+XX0=
 -->
