@@ -173,16 +173,21 @@ show ip dhcp binding
 debug ip dhcp server events
 
 ```
-### 10 NTP config
+### 10 NTP client config
 stratum 
+```
+show clock
+conf t
+ntp server 173.13.85.5
+
+```
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMDEyMDQzNDgsNDIxNTk3MjQwLDE4MD
-kwNTY5MzIsLTEwMjkxODExMjksLTE5NDUyMjA1MTgsLTY2MDQx
-NTY2LDE4ODU5MTk2MjcsMTQ2MjQ4OTI4OCwxNjg5MjI4NThdfQ
-==
+eyJoaXN0b3J5IjpbMTY4OTM2ODIzMCw0MjE1OTcyNDAsMTgwOT
+A1NjkzMiwtMTAyOTE4MTEyOSwtMTk0NTIyMDUxOCwtNjYwNDE1
+NjYsMTg4NTkxOTYyNywxNDYyNDg5Mjg4LDE2ODkyMjg1OF19
 -->
