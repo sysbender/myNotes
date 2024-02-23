@@ -89,11 +89,12 @@ ISDN PRI(CCS)
 Measuring Voice Quality
 Mean Opinion Score - 
 
-
+### 6 DSP - Digital Signal Processing
+anlog to digital 
 
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg4NTkxOTYyNywxNDYyNDg5Mjg4LDE2OD
-kyMjg1OF19
+eyJoaXN0b3J5IjpbLTExMTIxNzEyOTMsMTg4NTkxOTYyNywxND
+YyNDg5Mjg4LDE2ODkyMjg1OF19
 -->
