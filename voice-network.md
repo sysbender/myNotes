@@ -134,7 +134,9 @@ IP Phone Boot Process
 - spanning tree unblock
 	- Voice VLAN is learned via CDP
 - Cisco IP phone send DHCP request
-	- 
+	- get DHCP Address with options
+		- Options 150 : TFTP boot server (UMUC server)
+	- down
 
 
 
@@ -143,7 +145,7 @@ IP Phone Boot Process
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODM5NDQzNDM1LDE4MDkwNTY5MzIsLTEwMj
+eyJoaXN0b3J5IjpbNzc0ODc3MDQxLDE4MDkwNTY5MzIsLTEwMj
 kxODExMjksLTE5NDUyMjA1MTgsLTY2MDQxNTY2LDE4ODU5MTk2
 MjcsMTQ2MjQ4OTI4OCwxNjg5MjI4NThdfQ==
 -->
