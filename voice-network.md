@@ -91,11 +91,12 @@ Mean Opinion Score -
 
 ### 6 DSP - Digital Signal Processing
 analog to digital 
-PVDM2 
+PVDM2-8/16/32/48/64
+
 
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU1MzkxMTA4OSwxODg1OTE5NjI3LDE0Nj
-I0ODkyODgsMTY4OTIyODU4XX0=
+eyJoaXN0b3J5IjpbLTY2MDQxNTY2LDE4ODU5MTk2MjcsMTQ2Mj
+Q4OTI4OCwxNjg5MjI4NThdfQ==
 -->
