@@ -50,7 +50,8 @@ ISDN PRI(CCS)
 ### 4 PSTN interface
 
 - Analog POTS lines (FXO)
-	- pair of 
+	- Loop Start/ Ground Start
+	- pair of copper wires (tip/ring)
 - DID Trunk (Analog)
 - ISDN BRI( 2B+D)
 - T1 CAS(24 DSOs)
@@ -63,5 +64,5 @@ ISDN PRI(CCS)
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY5NDg3NDY3NywxNjg5MjI4NThdfQ==
+eyJoaXN0b3J5IjpbNzE5OTYyODgyLDE2ODkyMjg1OF19
 -->
