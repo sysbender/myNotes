@@ -49,16 +49,19 @@ ISDN PRI(CCS)
 
 ### 4 PSTN interface
 
-Analog POTS lines (FXO)
-DID Trunk (Analog)
-ISDN BRI( 2B+D)
-T1 CAS(24 DSOs)
-ISDN PRI(23B+D)
+- Analog POTS lines (FXO)
+	- pair of 
+- DID Trunk (Analog)
+- ISDN BRI( 2B+D)
+- T1 CAS(24 DSOs)
+- ISDN PRI(23B+D) - primary
+- SIP Trunk
+
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODcwMjM0MTAsMTY4OTIyODU4XX0=
+eyJoaXN0b3J5IjpbLTY5NDg3NDY3NywxNjg5MjI4NThdfQ==
 -->
