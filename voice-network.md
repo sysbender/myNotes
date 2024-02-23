@@ -121,7 +121,8 @@ supplying power
 	power inline delay shutdown 20 initial 300
 	```
 Voice VLAN
-- 
+- data traffic is untagged
+- voice traffic is tagged
 
 CDP - Cisco Discovery Protocol
 
@@ -132,7 +133,7 @@ CDP - Cisco Discovery Protocol
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgwOTA1NjkzMiwtMTAyOTE4MTEyOSwtMT
-k0NTIyMDUxOCwtNjYwNDE1NjYsMTg4NTkxOTYyNywxNDYyNDg5
-Mjg4LDE2ODkyMjg1OF19
+eyJoaXN0b3J5IjpbLTE4MTQxMDIzMTIsMTgwOTA1NjkzMiwtMT
+AyOTE4MTEyOSwtMTk0NTIyMDUxOCwtNjYwNDE1NjYsMTg4NTkx
+OTYyNywxNDYyNDg5Mjg4LDE2ODkyMjg1OF19
 -->
