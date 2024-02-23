@@ -187,13 +187,16 @@ show ntp status
 
 ### 13 Manual Configuring of CUCM Endpoints
 
-
+CM admin > Device Phone > add new
+type:
+protocol : SCCP, SIP
+MAC ADDR:
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcyMjE2NDM0NCwtMTUwNTkwODMzMywzNj
-E2Mzk2NzddfQ==
+eyJoaXN0b3J5IjpbLTEzNDIwOTEwNTksMTcyMjE2NDM0NCwtMT
+UwNTkwODMzMywzNjE2Mzk2NzddfQ==
 -->
