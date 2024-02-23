@@ -158,12 +158,18 @@ subnet 10.10.200.0
 DHCP pool: 10.10.200.100 -120
 TFTP(CUCM/CUCME)  10.10.210.10
 
+```
+conf t
+ip dhcp excluded-address 10.10.200.1 10.10.200.99
+ip dhcp excluded-address 10.10.200.121 10.10.200.99
+```
+
 
 
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk4MDY1NTc0OCwxODA5MDU2OTMyLC0xMD
-I5MTgxMTI5LC0xOTQ1MjIwNTE4LC02NjA0MTU2NiwxODg1OTE5
-NjI3LDE0NjI0ODkyODgsMTY4OTIyODU4XX0=
+eyJoaXN0b3J5IjpbLTExODMxOTM3MDcsMTgwOTA1NjkzMiwtMT
+AyOTE4MTEyOSwtMTk0NTIyMDUxOCwtNjYwNDE1NjYsMTg4NTkx
+OTYyNywxNDYyNDg5Mjg4LDE2ODkyMjg1OF19
 -->
