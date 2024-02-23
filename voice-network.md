@@ -55,7 +55,9 @@ ISDN PRI(CCS)
 - DID Trunk (Analog)
 	- No Long common
 	- a single audio conversation at one time
-	- 
+	- one pair of copper wires(tip/ring)
+	- uses a wink signal to pass dialed digit information
+	- more like
 	- 
 - ISDN BRI( 2B+D)
 - T1 CAS(24 DSOs)
@@ -68,5 +70,5 @@ ISDN PRI(CCS)
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIyNTExNDg4LDE2ODkyMjg1OF19
+eyJoaXN0b3J5IjpbLTE5NjcwMDQ2NjMsMTY4OTIyODU4XX0=
 -->
