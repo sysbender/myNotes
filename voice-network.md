@@ -81,11 +81,16 @@ ISDN PRI(CCS)
 	- 2 Forms : uLaw (us and Japan), aLaw
 	- 64k uncompressed
 	- 300Hz to 4000Hz
+- G.729 - 
+	- 8kb/s compressed
+- G726 - 32kb/s
+- I
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ2MjQ4OTI4OCwxNjg5MjI4NThdfQ==
+eyJoaXN0b3J5IjpbLTg5NDExNTUwOCwxNDYyNDg5Mjg4LDE2OD
+kyMjg1OF19
 -->
