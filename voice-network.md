@@ -141,7 +141,15 @@ IP Phone Boot Process
 
 ### 8 Switch Port Config for IP Telephony
 
+```
+show vlan
+conf t
+int fa0/10
+switchport voice vlan 20
+switchport access vlan 10
+spanning-tree portfast
 
+```
 
 
 
@@ -149,7 +157,7 @@ IP Phone Boot Process
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNzkzNjkyODAsMTgwOTA1NjkzMiwtMT
-AyOTE4MTEyOSwtMTk0NTIyMDUxOCwtNjYwNDE1NjYsMTg4NTkx
-OTYyNywxNDYyNDg5Mjg4LDE2ODkyMjg1OF19
+eyJoaXN0b3J5IjpbMTAwMzA3MDU0NSwxODA5MDU2OTMyLC0xMD
+I5MTgxMTI5LC0xOTQ1MjIwNTE4LC02NjA0MTU2NiwxODg1OTE5
+NjI3LDE0NjI0ODkyODgsMTY4OTIyODU4XX0=
 -->
