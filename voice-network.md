@@ -193,6 +193,8 @@ CM admin > Device Phone > add new
 - MAC ADDR:
 - Device Pool
 - Phone Button Template
+- Device Security profile
+- 
 - 
 
 
@@ -200,6 +202,6 @@ CM admin > Device Phone > add new
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzY4MjY2NjcsMTcyMjE2NDM0NCwtMTUwNT
-kwODMzMywzNjE2Mzk2NzddfQ==
+eyJoaXN0b3J5IjpbLTEwNjM1NDEzMjQsMTcyMjE2NDM0NCwtMT
+UwNTkwODMzMywzNjE2Mzk2NzddfQ==
 -->
