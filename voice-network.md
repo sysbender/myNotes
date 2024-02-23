@@ -108,7 +108,8 @@ RTCP : RTP Control Protocol
 
 ### 7 Network for UC - switched network design
 supplying power 
-- Inline Power
+- Inline Power (Pre-Standard)
+	- 3500xl switch (cisco 7940, 7960, 7905)
 - PoE/
 - Mid-Span Power(Injectors)
 - Power Bricks
@@ -124,6 +125,6 @@ CDP - Cisco Discovery Protocol
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjExNzUzMTgwNywtNjYwNDE1NjYsMTg4NT
+eyJoaXN0b3J5IjpbMTg5MjAwODI2NSwtNjYwNDE1NjYsMTg4NT
 kxOTYyNywxNDYyNDg5Mjg4LDE2ODkyMjg1OF19
 -->
