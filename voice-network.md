@@ -161,7 +161,13 @@ TFTP(CUCM/CUCME)  10.10.210.10
 ```
 conf t
 ip dhcp excluded-address 10.10.200.1 10.10.200.99
-ip dhcp excluded-address 10.10.200.121 10.10.200.99
+ip dhcp excluded-address 10.10.200.121 10.10.200.254
+ip dhcp pool HQ_PHONES
+network 10.10.2000.0 255.255.255.0
+dns-server 4.2.2.2
+default-router 10.10.200.1
+option 150 
+
 ```
 
 
@@ -169,7 +175,7 @@ ip dhcp excluded-address 10.10.200.121 10.10.200.99
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExODMxOTM3MDcsMTgwOTA1NjkzMiwtMT
-AyOTE4MTEyOSwtMTk0NTIyMDUxOCwtNjYwNDE1NjYsMTg4NTkx
-OTYyNywxNDYyNDg5Mjg4LDE2ODkyMjg1OF19
+eyJoaXN0b3J5IjpbLTgxNzM5NTQ3MywxODA5MDU2OTMyLC0xMD
+I5MTgxMTI5LC0xOTQ1MjIwNTE4LC02NjA0MTU2NiwxODg1OTE5
+NjI3LDE0NjI0ODkyODgsMTY4OTIyODU4XX0=
 -->
