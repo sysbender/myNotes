@@ -63,7 +63,8 @@ ISDN PRI(CCS)
 - ISDN BRI( 2B+D)
 - T1 CAS(24 DSOs)
 	- 193Bits per frame :192Bits + 1 Framing Bit
-	- use ESF(E)
+	- use ESF(Extended Super Frame) , got 4 bit (ABCD) for signaling
+	- supports Loop Start, Ground Start, E&M Signaling
 - ISDN PRI(23B+D) - primary
 - SIP Trunk
 
@@ -73,5 +74,5 @@ ISDN PRI(CCS)
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcxNTY4NzM3OCwxNjg5MjI4NThdfQ==
+eyJoaXN0b3J5IjpbMTA4NzA0NjU5MywxNjg5MjI4NThdfQ==
 -->
