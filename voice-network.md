@@ -93,14 +93,17 @@ Mean Opinion Score -
 analog to digital 
 PVDM2-8/16/32/48/64
 
-RTP and RTCP
+RTP  
 - Real-time Transport Protocol
 - RTP rides on top of UDP
 - add timestamps and sequence number 
-- 
+- manage playback speeds
+RTCP : RTP Control Protocol
+- a performance reporting protocol
+- provides
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjY1ODY4MjI3LC02NjA0MTU2NiwxODg1OT
-E5NjI3LDE0NjI0ODkyODgsMTY4OTIyODU4XX0=
+eyJoaXN0b3J5IjpbLTEzOTQ4NjU3NzIsLTY2MDQxNTY2LDE4OD
+U5MTk2MjcsMTQ2MjQ4OTI4OCwxNjg5MjI4NThdfQ==
 -->
