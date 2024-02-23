@@ -185,6 +185,8 @@ show ntp status
 ```
 ### 11 CUCM GUI
 
+### 13 Manual Configuring of CUCM Endpoints
+
 
 
 
@@ -192,5 +194,6 @@ show ntp status
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MDU5MDgzMzMsMzYxNjM5Njc3XX0=
+eyJoaXN0b3J5IjpbMTcyMjE2NDM0NCwtMTUwNTkwODMzMywzNj
+E2Mzk2NzddfQ==
 -->
