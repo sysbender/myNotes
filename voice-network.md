@@ -109,13 +109,20 @@ RTCP : RTP Control Protocol
 ### 7 Network for UC - switched network design
 supplying power 
 - PoE/Inline Power
-- Mid-Span Power()
+- Mid-Span Power(Injectors)
+- Power Bricks
+
+VLAN
+
+CDP - Cisco Discovery Protocol
+
+
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEzNjM5NjA1OSwtNjYwNDE1NjYsMTg4NT
+eyJoaXN0b3J5IjpbLTMzODU0Nzg0NiwtNjYwNDE1NjYsMTg4NT
 kxOTYyNywxNDYyNDg5Mjg4LDE2ODkyMjg1OF19
 -->
