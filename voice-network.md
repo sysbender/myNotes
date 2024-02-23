@@ -77,12 +77,15 @@ ISDN PRI(CCS)
 	- different codec
 	- 
 ### 5 Audio Codecs
-
+- G.711 
+	- 2 Forms : uLaw (us and Japan), aLaw
+	- 64k uncompressed
+	- 300Hz to 4000Hz
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODk3MTQ0NjI0LDE2ODkyMjg1OF19
+eyJoaXN0b3J5IjpbMTQ2MjQ4OTI4OCwxNjg5MjI4NThdfQ==
 -->
