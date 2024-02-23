@@ -132,7 +132,9 @@ IP Phone Boot Process
 - Cisco IP phone connect to switch
 	- power negotiation 
 - spanning tree unblock
-	- Voice Vlan is learned via CDP
+	- Voice VLAN is learned via CDP
+- Cisco IP phone send DHCP request
+	- 
 
 
 
@@ -141,7 +143,7 @@ IP Phone Boot Process
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjQ5MTU3MTUzLDE4MDkwNTY5MzIsLTEwMj
+eyJoaXN0b3J5IjpbODM5NDQzNDM1LDE4MDkwNTY5MzIsLTEwMj
 kxODExMjksLTE5NDUyMjA1MTgsLTY2MDQxNTY2LDE4ODU5MTk2
 MjcsMTQ2MjQ4OTI4OCwxNjg5MjI4NThdfQ==
 -->
