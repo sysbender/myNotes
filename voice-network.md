@@ -84,13 +84,16 @@ ISDN PRI(CCS)
 - G.729 - 
 	- 8kb/s compressed
 - G726 - 32kb/s
-- I
+- ILBC - Internet Low Bitrate Codec 15.2kb/s
+
+Measuring Voice Quality
+Mean Opinion Score - 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg5NDExNTUwOCwxNDYyNDg5Mjg4LDE2OD
+eyJoaXN0b3J5IjpbMTg4NTkxOTYyNywxNDYyNDg5Mjg4LDE2OD
 kyMjg1OF19
 -->
