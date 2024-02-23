@@ -98,12 +98,17 @@ RTP
 - RTP rides on top of UDP
 - add timestamps and sequence number 
 - manage playback speeds
+
 RTCP : RTP Control Protocol
 - a performance reporting protocol
-- provides
+- provides key metrics on the RTP stream
+	- Packet Count / Delay
+	- Packet Loss
+	- Jitter (Variations in Delay)
+
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzOTQ4NjU3NzIsLTY2MDQxNTY2LDE4OD
-U5MTk2MjcsMTQ2MjQ4OTI4OCwxNjg5MjI4NThdfQ==
+eyJoaXN0b3J5IjpbMTkyNDIxODEyMiwtNjYwNDE1NjYsMTg4NT
+kxOTYyNywxNDYyNDg5Mjg4LDE2ODkyMjg1OF19
 -->
