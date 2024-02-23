@@ -150,6 +150,7 @@ switchport access vlan 10
 spanning-tree portfast
 
 ```
+### 9 DHCP server config
 
 
 
@@ -157,7 +158,7 @@ spanning-tree portfast
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAwMzA3MDU0NSwxODA5MDU2OTMyLC0xMD
+eyJoaXN0b3J5IjpbMjA2MTczMjk3MSwxODA5MDU2OTMyLC0xMD
 I5MTgxMTI5LC0xOTQ1MjIwNTE4LC02NjA0MTU2NiwxODg1OTE5
 NjI3LDE0NjI0ODkyODgsMTY4OTIyODU4XX0=
 -->
