@@ -120,7 +120,8 @@ supplying power
 	switchport mode dynamic desirable
 	power inline delay shutdown 20 initial 300
 	```
-VLAN
+Voice VLAN
+- 
 
 CDP - Cisco Discovery Protocol
 
@@ -131,7 +132,7 @@ CDP - Cisco Discovery Protocol
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMjkxODExMjksLTE5NDUyMjA1MTgsLT
-Y2MDQxNTY2LDE4ODU5MTk2MjcsMTQ2MjQ4OTI4OCwxNjg5MjI4
-NThdfQ==
+eyJoaXN0b3J5IjpbMTgwOTA1NjkzMiwtMTAyOTE4MTEyOSwtMT
+k0NTIyMDUxOCwtNjYwNDE1NjYsMTg4NTkxOTYyNywxNDYyNDg5
+Mjg4LDE2ODkyMjg1OF19
 -->
