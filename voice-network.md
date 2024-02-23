@@ -129,8 +129,10 @@ CDP - Cisco Discovery Protocol
 - LLDP - Link Layer Discovery Protocol
 
 IP Phone Boot Process
-1. Cisco IP phone connect to switch
-	2. power negotiation 
+- Cisco IP phone connect to switch
+	- power negotiation 
+- spanning tree unblock
+	- Voice Vlan is learned via CDP
 
 
 
@@ -139,7 +141,7 @@ IP Phone Boot Process
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDQ3MDI0NDg1LDE4MDkwNTY5MzIsLTEwMj
+eyJoaXN0b3J5IjpbMjQ5MTU3MTUzLDE4MDkwNTY5MzIsLTEwMj
 kxODExMjksLTE5NDUyMjA1MTgsLTY2MDQxNTY2LDE4ODU5MTk2
 MjcsMTQ2MjQ4OTI4OCwxNjg5MjI4NThdfQ==
 -->
