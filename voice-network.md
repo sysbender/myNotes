@@ -139,7 +139,9 @@ IP Phone Boot Process
 - download config file from TFTP server
 - Contact the call processing server specified in the config file
 
-### 8 Switch Port 
+### 8 Switch Port Config for IP Telephony
+
+
 
 
 
@@ -147,7 +149,7 @@ IP Phone Boot Process
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUyMjQwNjU5MiwxODA5MDU2OTMyLC0xMD
-I5MTgxMTI5LC0xOTQ1MjIwNTE4LC02NjA0MTU2NiwxODg1OTE5
-NjI3LDE0NjI0ODkyODgsMTY4OTIyODU4XX0=
+eyJoaXN0b3J5IjpbLTEyNzkzNjkyODAsMTgwOTA1NjkzMiwtMT
+AyOTE4MTEyOSwtMTk0NTIyMDUxOCwtNjYwNDE1NjYsMTg4NTkx
+OTYyNywxNDYyNDg5Mjg4LDE2ODkyMjg1OF19
 -->
