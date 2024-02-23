@@ -179,6 +179,8 @@ stratum
 show clock
 conf t
 ntp server 173.13.85.5
+show ntp association
+show ntp status
 
 ```
 
@@ -187,7 +189,7 @@ ntp server 173.13.85.5
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY4OTM2ODIzMCw0MjE1OTcyNDAsMTgwOT
-A1NjkzMiwtMTAyOTE4MTEyOSwtMTk0NTIyMDUxOCwtNjYwNDE1
-NjYsMTg4NTkxOTYyNywxNDYyNDg5Mjg4LDE2ODkyMjg1OF19
+eyJoaXN0b3J5IjpbMzYxNjM5Njc3LDQyMTU5NzI0MCwxODA5MD
+U2OTMyLC0xMDI5MTgxMTI5LC0xOTQ1MjIwNTE4LC02NjA0MTU2
+NiwxODg1OTE5NjI3LDE0NjI0ODkyODgsMTY4OTIyODU4XX0=
 -->
