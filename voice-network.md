@@ -110,7 +110,9 @@ RTCP : RTP Control Protocol
 supplying power 
 - Inline Power (Pre-Standard)
 	- 3500xl switch (cisco 7940, 7960, 7905)
-- PoE/
+- PoE (Power over Ethernet) 802.3af
+	- Cisco 7941 7961 8945
+	- 
 - Mid-Span Power(Injectors)
 - Power Bricks
 
@@ -125,6 +127,6 @@ CDP - Cisco Discovery Protocol
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg5MjAwODI2NSwtNjYwNDE1NjYsMTg4NT
-kxOTYyNywxNDYyNDg5Mjg4LDE2ODkyMjg1OF19
+eyJoaXN0b3J5IjpbLTE5NDUyMjA1MTgsLTY2MDQxNTY2LDE4OD
+U5MTk2MjcsMTQ2MjQ4OTI4OCwxNjg5MjI4NThdfQ==
 -->
