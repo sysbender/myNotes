@@ -188,15 +188,18 @@ show ntp status
 ### 13 Manual Configuring of CUCM Endpoints
 
 CM admin > Device Phone > add new
-type:
-protocol : SCCP, SIP
-MAC ADDR:
+- type:
+- protocol : SCCP, SIP
+- MAC ADDR:
+- Device Pool
+- Phone Button Template
+- 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNDIwOTEwNTksMTcyMjE2NDM0NCwtMT
-UwNTkwODMzMywzNjE2Mzk2NzddfQ==
+eyJoaXN0b3J5IjpbNzY4MjY2NjcsMTcyMjE2NDM0NCwtMTUwNT
+kwODMzMywzNjE2Mzk2NzddfQ==
 -->
