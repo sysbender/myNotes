@@ -73,6 +73,8 @@ ISDN PRI(CCS)
 	- Europe (E1 , 31+D)
 - SIP Trunking
 	- end to end IP transport
+	- different DTMF
+	- different codec
 	- 
 
 
@@ -81,5 +83,5 @@ ISDN PRI(CCS)
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzOTcyMTg0OCwxNjg5MjI4NThdfQ==
+eyJoaXN0b3J5IjpbMjA1NjIxNTM3NywxNjg5MjI4NThdfQ==
 -->
