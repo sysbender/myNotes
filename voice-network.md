@@ -62,12 +62,14 @@ ISDN PRI(CCS)
 	- 
 - ISDN BRI( 2B+D) - basic rate interface
 	- two audio channel
+	- D 16k
 - T1 CAS(24 DSOs)
 	- 193Bits per frame :192Bits + 1 Framing Bit
 	- use ESF(Extended Super Frame) , got 4 bit (ABCD) for signaling
 	- supports Loop Start, Ground Start, E&M Signaling
 	- support DNIS (), ANI(caller ID)
-- ISDN PRI(23B+D) - primary rate interface
+- ISDN PRI(CCS) - primary rate interface
+	- 23B + D 64K
 - SIP Trunk
 
 
@@ -76,5 +78,5 @@ ISDN PRI(CCS)
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcwNjgwNzI0OCwxNjg5MjI4NThdfQ==
+eyJoaXN0b3J5IjpbLTEyMDY2Nzg0NTQsMTY4OTIyODU4XX0=
 -->
