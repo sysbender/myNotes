@@ -115,7 +115,10 @@ supplying power
 	- 
 - Mid-Span Power(Injectors)
 - Power Bricks
-
+	```
+	show inline
+	
+	```
 VLAN
 
 CDP - Cisco Discovery Protocol
@@ -127,6 +130,7 @@ CDP - Cisco Discovery Protocol
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NDUyMjA1MTgsLTY2MDQxNTY2LDE4OD
-U5MTk2MjcsMTQ2MjQ4OTI4OCwxNjg5MjI4NThdfQ==
+eyJoaXN0b3J5IjpbLTEyMzk2ODUwODgsLTE5NDUyMjA1MTgsLT
+Y2MDQxNTY2LDE4ODU5MTk2MjcsMTQ2MjQ4OTI4OCwxNjg5MjI4
+NThdfQ==
 -->
