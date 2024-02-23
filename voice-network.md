@@ -125,6 +125,7 @@ Voice VLAN
 - voice traffic is tagged
 
 CDP - Cisco Discovery Protocol
+- to discover
 
 
 
@@ -133,7 +134,7 @@ CDP - Cisco Discovery Protocol
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MTQxMDIzMTIsMTgwOTA1NjkzMiwtMT
-AyOTE4MTEyOSwtMTk0NTIyMDUxOCwtNjYwNDE1NjYsMTg4NTkx
-OTYyNywxNDYyNDg5Mjg4LDE2ODkyMjg1OF19
+eyJoaXN0b3J5IjpbMjM0NzE1NTM5LDE4MDkwNTY5MzIsLTEwMj
+kxODExMjksLTE5NDUyMjA1MTgsLTY2MDQxNTY2LDE4ODU5MTk2
+MjcsMTQ2MjQ4OTI4OCwxNjg5MjI4NThdfQ==
 -->
