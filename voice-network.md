@@ -125,7 +125,12 @@ Voice VLAN
 - voice traffic is tagged
 
 CDP - Cisco Discovery Protocol
-- to discover
+- to discover the voice vlan to be used
+- LLDP - Link Layer Discovery Protocol
+
+IP Phone Boot Process
+1. Cisco IP phone connect to switch
+	2. power negotiation 
 
 
 
@@ -134,7 +139,7 @@ CDP - Cisco Discovery Protocol
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjM0NzE1NTM5LDE4MDkwNTY5MzIsLTEwMj
+eyJoaXN0b3J5IjpbNDQ3MDI0NDg1LDE4MDkwNTY5MzIsLTEwMj
 kxODExMjksLTE5NDUyMjA1MTgsLTY2MDQxNTY2LDE4ODU5MTk2
 MjcsMTQ2MjQ4OTI4OCwxNjg5MjI4NThdfQ==
 -->
