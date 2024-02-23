@@ -168,7 +168,9 @@ network 10.10.2000.0 255.255.255.0
 dns-server 4.2.2.2
 default-router 10.10.200.1
 option 150 ip 10.10.210.10
-
+#
+show ip dhcp binding
+debug ip dhcp server events
 
 ```
 
@@ -177,7 +179,7 @@ option 150 ip 10.10.210.10
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTcxNzQ0NzIsMTgwOTA1NjkzMiwtMT
-AyOTE4MTEyOSwtMTk0NTIyMDUxOCwtNjYwNDE1NjYsMTg4NTkx
-OTYyNywxNDYyNDg5Mjg4LDE2ODkyMjg1OF19
+eyJoaXN0b3J5IjpbNDIxNTk3MjQwLDE4MDkwNTY5MzIsLTEwMj
+kxODExMjksLTE5NDUyMjA1MTgsLTY2MDQxNTY2LDE4ODU5MTk2
+MjcsMTQ2MjQ4OTI4OCwxNjg5MjI4NThdfQ==
 -->
