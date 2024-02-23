@@ -90,11 +90,12 @@ Measuring Voice Quality
 Mean Opinion Score - 
 
 ### 6 DSP - Digital Signal Processing
-anlog to digital 
+analog to digital 
+PVDM2 
 
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMTIxNzEyOTMsMTg4NTkxOTYyNywxND
-YyNDg5Mjg4LDE2ODkyMjg1OF19
+eyJoaXN0b3J5IjpbMTU1MzkxMTA4OSwxODg1OTE5NjI3LDE0Nj
+I0ODkyODgsMTY4OTIyODU4XX0=
 -->
