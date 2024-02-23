@@ -25,6 +25,7 @@ CAS - Channel Associated Signaling
 - steals bits from the voice channel
 - the 8th bit on every 6th sample
 - 24 voice channel
+- also called RBS(Robbed B)
 
 CCS - Common Channel Signaling
 ISDN PRI(CCS) 
@@ -57,7 +58,7 @@ ISDN PRI(CCS)
 	- a single audio conversation at one time
 	- one pair of copper wires(tip/ring)
 	- uses a wink signal to pass dialed digit information
-	- more like
+	- more like FXS connection (to router) than FXO connection
 	- 
 - ISDN BRI( 2B+D)
 - T1 CAS(24 DSOs)
@@ -70,5 +71,5 @@ ISDN PRI(CCS)
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NjcwMDQ2NjMsMTY4OTIyODU4XX0=
+eyJoaXN0b3J5IjpbLTg4MzIyOTUwNiwxNjg5MjI4NThdfQ==
 -->
