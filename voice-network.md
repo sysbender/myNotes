@@ -76,12 +76,13 @@ ISDN PRI(CCS)
 	- different DTMF
 	- different codec
 	- 
-### 5 Au
+### 5 Audio Codecs
+
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTQ0NDYzMjIxLDE2ODkyMjg1OF19
+eyJoaXN0b3J5IjpbODk3MTQ0NjI0LDE2ODkyMjg1OF19
 -->
