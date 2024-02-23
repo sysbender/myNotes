@@ -136,7 +136,8 @@ IP Phone Boot Process
 - Cisco IP phone send DHCP request
 	- get DHCP Address with options
 		- Options 150 : TFTP boot server (UMUC server)
-	- down
+- download config file from TFTP server
+- Contact the call processing server specified in the config file
 
 
 
@@ -145,7 +146,7 @@ IP Phone Boot Process
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzc0ODc3MDQxLDE4MDkwNTY5MzIsLTEwMj
-kxODExMjksLTE5NDUyMjA1MTgsLTY2MDQxNTY2LDE4ODU5MTk2
-MjcsMTQ2MjQ4OTI4OCwxNjg5MjI4NThdfQ==
+eyJoaXN0b3J5IjpbLTIwMDM3NTQ5MzQsMTgwOTA1NjkzMiwtMT
+AyOTE4MTEyOSwtMTk0NTIyMDUxOCwtNjYwNDE1NjYsMTg4NTkx
+OTYyNywxNDYyNDg5Mjg4LDE2ODkyMjg1OF19
 -->
