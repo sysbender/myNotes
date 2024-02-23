@@ -70,8 +70,10 @@ ISDN PRI(CCS)
 	- support DNIS (), ANI(caller ID)
 - ISDN PRI(CCS) - primary rate interface
 	- 23B + D 64K
-	- Europe (E1 , 31+)
-- SIP Trunk
+	- Europe (E1 , 31+D)
+- SIP Trunking
+	- end to end IP transport
+	- 
 
 
 
@@ -79,5 +81,5 @@ ISDN PRI(CCS)
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUxMTQzMjI1LDE2ODkyMjg1OF19
+eyJoaXN0b3J5IjpbLTEzOTcyMTg0OCwxNjg5MjI4NThdfQ==
 -->
