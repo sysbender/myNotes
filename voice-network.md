@@ -25,7 +25,7 @@ CAS - Channel Associated Signaling
 - steals bits from the voice channel
 - the 8th bit on every 6th sample
 - 24 voice channel
-- also called RBS(Robbed B)
+- also called RBS(Robbed Bit Signaling)
 
 CCS - Common Channel Signaling
 ISDN PRI(CCS) 
@@ -62,6 +62,8 @@ ISDN PRI(CCS)
 	- 
 - ISDN BRI( 2B+D)
 - T1 CAS(24 DSOs)
+	- 193Bits per frame :192Bits + 1 Framing Bit
+	- use ESF(E)
 - ISDN PRI(23B+D) - primary
 - SIP Trunk
 
@@ -71,5 +73,5 @@ ISDN PRI(CCS)
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg4MzIyOTUwNiwxNjg5MjI4NThdfQ==
+eyJoaXN0b3J5IjpbLTcxNTY4NzM3OCwxNjg5MjI4NThdfQ==
 -->
