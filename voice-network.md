@@ -53,6 +53,10 @@ ISDN PRI(CCS)
 	- Loop Start/ Ground Start
 	- pair of copper wires (tip/ring)
 - DID Trunk (Analog)
+	- No Long common
+	- a single audio conversation at one time
+	- 
+	- 
 - ISDN BRI( 2B+D)
 - T1 CAS(24 DSOs)
 - ISDN PRI(23B+D) - primary
@@ -64,5 +68,5 @@ ISDN PRI(CCS)
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzE5OTYyODgyLDE2ODkyMjg1OF19
+eyJoaXN0b3J5IjpbLTIyNTExNDg4LDE2ODkyMjg1OF19
 -->
