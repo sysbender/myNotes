@@ -48,8 +48,13 @@ charts
 * deployment
 * service
 * secret
+```shell
+kubectl apply -f deployment.yaml
+kubectl apply -f service.yaml
+kubectl apply -f secret.yaml
+```
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk5ODI0MTgzMl19
+eyJoaXN0b3J5IjpbMTQyMDU4MDQzMCwtOTk4MjQxODMyXX0=
 -->
