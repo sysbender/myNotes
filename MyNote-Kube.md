@@ -40,3 +40,6 @@ kubectl get <resources> -o yaml > myresource.yaml
  * get pods
  * get pods <podname> -o yaml
  *  delete pods mypod
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMzQ1NzAyMTIyXX0=
+-->
