@@ -52,9 +52,11 @@ charts
 kubectl apply -f deployment.yaml
 kubectl apply -f service.yaml
 kubectl apply -f secret.yaml
+# heml
+
 ```
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyMDU4MDQzMCwtOTk4MjQxODMyXX0=
+eyJoaXN0b3J5IjpbLTE4OTI4NTkzNDksLTk5ODI0MTgzMl19
 -->
