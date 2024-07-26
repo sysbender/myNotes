@@ -52,11 +52,12 @@ charts
 kubectl apply -f deployment.yaml
 kubectl apply -f service.yaml
 kubectl apply -f secret.yaml
-# heml
+# helm
+helm install -name mychart ./mychart
 
 ```
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4OTI4NTkzNDksLTk5ODI0MTgzMl19
+eyJoaXN0b3J5IjpbLTU5MzU1MzQyMSwtOTk4MjQxODMyXX0=
 -->
