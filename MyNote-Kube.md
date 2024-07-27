@@ -76,9 +76,13 @@ helm repo add bitnami
 choco install kubernetes-helm
 
 ```
+## example
+```
+helm repo add bitnami https://charts.bitnami.com/bitnami
 
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg1MzkzNjc5MSwtMzc0MTg3NDUyLDE0Nj
-g1MjkzMTEsLTExNDc0MzY5MzQsLTU5MzU1MzQyMSwtOTk4MjQx
-ODMyXX0=
+eyJoaXN0b3J5IjpbMTcwNTYwMjY5MiwtODUzOTM2NzkxLC0zNz
+QxODc0NTIsMTQ2ODUyOTMxMSwtMTE0NzQzNjkzNCwtNTkzNTUz
+NDIxLC05OTgyNDE4MzJdfQ==
 -->
