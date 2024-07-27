@@ -74,6 +74,9 @@ helm repo add bitnami
 ```shell
 
 choco install kubernetes-helm
+# reinstall minikube
+minikube delete && minikube start --memory 4096
+
 
 ```
 ## example
@@ -89,8 +92,8 @@ stateful sets - give pod garantee name, rather than
 
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE5MzEzNzQ1NSwtMTk1NTIzNTc3LDg4OD
-A0MTY4Miw3NDYxMzczMzUsLTg1MzkzNjc5MSwtMzc0MTg3NDUy
-LDE0Njg1MjkzMTEsLTExNDc0MzY5MzQsLTU5MzU1MzQyMSwtOT
-k4MjQxODMyXX0=
+eyJoaXN0b3J5IjpbMTE3NzE1MDc2NywxMTkzMTM3NDU1LC0xOT
+U1MjM1NzcsODg4MDQxNjgyLDc0NjEzNzMzNSwtODUzOTM2Nzkx
+LC0zNzQxODc0NTIsMTQ2ODUyOTMxMSwtMTE0NzQzNjkzNCwtNT
+kzNTUzNDIxLC05OTgyNDE4MzJdfQ==
 -->
