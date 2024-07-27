@@ -94,10 +94,17 @@ stateful sets - give pod garantee name, rather than
  ```
 ```bash
 helm repo add prom https://prometheus-community.github.io/helm-charts
+helm repo list
+helm repo update
+
+```bash
+helm install monitoring prom/kube-prometheus-stack
+```
+
 ```
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYwNzU3ODA3NSwxMTc3MTUwNzY3LDExOT
+eyJoaXN0b3J5IjpbLTIyMjgxMjgyMSwxMTc3MTUwNzY3LDExOT
 MxMzc0NTUsLTE5NTUyMzU3Nyw4ODgwNDE2ODIsNzQ2MTM3MzM1
 LC04NTM5MzY3OTEsLTM3NDE4NzQ1MiwxNDY4NTI5MzExLC0xMT
 Q3NDM2OTM0LC01OTM1NTM0MjEsLTk5ODI0MTgzMl19
