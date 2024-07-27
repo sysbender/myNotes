@@ -55,13 +55,15 @@ kubectl apply -f secret.yaml
 # helm
 helm install -name mychart ./mychart
 
+```
 artifacthub.io
 
-
+```
+helm repo add bitnami 
 ```
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNDc0MzY5MzQsLTU5MzU1MzQyMSwtOT
-k4MjQxODMyXX0=
+eyJoaXN0b3J5IjpbMTQ2ODUyOTMxMSwtMTE0NzQzNjkzNCwtNT
+kzNTUzNDIxLC05OTgyNDE4MzJdfQ==
 -->
