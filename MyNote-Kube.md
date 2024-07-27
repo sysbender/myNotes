@@ -43,6 +43,7 @@ kubectl get <resources> -o yaml > myresource.yaml
 
 
 # helm
+a Helm chart is a collection of files that describe the necessary **resources**, **dependencies**, and **configuration options** for an application.
 
 charts
 * deployment
@@ -58,12 +59,14 @@ helm install -name mychart ./mychart
 ```
 artifacthub.io
 
+
+
 ```
 helm repo add bitnami 
 ```
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ2ODUyOTMxMSwtMTE0NzQzNjkzNCwtNT
-kzNTUzNDIxLC05OTgyNDE4MzJdfQ==
+eyJoaXN0b3J5IjpbLTUxMjYyNTAwMCwxNDY4NTI5MzExLC0xMT
+Q3NDM2OTM0LC01OTM1NTM0MjEsLTk5ODI0MTgzMl19
 -->
