@@ -79,10 +79,10 @@ choco install kubernetes-helm
 ## example
 ```
 helm repo add bitnami https://charts.bitnami.com/bitnami
-
+helm install mysql bitnami/mysql
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcwNTYwMjY5MiwtODUzOTM2NzkxLC0zNz
-QxODc0NTIsMTQ2ODUyOTMxMSwtMTE0NzQzNjkzNCwtNTkzNTUz
-NDIxLC05OTgyNDE4MzJdfQ==
+eyJoaXN0b3J5IjpbODUwODUyMTEwLC04NTM5MzY3OTEsLTM3ND
+E4NzQ1MiwxNDY4NTI5MzExLC0xMTQ3NDM2OTM0LC01OTM1NTM0
+MjEsLTk5ODI0MTgzMl19
 -->
