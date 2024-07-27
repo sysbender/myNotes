@@ -55,9 +55,13 @@ kubectl apply -f secret.yaml
 # helm
 helm install -name mychart ./mychart
 
+artifacthub.io
+
+
 ```
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU5MzU1MzQyMSwtOTk4MjQxODMyXX0=
+eyJoaXN0b3J5IjpbLTExNDc0MzY5MzQsLTU5MzU1MzQyMSwtOT
+k4MjQxODMyXX0=
 -->
