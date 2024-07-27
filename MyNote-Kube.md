@@ -82,43 +82,15 @@ helm repo add bitnami https://charts.bitnami.com/bitnami
 helm install mysql bitnami/mysql
 
 kubectl get pods --all-namespaces
+helm list
+helm uninstall mysql 
 ```
 stateful sets - give pod garantee name, rather than 
 
-```
- kubectl get pods -w --namespace default
-
-Services:
-
-  echo Primary: mysql.default.svc.cluster.local:3306
-
-Execute the following to get the administrator credentials:
-
-  echo Username: root
-  MYSQL_ROOT_PASSWORD=$(kubectl get secret --namespace default mysql -o jsonpath="{.data.mysql-root-password}" | base64 -d)
-
-To connect to your database:
-
-  1. Run a pod that you can use as a client:
-
-      kubectl run mysql-client --rm --tty -i --restart='Never' --image  docker.io/bitnami/mysql:8.4.2-debian-12-r2 --namespace default --env MYSQL_ROOT_PASSWORD=$MYSQL_ROOT_PASSWORD --command -- bash
-
-  2. To connect to primary service (read/write):
-
-      mysql -h mysql.default.svc.cluster.local -uroot -p"$MYSQL_ROOT_PASSWORD"
-
-
-
-
-
-
-WARNING: There are "resources" sections in the chart not set. Using "resourcesPreset" is not recommended for production. For production installations, please set the following values according to your workload needs:
-  - primary.resources
-  - secondary.resources
-+info https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/
-```
+ 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NTUyMzU3Nyw4ODgwNDE2ODIsNzQ2MT
-M3MzM1LC04NTM5MzY3OTEsLTM3NDE4NzQ1MiwxNDY4NTI5MzEx
-LC0xMTQ3NDM2OTM0LC01OTM1NTM0MjEsLTk5ODI0MTgzMl19
+eyJoaXN0b3J5IjpbMTE5MzEzNzQ1NSwtMTk1NTIzNTc3LDg4OD
+A0MTY4Miw3NDYxMzczMzUsLTg1MzkzNjc5MSwtMzc0MTg3NDUy
+LDE0Njg1MjkzMTEsLTExNDc0MzY5MzQsLTU5MzU1MzQyMSwtOT
+k4MjQxODMyXX0=
 -->
