@@ -90,10 +90,15 @@ helm uninstall mysql
 ```
 stateful sets - give pod garantee name, rather than 
 
- 
+ ## prom
+ ```
+```bash
+helm repo add prom https://prometheus-community.github.io/helm-charts
+```
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE3NzE1MDc2NywxMTkzMTM3NDU1LC0xOT
-U1MjM1NzcsODg4MDQxNjgyLDc0NjEzNzMzNSwtODUzOTM2Nzkx
-LC0zNzQxODc0NTIsMTQ2ODUyOTMxMSwtMTE0NzQzNjkzNCwtNT
-kzNTUzNDIxLC05OTgyNDE4MzJdfQ==
+eyJoaXN0b3J5IjpbLTYwNzU3ODA3NSwxMTc3MTUwNzY3LDExOT
+MxMzc0NTUsLTE5NTUyMzU3Nyw4ODgwNDE2ODIsNzQ2MTM3MzM1
+LC04NTM5MzY3OTEsLTM3NDE4NzQ1MiwxNDY4NTI5MzExLC0xMT
+Q3NDM2OTM0LC01OTM1NTM0MjEsLTk5ODI0MTgzMl19
 -->
