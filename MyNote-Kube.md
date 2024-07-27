@@ -80,6 +80,8 @@ choco install kubernetes-helm
 ```
 helm repo add bitnami https://charts.bitnami.com/bitnami
 helm install mysql bitnami/mysql
+
+kubectl get pods --all-namespaces
 ```
 
 ```
@@ -130,7 +132,7 @@ WARNING: There are "resources" sections in the chart not set. Using "resourcesPr
 +info https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzQ2MTM3MzM1LC04NTM5MzY3OTEsLTM3ND
-E4NzQ1MiwxNDY4NTI5MzExLC0xMTQ3NDM2OTM0LC01OTM1NTM0
-MjEsLTk5ODI0MTgzMl19
+eyJoaXN0b3J5IjpbOTM2ODgxMzIxLDc0NjEzNzMzNSwtODUzOT
+M2NzkxLC0zNzQxODc0NTIsMTQ2ODUyOTMxMSwtMTE0NzQzNjkz
+NCwtNTkzNTUzNDIxLC05OTgyNDE4MzJdfQ==
 -->
