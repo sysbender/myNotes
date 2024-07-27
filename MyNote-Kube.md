@@ -83,6 +83,7 @@ helm install mysql bitnami/mysql
 
 kubectl get pods --all-namespaces
 ```
+stateful sets - give pod garantee name, rather than 
 
 ```
  kubectl get pods -w --namespace default
@@ -117,7 +118,7 @@ WARNING: There are "resources" sections in the chart not set. Using "resourcesPr
 +info https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODg4MDQxNjgyLDc0NjEzNzMzNSwtODUzOT
-M2NzkxLC0zNzQxODc0NTIsMTQ2ODUyOTMxMSwtMTE0NzQzNjkz
-NCwtNTkzNTUzNDIxLC05OTgyNDE4MzJdfQ==
+eyJoaXN0b3J5IjpbLTE5NTUyMzU3Nyw4ODgwNDE2ODIsNzQ2MT
+M3MzM1LC04NTM5MzY3OTEsLTM3NDE4NzQ1MiwxNDY4NTI5MzEx
+LC0xMTQ3NDM2OTM0LC01OTM1NTM0MjEsLTk5ODI0MTgzMl19
 -->
