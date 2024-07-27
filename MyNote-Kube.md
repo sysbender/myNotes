@@ -115,12 +115,12 @@ kubectl edit svc monitoring-grafana
     app.kubernetes.io/instance: monitoring
     app.kubernetes.io/name: grafana
   sessionAffinity: None
-  type: NodePort  # change from clusterIP
+  type: NodePort  # change from ClusterPort
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg2MjEzMjI5NSwtNzEwMTkyNjUyLC0yMj
-I4MTI4MjEsMTE3NzE1MDc2NywxMTkzMTM3NDU1LC0xOTU1MjM1
-NzcsODg4MDQxNjgyLDc0NjEzNzMzNSwtODUzOTM2NzkxLC0zNz
-QxODc0NTIsMTQ2ODUyOTMxMSwtMTE0NzQzNjkzNCwtNTkzNTUz
-NDIxLC05OTgyNDE4MzJdfQ==
+eyJoaXN0b3J5IjpbNzU4NDQ2MzU1LC03MTAxOTI2NTIsLTIyMj
+gxMjgyMSwxMTc3MTUwNzY3LDExOTMxMzc0NTUsLTE5NTUyMzU3
+Nyw4ODgwNDE2ODIsNzQ2MTM3MzM1LC04NTM5MzY3OTEsLTM3ND
+E4NzQ1MiwxNDY4NTI5MzExLC0xMTQ3NDM2OTM0LC01OTM1NTM0
+MjEsLTk5ODI0MTgzMl19
 -->
