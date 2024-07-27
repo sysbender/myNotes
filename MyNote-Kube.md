@@ -46,6 +46,9 @@ kubectl get <resources> -o yaml > myresource.yaml
 a Helm chart is a collection of files that describe the necessary **resources**, **dependencies**, and **configuration options** for an application.
 
 Helm charts package all the required Kubernetes resources, such as deployments, services, and configmaps, into a single package.
+* package
+* template
+* dependency
 
 charts
 * deployment
@@ -69,6 +72,6 @@ helm repo add bitnami
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMwMzA1NDkwOSwxNDY4NTI5MzExLC0xMT
+eyJoaXN0b3J5IjpbLTM3NDE4NzQ1MiwxNDY4NTI5MzExLC0xMT
 Q3NDM2OTM0LC01OTM1NTM0MjEsLTk5ODI0MTgzMl19
 -->
