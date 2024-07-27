@@ -103,6 +103,7 @@ helm list
 kubectl --namespace default get pods -l "release=monitoring"
 
 kubectl edit svc monitoring-grafana
+minikube ip  # find ip of minikube node
 ```
 
 ```
@@ -118,9 +119,9 @@ kubectl edit svc monitoring-grafana
   type: NodePort  # change from ClusterPort
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzU4NDQ2MzU1LC03MTAxOTI2NTIsLTIyMj
-gxMjgyMSwxMTc3MTUwNzY3LDExOTMxMzc0NTUsLTE5NTUyMzU3
-Nyw4ODgwNDE2ODIsNzQ2MTM3MzM1LC04NTM5MzY3OTEsLTM3ND
-E4NzQ1MiwxNDY4NTI5MzExLC0xMTQ3NDM2OTM0LC01OTM1NTM0
-MjEsLTk5ODI0MTgzMl19
+eyJoaXN0b3J5IjpbMjY1MjQ4Mzk2LDc1ODQ0NjM1NSwtNzEwMT
+kyNjUyLC0yMjI4MTI4MjEsMTE3NzE1MDc2NywxMTkzMTM3NDU1
+LC0xOTU1MjM1NzcsODg4MDQxNjgyLDc0NjEzNzMzNSwtODUzOT
+M2NzkxLC0zNzQxODc0NTIsMTQ2ODUyOTMxMSwtMTE0NzQzNjkz
+NCwtNTkzNTUzNDIxLC05OTgyNDE4MzJdfQ==
 -->
