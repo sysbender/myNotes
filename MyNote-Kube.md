@@ -85,22 +85,7 @@ kubectl get pods --all-namespaces
 ```
 
 ```
-NAME: mysql
-LAST DEPLOYED: Sat Jul 27 08:07:45 2024
-NAMESPACE: default
-STATUS: deployed
-REVISION: 1
-TEST SUITE: None
-NOTES:
-CHART NAME: mysql
-CHART VERSION: 11.1.14
-APP VERSION: 8.4.2
-
-** Please be patient while the chart is being deployed **
-
-Tip:
-
-  Watch the deployment status using the command: kubectl get pods -w --namespace default
+ kubectl get pods -w --namespace default
 
 Services:
 
@@ -132,7 +117,7 @@ WARNING: There are "resources" sections in the chart not set. Using "resourcesPr
 +info https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTM2ODgxMzIxLDc0NjEzNzMzNSwtODUzOT
+eyJoaXN0b3J5IjpbODg4MDQxNjgyLDc0NjEzNzMzNSwtODUzOT
 M2NzkxLC0zNzQxODc0NTIsMTQ2ODUyOTMxMSwtMTE0NzQzNjkz
 NCwtNTkzNTUzNDIxLC05OTgyNDE4MzJdfQ==
 -->
