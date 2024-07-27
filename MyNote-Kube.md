@@ -99,13 +99,17 @@ helm repo update
 
 ```bash
 helm install monitoring prom/kube-prometheus-stack
+helm list
+kubectl --namespace default get pods -l "release=monitoring"
+
 ```
 
 ```
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIyMjgxMjgyMSwxMTc3MTUwNzY3LDExOT
-MxMzc0NTUsLTE5NTUyMzU3Nyw4ODgwNDE2ODIsNzQ2MTM3MzM1
-LC04NTM5MzY3OTEsLTM3NDE4NzQ1MiwxNDY4NTI5MzExLC0xMT
-Q3NDM2OTM0LC01OTM1NTM0MjEsLTk5ODI0MTgzMl19
+eyJoaXN0b3J5IjpbLTcxMDE5MjY1MiwtMjIyODEyODIxLDExNz
+cxNTA3NjcsMTE5MzEzNzQ1NSwtMTk1NTIzNTc3LDg4ODA0MTY4
+Miw3NDYxMzczMzUsLTg1MzkzNjc5MSwtMzc0MTg3NDUyLDE0Nj
+g1MjkzMTEsLTExNDc0MzY5MzQsLTU5MzU1MzQyMSwtOTk4MjQx
+ODMyXX0=
 -->
