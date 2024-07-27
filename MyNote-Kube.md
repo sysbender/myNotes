@@ -102,14 +102,25 @@ helm install monitoring prom/kube-prometheus-stack
 helm list
 kubectl --namespace default get pods -l "release=monitoring"
 
+kubectl edit svc monitoring-grafana
 ```
 
 ```
+  - name: http-web
+    port: 80
+    protocol: TCP
+    targetPort: 3000
+    nodePort: 30001  # new
+  selector:
+    app.kubernetes.io/instance: monitoring
+    app.kubernetes.io/name: grafana
+  sessionAffinity: None
+  type: NodePort  # change from clusterIP
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcxMDE5MjY1MiwtMjIyODEyODIxLDExNz
-cxNTA3NjcsMTE5MzEzNzQ1NSwtMTk1NTIzNTc3LDg4ODA0MTY4
-Miw3NDYxMzczMzUsLTg1MzkzNjc5MSwtMzc0MTg3NDUyLDE0Nj
-g1MjkzMTEsLTExNDc0MzY5MzQsLTU5MzU1MzQyMSwtOTk4MjQx
-ODMyXX0=
+eyJoaXN0b3J5IjpbLTg2MjEzMjI5NSwtNzEwMTkyNjUyLC0yMj
+I4MTI4MjEsMTE3NzE1MDc2NywxMTkzMTM3NDU1LC0xOTU1MjM1
+NzcsODg4MDQxNjgyLDc0NjEzNzMzNSwtODUzOTM2NzkxLC0zNz
+QxODc0NTIsMTQ2ODUyOTMxMSwtMTE0NzQzNjkzNCwtNTkzNTUz
+NDIxLC05OTgyNDE4MzJdfQ==
 -->
