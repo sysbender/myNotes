@@ -1,3 +1,0 @@
-MyNote-UnrealMaterial
-
-

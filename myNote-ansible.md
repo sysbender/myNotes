@@ -1,13 +1,14 @@
-
 # myNote-ansible
 
-# 1. install Ansible
+## myNote-ansible
 
-1.  enable wsl on windows 10
-2.  install centos (download centos 7), create user, add to wheel (sudoers), groupinstall desktop
-3.  install python3
-4.  install ansible as a normal user
-5.  try ansible
+## 1. install Ansible
+
+1. enable wsl on windows 10
+2. install centos (download centos 7), create user, add to wheel (sudoers), groupinstall desktop
+3. install python3
+4. install ansible as a normal user
+5. try ansible
 
 ```
 # create inventory file , ssh access through key
@@ -18,179 +19,185 @@ ip or hostname
 
 pip3 install ansible
 
-## config
+### config
 
-configheck current config  
-`` `ansible --version``
+configheck current config\
+`` `ansible --version ``
 
-`
+\`
 
 config file priority:
 
--   `export ANSIBLE_CONFIG=/tmp/myansible.cfg`
--   `./ansible.cfg`
--   `~/.ansible.cfg`
--   `/etc/ansible/ansible.cfg`
+* `export ANSIBLE_CONFIG=/tmp/myansible.cfg`
+* `./ansible.cfg`
+* `~/.ansible.cfg`
+* `/etc/ansible/ansible.cfg`
 
+### inventory
 
-## inventory
-inventory file can be in different format : 
-- hosts : default ini
-- hosts.yml : yml
-- hosts.json : json
-override the inventory file in the ansible.cfg from command line
-`ansible -i hosts`
-override variable
-`ansible -e 'ansible_port=2222'`
+inventory file can be in different format :
 
+* hosts : default ini
+* hosts.yml : yml
+* hosts.json : json override the inventory file in the ansible.cfg from command line `ansible -i hosts` override variable `ansible -e 'ansible_port=2222'`
+*   ansible inventory
 
-- ansible inventory
-	```shell
-	# from command
-	ANSIBLE_HOST_KEY_CHECKING=False ansible all -m ping
-	# in cfg
-	host_key_checking = False
-	# list hosts in group
-	ansible centos --list-hosts
-	```
-- connect via root
-	```
-	centos1 ansible_user=root ansible_port=2222
-	ansible all -m command -a 'id' -o
-	```
-- connect via sudo
-		`ubuntu1 ansible_become=true ansible_become_pass=password`
-- hostvars
-	```
-	[centos]
-	centos[1:3]
-	[centos:vars]
-	ansible_user=root
-	```
-- inventory range
-	`ubuntu[1:3`
-- group vars
-- inventory children groups
-	```
-	[linux:children]
-	centos
-	ubuntu
-	```
-## modules
+    ```shell
+    # from command
+    ANSIBLE_HOST_KEY_CHECKING=False ansible all -m ping
+    # in cfg
+    host_key_checking = False
+    # list hosts in group
+    ansible centos --list-hosts
+    ```
+*   connect via root
 
-- setup module - collect facts
-	- automatically execute
-	- reference as `setup` or `ansible.builtin.setup`
-	- `ansible centos1 -m setup`
-- file module
-	- `ansible all -m file -a 'path=/tmp/test state=touch'`
-	- `ansible all -m file -a 'path=/tmp/test state=file mode=600'`
-- copy module
-	`ansible all -m copy -a 'remote_src=yes src=/tmp/test dest=/tmp/test1'`
-- command module - default module
-	`ansible all -a 'hostname' -o`
-- 
+    ```
+    centos1 ansible_user=root ansible_port=2222
+    ansible all -m command -a 'id' -o
+    ```
+* connect via sudo `ubuntu1 ansible_become=true ansible_become_pass=password`
+*   hostvars
 
-- color notation used during Ansible execution
-	-  Red - failure
-	- Yellow : success with changes
-	- Green: success no changes
-- idempotence
-	- results are the same repeat an operation many times
-- ansible-doc
-	`ansible-doc file`
+    ```
+    [centos]
+    centos[1:3]
+    [centos:vars]
+    ansible_user=root
+    ```
+* inventory range `ubuntu[1:3`
+* group vars
+*   inventory children groups
 
-## playbook
-- YAML
-	- structure
-	- indentation
-	- quotes :
-		- no quote, single/double quote
-		- use quote when there is escape `\n` 
-	- multiline value 
-		- `|` multiple line
-		- `>` one line ends with new line
-		- `>-`  remove ending new line
-	- boolean
-		- True : `True, yes, on`
-		- False: `False, no, off`
-	- list and dictionary - can yaml format or python format
-	- list  `[item1, item2]` 
-		```yaml
-		- item1
-		- item2
-	```
-	- dictionary `{key1: value1, key2: value2}`
-	```
-		key1: value1
-		key2: value2
-		```
-		 
-		
-- playbook sections
-	- common sections
-		- begin `---`
-		- play
-		- hosts
-		- vars
-		- tasks
-		- handlers
-		- roles
-		- end `...` 
-	- 'message of the day' playbook
-	```
-	---
-	-
-	   #hosts
-	   hosts: centos
-	   user: root
-	   gather_facts: False
-	   vars:
-	     motd: "Welcome to Ansible\n"
-	   tasks:
-	     - name: configure a MOTD
-	       copy:
-	         content: "{{ motd }}"
-	         dest: /etc/motd	
-	       notify: MOTD changed
-	     handlers:
-	       - name: MOTD changed  
-	         debug:
-	           msg: The MOTD was changed
-	...
-	```
-	- use variable
-	- override variable from command line
-	- use handlers for post task execution
-		- defined as task
-		- add notify key to task
-	- when directive
-	- 
-- playbook variables
-- playbook facts
-- Jinja2 template
-- playbook creating and execute
-# 2. Ansible for the Windows Admin by Jeremy Murrah
+    ```
+    [linux:children]
+    centos
+    ubuntu
+    ```
 
-## Terminology
+### modules
 
--   task
-play = task + hosts-   playbook = plays
--   hosts/inventory = machines
--   vars/facts = variables - stored in a file or retrieved from a hostli>
--   * list - in json/yaml, array in powershell
--   dictionary - in json/yamal = hashtable in powershell
+* setup module - collect facts
+  * automatically execute
+  * reference as `setup` or `ansible.builtin.setup`
+  * `ansible centos1 -m setup`
+* file module
+  * `ansible all -m file -a 'path=/tmp/test state=touch'`
+  * `ansible all -m file -a 'path=/tmp/test state=file mode=600'`
+* copy module `ansible all -m copy -a 'remote_src=yes src=/tmp/test dest=/tmp/test1'`
+* command module - default module `ansible all -a 'hostname' -o`
+*
+* color notation used during Ansible execution
+  * Red - failure
+  * Yellow : success with changes
+  * Green: success no changes
+* idempotence
+  * results are the same repeat an operation many times
+* ansible-doc `ansible-doc file`
 
-ansible-playbook [options] playbook.yml  
-–step : confirmation before each task  
-–limit : ignore inventory file/group , against specified machines  
--v(vvvv) :  
--e : extra variable individially or @filename  
-–check : run but won’t make any change  
+### playbook
 
-# 3. module development
+*   YAML
 
-``` ansible will generate code from that template:  
+    * structure
+    * indentation
+    * quotes :
+      * no quote, single/double quote
+      * use quote when there is escape&#x20;
+    * multiline value
+      * `|` multiple line
+      * `>` one line ends with new line
+      * `>-` remove ending new line
+    * boolean
+      * True : `True, yes, on`
+      * False: `False, no, off`
+    * list and dictionary - can yaml format or python format
+    *   list `[item1, item2]`
+
+        ```yaml
+        - item1
+        - item2
+        ```
+
+    ```
+    - dictionary `{key1: value1, key2: value2}`
+    ```
+
+    ````
+      key1: value1
+      key2: value2
+      ```
+       
+      
+    ````
+*   playbook sections
+
+    * common sections
+      * begin `---`
+      * play
+      * hosts
+      * vars
+      * tasks
+      * handlers
+      * roles
+      * end `...`
+    * 'message of the day' playbook
+
+    ```
+    ---
+    -
+       #hosts
+       hosts: centos
+       user: root
+       gather_facts: False
+       vars:
+         motd: "Welcome to Ansible\n"
+       tasks:
+         - name: configure a MOTD
+           copy:
+             content: "{{ motd }}"
+             dest: /etc/motd	
+           notify: MOTD changed
+         handlers:
+           - name: MOTD changed  
+             debug:
+               msg: The MOTD was changed
+    ...
+    ```
+
+    * use variable
+    * override variable from command line
+    * use handlers for post task execution
+      * defined as task
+      * add notify key to task
+    * when directive
+    *
+* playbook variables
+* playbook facts
+* Jinja2 template
+* playbook creating and execute
+
+## 2. Ansible for the Windows Admin by Jeremy Murrah
+
+### Terminology
+
+* task play = task + hosts- playbook = plays
+* hosts/inventory = machines
+* vars/facts = variables - stored in a file or retrieved from a hostli>
+*
+  * list - in json/yaml, array in powershell
+* dictionary - in json/yamal = hashtable in powershell
+
+ansible-playbook \[options] playbook.yml\
+–step : confirmation before each task\
+–limit : ignore inventory file/group , against specified machines\
+\-v(vvvv) :\
+\-e : extra variable individially or @filename\
+–check : run but won’t make any change
+
+## 3. module development
+
+````ansible
 about 1600 lines code, copy to the target system, execute it.
 
 -   argument_spec is a dict, and get populated by the parameter provided in YAML file.
@@ -213,15 +220,10 @@ has three parameters:
     ```
     
 
-```
-   
-- name: Test Module Development
-  hosts: localhost
-  gather_facts: False
-  tasks:
-  - name: Test Module
-    test_module:
-      mandatory_var: value1
+````
+
+* name: Test Module Development hosts: localhost gather\_facts: False tasks:
+  * name: Test Module test\_module: mandatory\_var: value1
 
 ```
 
@@ -249,40 +251,44 @@ ansible -m copy -a “src=/etc/hosts dest=/tmp/hosts” --check --diff localhost
 ## format
 
 ```
-# two layer:
----   # indicator start of yaml
--     # list symbol
-play  # layer 1
-task  # layer 2
+
+## two layer:
+
+\--- # indicator start of yaml
+
+* ```
+  # list symbol
+  ```
+
+play # layer 1 task # layer 2
 
 ```
 
 example
 
 ```
-#playbook.ymml
-hosts: localhost
-tasks:
-- copy:
-    src: "/etc/hosts"
-    dest: "/tmp/hosts"
+
+\#playbook.ymml hosts: localhost tasks:
+
+* copy: src: "/etc/hosts" dest: "/tmp/hosts"
 
 ```
 
 -   short hand - put them in one line
 
 ```
-#playbook.ymml
-hosts: localhost
-tasks:
-- copy:    src: "/etc/hosts"    dest: "/tmp/hosts"
+
+\#playbook.ymml hosts: localhost tasks:
+
+* copy: src: "/etc/hosts" dest: "/tmp/hosts"
 
 ```
 
 ansible-playbook playbook.yml
 
 ```
----
+
+***
 
 ```
 
@@ -298,20 +304,20 @@ ansible-playbook playbook.yml
 -   list
 
 ```
+
 fruits:
-- apple
-- orange
-- mango
+
+* apple
+* orange
+* mango
 
 ```
 
 -   dictionary
 
 ```
-martin:
- name: Martin dev
- job: developer
- skill: elite
+
+martin: name: Martin dev job: developer skill: elite
 
 ```
 
@@ -355,16 +361,16 @@ node2
 
 ```
 
-[bad_group:vars]  
-ntp_server=[ntp1.mydomain.com](http://ntp1.mydomain.com/)  
+\[bad\_group:vars]\
+ntp\_server=[ntp1.mydomain.com](http://ntp1.mydomain.com/)\
 [proxy=proxy1.mydomain.com](http://proxy=proxy1.mydomain.com/)
 
-### two default group
+#### two default group
 
-1.  all
-2.  ungrouped
+1. all
+2. ungrouped
 
-### inventory plugin
+#### inventory plugin
 
 plugin - support dynamic list from azure, aws, …
 
@@ -374,18 +380,18 @@ ansible-doc -t inventory -l
 
 ```
 
-#list aansible module  
+\#list aansible module\
 ansible-doc -l
 
-list parameters of a module  
-ansible-doc -s module_name  
+list parameters of a module\
+ansible-doc -s module\_name
 
-without specifying inventory file, can only use localhost  
+without specifying inventory file, can only use localhost\
 different inventory file type:
 
-1.  py -
-2.  ini -
-3.  yml -
+1. py -
+2. ini -
+3. yml -
 
 ```
 # to get the inventory ignore extensions - .orig, .ini, .cfg, .retry
@@ -393,13 +399,13 @@ ansible-config list
 
 ```
 
-# to list all inventoransible-inventory --list
+## to list all inventoransible-inventory --list
 
-# tree view of inventory
+## tree view of inventory
 
-ansible-inventory --graph  
+ansible-inventory --graph
 
-## ansbile face
+### ansbile face
 
 ```
 
@@ -407,21 +413,21 @@ ansible node1 -m setup
 
 ```
 
-# write facts to a file
+## write facts to a file
 
--   name: writes to a file named  
-    host: node1  
-    become: true  
-    remote_user: root  
-    tasks:
-    -   name:  
-        copy :  
-        dest: /tmp/facts.txt  
-        content: “{{ansible_all_ipv4_addresses}} {{}}”
+* name: writes to a file named\
+  host: node1\
+  become: true\
+  remote\_user: root\
+  tasks:
+  * name:\
+    copy :\
+    dest: /tmp/facts.txt\
+    content: “\{{ansible\_all\_ipv4\_addresses\}} \{{\}}”
 
-# ansible variables
+## ansible variables
 
-# 8. window
+## 8. window
 
 ```
 #check ps version
@@ -430,28 +436,28 @@ ansible node1 -m setup
 
 $PSVersionTable
 
-# winrm
+## winrm
 
-## winrm listener
+### winrm listener
 
-## winrm service configuration
+### winrm service configuration
 
-### configureRemotingForAnsible.ps1 in ansible repo
+#### configureRemotingForAnsible.ps1 in ansible repo
 
 setup http/https listeners with a self-signed certificate and baisc authentification
 
-winrm get winrm/config  
+winrm get winrm/config\
 winrm set winrm/config/service @{AllowUnencrypted=“true”}
 
-# not work:
+## not work:
 
 winrm set winrm/config/service/auth @{Basic=“true”}
 
-# work (network profile set to private )
+## work (network profile set to private )
 
 set-item -Force WSMan:\localhost\Service\AllowUnencrypted $True
 
-# [www.guruoye.net](http://www.guruoye.net/)
+## [www.guruoye.net](http://www.guruoye.net/)
 
 ```
 #window inventory
@@ -479,61 +485,38 @@ ansible windows -i hosts -m win_chocolatey -a “name=notepadplusplus state=pres
 
 ```
 
+domain user: svc-ansible
 
+winrm: listener: http: 5985 https: 5986
 
+authentication basic certificate ntlm kerberos CredSSP - modern,
 
-domain user:
-svc-ansible
-
-winrm:
- listener:
-	http: 5985
-	https: 5986
+```
+	#powershell
+	winrm enumerate winrm/config/listener
+	winrm get winrm/config/Service
+	wget https://raw.githubusercontent.com/ansible/ansible/devel/examples/scripts/ConfigureRemotingForAnsible.ps1 -Outfile ConfigureRemotingForAnsible.ps1 
+	# enable credSSP and disable basic
 	
- authentication 
-	basic
-	certificate
-	ntlm
-	kerberos
-	CredSSP - modern, 
+	.\ConfigureRemotingForAnsible.ps1 -EnableCredSSP -DisableBasicAuth -Verbose
 	
 	
-		#powershell
-		winrm enumerate winrm/config/listener
-		winrm get winrm/config/Service
-		wget https://raw.githubusercontent.com/ansible/ansible/devel/examples/scripts/ConfigureRemotingForAnsible.ps1 -Outfile ConfigureRemotingForAnsible.ps1 
-		# enable credSSP and disable basic
-		
-		.\ConfigureRemotingForAnsible.ps1 -EnableCredSSP -DisableBasicAuth -Verbose
-		
-		
-		# remove http
-		 Get-ChildItem -Path WSMan:\localhost\Listener | Where-Object { $_.keys -eq "Transport=HTTP"} | Remove-Item -Recurse -Force
-		 
-		 # restart winrm
-		 restart-service winrm 
-		 
-		 # give service account access - add to local admin group 
-		 
-		 
-========================
-
-
-
+	# remove http
+	 Get-ChildItem -Path WSMan:\localhost\Listener | Where-Object { $_.keys -eq "Transport=HTTP"} | Remove-Item -Recurse -Force
 	 
-		 
-[web]
-win10
+	 # restart winrm
+	 restart-service winrm 
+	 
+	 # give service account access - add to local admin group 
+	 
+	 
+```
 
-[web:vars]
-ansbile_user=""
-ansible_password=""
-ansbile_connection=winrm
-ansible_winrm_transport=credssp
-ansiblewinrm_server_cert_validation=ignore
+\========================
 
+\[web] win10
 
-
+\[web:vars] ansbile\_user="" ansible\_password="" ansbile\_connection=winrm ansible\_winrm\_transport=credssp ansiblewinrm\_server\_cert\_validation=ignore
 
 ```
 
@@ -586,83 +569,48 @@ consist style
 -   * directory layout
 
 ```
-# inventory - meaningful name
-cos72 ansible_host=192.168.1.72
-cos73 ansible_host=192.168.1.73
 
+## inventory - meaningful name
 
-# groups
-[cos]
-cos[1:2]
+cos72 ansible\_host=192.168.1.72 cos73 ansible\_host=192.168.1.73
 
-# variable - 16 places you can put variables
-apache_port : 80
+## groups
 
-# use name lable - for documenting
+\[cos] cos\[1:2]
 
-- hosts: web
-  name: installs and starts apache
-  
-  tasks:
-  - name: install apache packages
-    yum:
-      name: httpd
-      state: latest
-      
-  - name: starts apache service
-    service:
-      name: httpd
-      state: started
-      enabled: yes
-      
-      
-      
-# block - organise and group tasks; enable rollbacks 
+## variable - 16 places you can put variables
 
-- block:
-    copy:
-      src: critical.conf
-      dest: /etc/critical/crit.conf
-      
-    service:
-      name: critical
-      state: restarted
-      
-  rescue:
-    command: shutdown -h now
-    
-#execute option
+apache\_port : 80
 
--vvvv
---step
---check
---diff
---start-at-task
+## use name lable - for documenting
 
---list-tasks
---list-tags
---list-hosts
---syntax-check
+*   hosts: web name: installs and starts apache
 
-#avoid - command, shell, raw
+    tasks:
 
-# smoke tests -check
--name: check for proper response
-uri:
-  url: http://localhost/myapp
-  return_content: yes
-register: result
-until: '"hello world" in result.content'
-retries: 10
-delay: 1
+    * name: install apache packages yum: name: httpd state: latest
+    * name: starts apache service service: name: httpd state: started enabled: yes
 
+## block - organise and group tasks; enable rollbacks
 
+*   block: copy: src: critical.conf dest: /etc/critical/crit.conf
 
+    service: name: critical state: restarted
 
+    rescue: command: shutdown -h now
 
+\#execute option
 
+\-vvvv --step --check --diff --start-at-task
 
-</code></pre>
+\--list-tasks --list-tags --list-hosts --syntax-check
+
+\#avoid - command, shell, raw
+
+## smoke tests -check
+
+\-name: check for proper response uri: url: http://localhost/myapp return\_content: yes register: result until: '"hello world" in result.content' retries: 10 delay: 1
+
 ```
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTE2NzUzMTcxMjMsNjYxNjIxODAsLTE5ND
@@ -672,3 +620,4 @@ E5NDExNzcsLTQ1NzAzMTc4LDEwNDQzNzQ2MzgsNTEwMDA4NDQ1
 LDc3NzE0MDEzNSwzNjMzMDI2NjEsMTg3MzgzMTU3MiwtMjMwOD
 M2MTc2LC0xNTc0NzQzNTE0XX0=
 -->
+```
