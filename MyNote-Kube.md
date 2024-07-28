@@ -123,13 +123,16 @@ minikube ip  # find ip of minikube node
 to customize
 
 
-`helm show values prom/kube-prometheus-stack`
+```
+helm show values prom/kube-prometheus-stack
+helm upgrade monitoring prom/kube-prometheus-stack --set grafana.adminPassword=admi
+```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0ODA5MjU4NzcsMTc5MTYwODQ3NiwyNj
-UyNDgzOTYsNzU4NDQ2MzU1LC03MTAxOTI2NTIsLTIyMjgxMjgy
-MSwxMTc3MTUwNzY3LDExOTMxMzc0NTUsLTE5NTUyMzU3Nyw4OD
-gwNDE2ODIsNzQ2MTM3MzM1LC04NTM5MzY3OTEsLTM3NDE4NzQ1
-MiwxNDY4NTI5MzExLC0xMTQ3NDM2OTM0LC01OTM1NTM0MjEsLT
-k5ODI0MTgzMl19
+eyJoaXN0b3J5IjpbLTE4NzEwNjM3MDMsLTE0ODA5MjU4NzcsMT
+c5MTYwODQ3NiwyNjUyNDgzOTYsNzU4NDQ2MzU1LC03MTAxOTI2
+NTIsLTIyMjgxMjgyMSwxMTc3MTUwNzY3LDExOTMxMzc0NTUsLT
+E5NTUyMzU3Nyw4ODgwNDE2ODIsNzQ2MTM3MzM1LC04NTM5MzY3
+OTEsLTM3NDE4NzQ1MiwxNDY4NTI5MzExLC0xMTQ3NDM2OTM0LC
+01OTM1NTM0MjEsLTk5ODI0MTgzMl19
 -->
