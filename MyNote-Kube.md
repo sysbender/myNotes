@@ -133,4 +133,29 @@ to customize
 helm show values prom/kube-prometheus-stack
 # update a value by set
 helm upgrade monitoring prom/kube-prometheus-stack --set grafana.adminPassword=admi
+
+# which value name : https://github.com/grafana/helm-charts/tree/main/charts/grafana
+helm upgrade monitoring prom/kube-prometheus-stack --values=values
+
 ```
+
+
+
+````yaml
+```yaml
+## Using default values from https://github.com/grafana/helm-charts/blob/main/charts/grafana/values.yaml
+##
+grafana:
+
+  adminPassword: admin
+ 
+  ## Passed to grafana subchart and used by servicemonitor below
+  ##
+  service:
+    portName: http-web
+    ipFamilies: []
+    ipFamilyPolicy: ""
+    type: NodePort
+    nodePort: 30008
+```
+````
