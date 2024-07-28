@@ -90,7 +90,7 @@ helm uninstall mysql
 ```
 stateful sets - give pod garantee name, rather than 
 
- ## prom
+ ## example - prom
  ```
 ```bash
 helm repo add prom https://prometheus-community.github.io/helm-charts
@@ -118,10 +118,15 @@ minikube ip  # find ip of minikube node
   sessionAffinity: None
   type: NodePort  # change from ClusterPort
 ```
+
+## chart value
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjY1MjQ4Mzk2LDc1ODQ0NjM1NSwtNzEwMT
-kyNjUyLC0yMjI4MTI4MjEsMTE3NzE1MDc2NywxMTkzMTM3NDU1
-LC0xOTU1MjM1NzcsODg4MDQxNjgyLDc0NjEzNzMzNSwtODUzOT
-M2NzkxLC0zNzQxODc0NTIsMTQ2ODUyOTMxMSwtMTE0NzQzNjkz
-NCwtNTkzNTUzNDIxLC05OTgyNDE4MzJdfQ==
+eyJoaXN0b3J5IjpbLTE0ODc5ODE0MjgsMjY1MjQ4Mzk2LDc1OD
+Q0NjM1NSwtNzEwMTkyNjUyLC0yMjI4MTI4MjEsMTE3NzE1MDc2
+NywxMTkzMTM3NDU1LC0xOTU1MjM1NzcsODg4MDQxNjgyLDc0Nj
+EzNzMzNSwtODUzOTM2NzkxLC0zNzQxODc0NTIsMTQ2ODUyOTMx
+MSwtMTE0NzQzNjkzNCwtNTkzNTUzNDIxLC05OTgyNDE4MzJdfQ
+==
 -->
