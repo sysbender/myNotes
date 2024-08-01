@@ -159,3 +159,40 @@ grafana:
     nodePort: 30008
 ```
 ````
+
+
+
+* snowflake server/cluster - every snowflake is different
+* phenix server/cluster - replicable&#x20;
+
+don't use helm install
+
+#### pull and install
+
+```
+# helm pull
+helm pull bitnami/mysql --untar=true
+helm pull prom/kube-prometheus-stack --untar=true
+
+
+helm install monitoring ./kube-prometheus-stack/
+
+helm upgrade monitoring --values=myvalues.yaml .
+
+# using generated template and apply by kubectl
+helm template monitoring ./kube-prometheus-stack/ --values=./kube-prometheus-stack/myvalues.yaml > monitoring.yaml
+
+kubectl apply -f monitoring.yaml
+
+
+
+```
+
+
+
+```
+https://github.com/DickChesterwood/k8s-fleetman/blob/master/_course_files/Intel_AMD_Edition/Going%20Further%20with%20Kubernetes/Helm/fleetman-helm-demo-start.yaml
+```
+
+
+
